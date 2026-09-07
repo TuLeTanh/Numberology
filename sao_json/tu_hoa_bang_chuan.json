@@ -1,0 +1,76 @@
+{
+  "_comment": "Bảng Sinh Niên Tứ Hóa chính thức làm chuẩn cho An Sao Engine. Được tổng hợp dựa trên sự đồng thuận của Tân Biên cho 7 Can phổ quát, và áp dụng nghiêm ngặt nguyên lý của Trung Châu Phái (Vương Đình Chi) cho 3 Can Mậu, Canh, Nhâm.",
+  "Giáp": {
+    "HoaLoc": "Liêm Trinh",
+    "HoaQuyen": "Phá Quân",
+    "HoaKhoa": "Vũ Khúc",
+    "HoaKy": "Thái Dương",
+    "Nguon": "Tân Biên (đồng thuận mọi phái)"
+  },
+  "Ất": {
+    "HoaLoc": "Thiên Cơ",
+    "HoaQuyen": "Thiên Lương",
+    "HoaKhoa": "Tử Vi",
+    "HoaKy": "Thái Âm",
+    "Nguon": "Tân Biên (đồng thuận mọi phái)"
+  },
+  "Bính": {
+    "HoaLoc": "Thiên Đồng",
+    "HoaQuyen": "Thiên Cơ",
+    "HoaKhoa": "Văn Xương",
+    "HoaKy": "Liêm Trinh",
+    "Nguon": "Tân Biên (đồng thuận mọi phái)"
+  },
+  "Đinh": {
+    "HoaLoc": "Thái Âm",
+    "HoaQuyen": "Thiên Đồng",
+    "HoaKhoa": "Thiên Cơ",
+    "HoaKy": "Cự Môn",
+    "Nguon": "Tân Biên (đồng thuận mọi phái)"
+  },
+  "Mậu": {
+    "HoaLoc": "Tham Lang",
+    "HoaQuyen": "Thái Âm",
+    "HoaKhoa": "Thái Dương",
+    "HoaKy": "Thiên Cơ",
+    "Nguon": "Trung Châu Phái (Vương Đình Chi)",
+    "_note": "Khác Tân Biên: Tân Biên dùng Hữu Bật Hóa Khoa. Lập trường Trung Châu Phái dùng Thái Dương Hóa Khoa."
+  },
+  "Kỷ": {
+    "HoaLoc": "Vũ Khúc",
+    "HoaQuyen": "Tham Lang",
+    "HoaKhoa": "Thiên Lương",
+    "HoaKy": "Văn Khúc",
+    "Nguon": "Tân Biên (đồng thuận mọi phái)"
+  },
+  "Canh": {
+    "HoaLoc": "Thái Dương",
+    "HoaQuyen": "Vũ Khúc",
+    "HoaKhoa": "Thiên Phủ",
+    "HoaKy": "Thiên Đồng",
+    "Nguon": "Trung Châu Phái (Vương Đình Chi)",
+    "_note": "Khác Tân Biên và Toàn Thư: Tân Biên dùng Thái Âm Hóa Khoa, Toàn Thư dùng Thiên Đồng Hóa Khoa. Trung Châu Phái dùng Thiên Phủ Hóa Khoa."
+  },
+  "Tân": {
+    "HoaLoc": "Cự Môn",
+    "HoaQuyen": "Thái Dương",
+    "HoaKhoa": "Văn Khúc",
+    "HoaKy": "Văn Xương",
+    "Nguon": "Tân Biên (đồng thuận mọi phái)"
+  },
+  "Nhâm": {
+    "HoaLoc": "Thiên Lương",
+    "HoaQuyen": "Tử Vi",
+    "HoaKhoa": "Thiên Phủ",
+    "HoaKy": "Vũ Khúc",
+    "Nguon": "Trung Châu Phái (Vương Đình Chi)",
+    "_note": "Tân Biên cũng sử dụng Thiên Phủ Hóa Khoa cho Can Nhâm (vô tình trùng với chuẩn Trung Châu Phái). Tuy nhiên nhiều sách khác trên thị trường thường dùng Tả Phù Hóa Khoa, nên cần comment rõ để người đọc code hiểu lý do chọn Thiên Phủ."
+  },
+  "Quý": {
+    "HoaLoc": "Phá Quân",
+    "HoaQuyen": "Cự Môn",
+    "HoaKhoa": "Thái Âm",
+    "HoaKy": "Tham Lang",
+    "Nguon": "Tân Biên (đồng thuận mọi phái)"
+  }
+}

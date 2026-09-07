@@ -1,0 +1,64 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Secrets / env
+.env
+*.env
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Log/error/status artifacts từ script extract
+sao_json/_batch_*_error_output.json
+sao_json/_batch_*_status.txt
+
+# Data/OCR intermediate and heavy files
+data/*.pdf
+data/*_ocr.txt
+data/*.zip
+data/*.png
+data/*_extract.txt
+data/*_sample.txt
+data/search_results.txt
+data/thien_co_text.txt
+data/toc1.txt
+data/toc2.txt
+data/tu_dien_meanings*.txt
+data/tu_vi_text.txt
+data/tu_vi_thien_co.txt
+data/cuc_search.txt
+
+# Agent scratch and debug
+scratch/
+*_status.txt
+*_error_output.json
+check_*.txt
+*.key
+credentials.json
+
+data/tan_bien.txt
+data/toan_thu_unicode.txt
+data/vuong_dinh_chi.txt
+data/*.jpg
+data/formulas_dump.txt
+data/differences.txt
+data/truth_out.txt
+*.docx
+
+# Prevent sensitive raw JSON files from being pushed
+sao_json/*
+!sao_json/tu_hoa_bang_chuan.json
+/sao_thien_co.json
+/sao_tu_vi.json

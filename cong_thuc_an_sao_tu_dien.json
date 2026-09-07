@@ -1,0 +1,76 @@
+{
+  "nguon": "Tự Điển Tử Vi Đẩu Số & Thần Số Học - Lê Quang Tiềm",
+  "vong_thai_tue": {
+    "cach_an": "Sanh năm nào để Thái Tuế vào cung ấy. Kéo theo 11 sao theo chiều thuận.",
+    "cac_sao": [
+      "Thái Tuế", "Thiếu Dương", "Tang Môn", "Thiếu Âm", "Quan Phù", "Tử Phù",
+      "Tuế Phá", "Long Đức", "Bạch Hổ", "Phúc Đức", "Điếu Khách", "Trực Phù"
+    ],
+    "sao_dac_biet": {
+      "Thiên Không": "Trước sao Thái Tuế 1 cung."
+    }
+  },
+  "vong_loc_ton": {
+    "cach_an": "An theo hàng Can năm sinh. Dương nam/âm nữ thuận, Âm nam/dương nữ nghịch.",
+    "bang_tra": {
+      "Giáp": "Dần", "Ất": "Mão", "Bính/Mậu": "Tỵ", "Đinh/Kỷ": "Ngọ",
+      "Canh": "Thân", "Tân": "Dậu", "Nhâm": "Hợi", "Quí": "Tý"
+    },
+    "cac_sao": [
+      "Lộc Tồn (Bác Sĩ)", "Lực Sĩ", "Thanh Long", "Tiểu Hao", "Tướng Quân", "Tấu Thư",
+      "Phi Liêm", "Hỷ Thần", "Bệnh Phù", "Đại Hao", "Phục Binh", "Quan Phủ"
+    ],
+    "sao_dac_biet": {
+      "Kình Dương": "Trước sao Lộc Tồn 1 cung",
+      "Đà La": "Sau sao Lộc Tồn 1 cung"
+    }
+  },
+  "vong_trang_sinh": {
+    "cach_an": "An theo Cục. Dương nam/âm nữ thuận, Âm nam/dương nữ nghịch.",
+    "bang_tra": {
+      "Thủy Nhị Cục": "Thân",
+      "Mộc Tam Cục": "Hợi",
+      "Kim Tứ Cục": "Tỵ",
+      "Thổ Ngũ Cục": "Thân",
+      "Hỏa Lục Cục": "Dần"
+    },
+    "cac_sao": [
+      "Tràng Sanh", "Mộc Dục", "Quan Đới", "Lâm Quan", "Đế Vượng", "Suy",
+      "Bệnh", "Tử", "Mộ", "Tuyệt", "Thai", "Dưỡng"
+    ]
+  },
+  "he_thong_tu_vi_thien_phu": {
+    "tu_vi": {
+      "cach_an": "Tính theo Cục và ngày sinh (tham chiếu bảng Lập Thành, chi tiết lỗi do OCR mờ).",
+      "ghi_chu_thieu_du_lieu": [
+        "Bảng tra Tử Vi theo Cục và Ngày Sinh bị lỗi OCR, không thể đọc được cấu trúc."
+      ]
+    },
+    "thien_phu": {
+      "cach_an": "Đối xứng (symetric) với Tử Vi qua trục Dần - Thân. Đóng chung với Tử Vi ở Dần và Thân."
+    },
+    "vong_tu_vi": {
+      "cach_an": "Kéo theo chiều thuận.",
+      "cac_sao": [
+        {"sao": "Tử Vi", "vi_tri": 0},
+        {"sao": "Liêm Trinh", "vi_tri": 4},
+        {"sao": "Vũ Khúc", "vi_tri": 8},
+        {"sao": "Thái Dương", "vi_tri": 9},
+        {"sao": "Thiên Cơ", "vi_tri": 11}
+      ]
+    },
+    "vong_thien_phu": {
+      "cach_an": "Kéo theo chiều thuận từ Thiên Phủ.",
+      "cac_sao": [
+        {"sao": "Thiên Phủ", "vi_tri": 0},
+        {"sao": "Thái Âm", "vi_tri": 1},
+        {"sao": "Tham Lang", "vi_tri": 2},
+        {"sao": "Cự Môn", "vi_tri": 3},
+        {"sao": "Thiên Tướng", "vi_tri": 4},
+        {"sao": "Thiên Lương", "vi_tri": 5},
+        {"sao": "Thất Sát", "vi_tri": 6},
+        {"sao": "Phá Quân", "vi_tri": 10}
+      ]
+    }
+  }
+}

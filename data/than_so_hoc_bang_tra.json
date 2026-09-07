@@ -1,0 +1,231 @@
+{
+  "cach_tinh_so": {
+    "cach_tinh": "Quy tắc cộng dồn các chữ số cho tới khi chỉ còn 1 chữ số (từ 1 đến 9). Nếu tổng lớn hơn 9, tiếp tục cộng các chữ số của tổng đó với nhau.",
+    "vi_du_tu_ten": "Tương ứng chữ cái sang số: 1 (A, J, S), 2 (B, K, T), 3 (C, L, U), 4 (D, M, V), 5 (E, N, W), 6 (F, O, X), 7 (G, P, Y), 8 (H, Q, Z), 9 (I, R). Ví dụ chữ AMERICA: 1+4+5+9+9+3+1 = 32. Sau đó lấy 3+2 = 5. Số định mệnh từ tên (Path of Destiny) là 5.",
+    "vi_du_tu_ngay_sinh": "Cộng tất cả các chữ số của ngày, tháng, năm sinh. Ví dụ người sinh ngày 3 tháng 8 năm 1944: 3 + 8 + 1944 = 1955. Sau đó 1 + 9 + 5 + 5 = 20. Cuối cùng 2 + 0 = 2. Số định mệnh từ ngày sinh (Life lesson number) là 2."
+  },
+  "so_dinh_menh": {
+    "1": {
+      "so": 1,
+      "hanh_tinh_lien_he": "Thái Dương Tinh",
+      "tinh_tinh": "Cứng, mạnh, tượng trưng cho nguyên lý căn bản của đời sống. Lập trường vững chắc, ít thay đổi. Ưa thám sát, mạo hiểm, khám phá, tìm tòi và sáng chế. Cứng đầu, ý chí mạnh mẽ, tự quyết, tự lập, tự hào. Có óc tổ chức, lãnh đạo. Rất khó bị thuyết phục, khó sửa đổi những lỗi lầm và chỉ huy độc đoán. Bản tính rộng rãi, đại lượng, nhưng vì nhiều tham vọng dễ trở thành ích kỷ, tàn nhẫn, bất chấp. Làm việc đúng đường hướng thì kết quả rất tốt vì nhiều nhiệt huyết và cương quyết. Nhưng nếu sai lạc thì rất thảm hại.",
+      "nhan_cach": "Con người xuất chúng, tinh thần rất cao. Thường nổi bật và gây ấn tượng tốt đẹp ngay lúc đầu. Có tài thuyết phục người xung quanh. Thích hoạt động, bận rộn và xê dịch đó đây. Tế nhị và dễ dàng xúc cảm. Được nhiều người mến phục, mặc dầu hơi thiếu xã giao. Có nhiều bạn bè sẵn sàng giúp đỡ họ mà không ngần ngại điều gì. Đối với kẻ thù, người số 1 không bao giờ tha thứ và quên đi dễ dàng một lỗi lầm nhỏ nào. Dễ bị người khác ghét và có kẻ thù vì cứng rắn, muốn làm nhanh và mạnh.",
+      "cong_viec_nang_khieu": "Dễ thành công trong việc điều khiển và quản trị hơn là trong địa hạt kỹ thuật. Dễ thành công nếu là giám đốc sản xuất, kỹ thuật hơn là điện tử. Làm chủ báo hơn là ký giả. Thành công trong các ngành khoa học, nhất là về khảo cứu, sáng chế hoặc phát minh.",
+      "tien_bac": "Dễ đói rách. Dễ kiếm tiền và cũng dễ giàu mà cũng dễ mất tiền. Dễ mắc công nợ vì dám chi tiêu vào bất cứ việc nào cho hợp lý. Dám đầu tư vào các công việc liều lĩnh: 'được ăn cả ngã về không'. Rất dễ phiêu lưu trong vấn đề tiền bạc và có thể đưa tới sự phá sản.",
+      "tinh_duyen": {
+        "mo_ta_chung": "Khi chọn bạn, luôn luôn chọn người mà họ chi phối được. Họ càng gần gũi người nào bao nhiêu thì họ càng có khuynh hướng muốn chỉ huy bấy nhiêu. Rất thụ cảm với tình yêu nhưng cũng lại dễ bị tiêu tan. Muốn chiếm độc quyền tình cảm và rất cả ghen. Rất nặng nề về tình cảm và rất dễ đau khổ. Thường che dấu tình cảm thầm kín, ít cho mọi người biết tâm trạng mình.",
+        "hop_nhat": [
+          2,
+          6
+        ],
+        "hop_vua": [
+          3,
+          4,
+          5,
+          7
+        ],
+        "khac_khong_hop": [
+          1,
+          8,
+          9
+        ]
+      }
+    },
+    "2": {
+      "so": 2,
+      "hanh_tinh_lien_he": "Mặt trăng / Thổ Tinh",
+      "tinh_tinh": "Rất dễ tế nhị trong việc giao thiệp, biết xét đoán những người khác. Cộng tác ngoan ngoãn với người khác hơn là lãnh đạo. Thích sự quen thuộc thân mật và yên ổn hơn là muốn ra sao thì ra, hơn là cái gì mới lạ quá. Thường thầm lặng, dè dặt, cân nhắc kỹ lưỡng trước khi hành động. Thích sự hòa thuận cộng tác. Không ưa cãi cọ xích mích. Dễ thất vọng, chán nản lo nghĩ nếu gặp những chuyện không vui.",
+      "nhan_cach": "Dễ bị chi phối bởi tình cảm hơn là lý trí lãng mạn. Dễ xúc cảm. Hòa nhã. Tuy có vẻ thản nhiên trầm lặng bên ngoài, thật ra có nhiều khi 'cười bên ngoài mặt, bên trong khóc thầm'. Khi vui thì thật là vui, khi buồn thật là buồn. Rất dễ gây tình bạn. Ít đòi hỏi ở người khác, nhưng lại không phải là người ưa sống tập thể. Thích là khán giả hơn là diễn viên. Ít khi mất bình tĩnh. Khi đau khổ, hay giận dữ thường có tính thâm trầm, ngậm đắng nuốt cay hơn là bộc phát.",
+      "cong_viec_nang_khieu": "Có óc sáng kiến và tưởng tượng nhưng có khả năng nhiều trong cương vị người thừa hành hơn là cấp chỉ huy, cộng tác hơn là tranh chấp. Dễ thành công trong những việc đòi hỏi sự tế nhị như giao dịch, nhất là các nghề về tâm lý học, xã hội học, cố vấn, phụ tá, thư ký. Các ngành thích hợp khác là dạy học, nghiên cứu, y khoa, kế toán. Là nhân viên cộng tác chân thành đắc lực. Ít gặp sự may mắn trên đường công danh và ít đòi hỏi, cam phận thủ thường.",
+      "tien_bac": "Tiêu tiền rất hợp lý và chắc chắn. Ít phung phí, trừ trường hợp đối với người yêu. Ghét nợ nần, thường dành dụm từng đồng. Kinh doanh những việc chắc ăn như bắp nhưng ít lời. Không dám liều lĩnh. Không có đầu óc đầu cơ. Vì mềm yếu, dễ bị bạn bè lợi dụng, vay mượn, ngược lại rất ngại ngùng khi vay mượn người khác.",
+      "tinh_duyen": {
+        "mo_ta_chung": "Là bạn đời lý tưởng về nhiều khía cạnh, chan chứa tình thương yêu và sẵn sàng hy sinh với người yêu. Người vợ số 2 thường tìm mọi cách để đem lại hạnh phúc cho chồng. Người chồng số 2 rất hòa nhã, dễ thương, ít đòi hỏi hoặc độc đoán. Cần phải lưu ý: đừng để khuynh hướng lãng mạn chi phối tính tốt bẩm nhiên vì họ mềm yếu về tình yêu.",
+        "hop_nhat": [
+          2,
+          4,
+          6
+        ],
+        "hop_vua": [
+          1,
+          3,
+          5,
+          8
+        ],
+        "khac_khong_hop": [
+          7,
+          9
+        ]
+      }
+    },
+    "3": {
+      "so": 3,
+      "hanh_tinh_lien_he": "Mộc Tinh (Jupiter)",
+      "tinh_tinh": "Có nhiều khả năng thiên phú và ham thích học hỏi. Lạc quan, dễ say mê, tháo vát và thông minh. Thích sống tập đoàn, yêu đời và làm cho người xung quanh vui theo. Thường công nhận sự rủi ro và cho đó là tự nhiên. Có tài ứng biến, thích hoạt động nhưng ít cương quyết, dễ bị người khác chi phối và cũng dễ gây ảnh hưởng sang người khác. Có khuynh hướng ích kỷ, thích sống theo lối sống riêng của mình, dễ dãi đối với bản thân. Rất chú trọng đến đời sống vật chất và tiền tài.",
+      "nhan_cach": "Xã giao và đại chúng, thích quen biết, đi nơi này và tiêu khiển về ăn uống. Nói chuyện hay, dễ làm quen với hoàn cảnh mới, làm cho mọi việc thoải mái trừ phi giận dữ bất thường. Thường có nhiều bạn bè nhưng ít thân vì ưa thích thay đổi và nhìn nhận sự vật một cách dễ dãi. Vui tính, dễ kích thích và làm hứng khởi người khác. Ít chán nản bi quan, ít quấy rầy người xung quanh.",
+      "cong_viec_nang_khieu": "Có óc sáng tạo và tưởng tượng rất mạnh, thêm với nhiều tham vọng, do đó dễ thành công. Các nghề thích hợp thuộc địa hạt văn nghệ như viết văn, nhiếp ảnh, trang hoàng, hội họa, giải trí và các nghề cần xã giao và ăn nói. Ít kiên nhẫn với các nghề: bác sĩ, luật sư, kế toán, kỹ sư. Dễ chán nản với công việc cố định và đều đặn.",
+      "tien_bac": "Dễ tiêu hoang phí cho mình, cho gia đình và cho người cộng tác. Không thích tiết kiệm mà thích sắm sửa. Rộng rãi về tiền bạc và quà bánh cho mọi người. Quan niệm kiếm tiền ra là để tiêu pha cho sung sướng. Tóm lại đó là người kiếm tiền dễ dàng và cũng tiêu pha dễ dàng. Tiền bạc như chiêm bao, sáng vào tối ra là chuyện thường.",
+      "tinh_duyen": {
+        "mo_ta_chung": "Sâu xa vững bền sau khi đã suy nghĩ kỹ lưỡng. Khi chưa kết hôn, thường là người đa tình, hào hoa và thích phiêu lưu tình cảm, do đó có thể bị tai tiếng. Khi lập gia đình rồi là người rất trung thành, thích cảnh ấm cúng, săn sóc và chiều chuộng gia đình hết mức. Tuy nhiên không vì thế mà bỏ các đam mê riêng tư.",
+        "hop_nhat": [
+          1,
+          5,
+          8
+        ],
+        "hop_vua": [
+          3
+        ],
+        "khac_khong_hop": []
+      }
+    },
+    "4": {
+      "so": 4,
+      "hanh_tinh_lien_he": "Sao Saturne (La Hầu)",
+      "tinh_tinh": "Làm việc nhiều, bền bỉ, tín cẩn nhưng không phải là người sáng chế hay phát minh. Là cột trụ của kỹ nghệ và xã hội. Tổ chức và kiến thiết giỏi. Làm việc với suy nghĩ, chín chắn, cẩn thận và chính xác. Nhiều khi đi sâu vào cả chi tiết, vì vậy mà lạc khỏi mục tiêu chính. Lương tâm chức nghiệp nếu được dùng đúng chỗ sẽ đem đến kết quả tốt. Khuynh hướng bảo thủ, ưa chống đối các việc cải cách. Thường tìm hiểu, do dự rất lâu rồi mới bắt tay vào việc.",
+      "nhan_cach": "Thích thú trước và ít biểu lộ. Ít hài hước và không tháo vát. Bản tính trung thành. Tin cậy. Là những người bạn thật tốt và lâu dài. Hướng nội hơn là hướng ngoại. Có khuynh hướng trả thù hơn là tha thứ. Kém tế nhị, kém ăn nói. Thật thà, nghĩ sao nói vậy. Không có chỉ huy nhưng rất cứng đầu, khó mà lay chuyển được ý định của họ.",
+      "cong_viec_nang_khieu": "Rất thích hợp cho những việc cần có sự tập trung và chú ý từng chi tiết. Các nghề thích ứng: kỹ sư, kiến trúc sư, thầu khoán, kế toán, thu ngân, quản thủ thư viện, hóa học, dược sĩ, toán học, luật gia hoặc thẩm phán xuất sắc. Phần lớn thiếu óc sáng kiến và tưởng tượng, nên không thích hợp với các nghề thương mại quảng cáo, tuyên truyền. Là nhân viên rất có tinh thần trách nhiệm, có thể hợp với các công việc buồn tẻ, đều đặn và không chán.",
+      "tien_bac": "Cẩn thận về tiền bạc. Biết để dành phòng khi mưa nắng trở trời. Mua bán rất chặt chẽ, không hoang phí, thường mua đồ cũ hơn là đồ mới. Ít người thích cờ bạc hay đầu tư liều lĩnh. Họ chỉ dám làm những việc chắc chắn có kết quả. Kiếm được đồng nào giữ chắc đồng đó.",
+      "tinh_duyen": {
+        "mo_ta_chung": "Không tương tư một cách dễ dàng. Rất cẩn thận, thực tế, tiến bước trên đường một cách chậm chạp và chắc chắn. Rất hiếm người có tình yêu sét đánh, phần đông tìm hiểu lâu dài. Là một người lý tưởng cho những ai kiếm một người tin cậy, làm việc nhiều và cương quyết. Cần tình yêu, nếu không rất dễ bị cô quạnh, khổ sở nhưng lại ít dám tỏ tình.",
+        "hop_nhat": [
+          4,
+          7,
+          9
+        ],
+        "hop_vua": [
+          1,
+          2,
+          6,
+          8
+        ],
+        "khac_khong_hop": [
+          3,
+          5
+        ]
+      }
+    },
+    "5": {
+      "so": 5,
+      "hanh_tinh_lien_he": "Sao Mercury",
+      "tinh_tinh": "Sáng trí, hành động mau lẹ. Đặc biệt hơn cả, họ rất quí trọng tự do cá nhân và luôn luôn vận dụng tinh thần, đã thúc đẩy họ không ngừng hoạt động. Phần đông, họ sẵn sàng hy sinh quyền hành, địa vị cho sự hoạt động và phiêu lưu. Soạn thảo chương trình kế hoạch và cuộc sống từng ngày, không lo tới ngày mai, mặc cho dòng đời lôi cuốn, muốn ra sao thì ra. Có nhiều nghị lực và hứng khởi. Tuy thay đổi tính tình mau chóng nhưng có sức chịu đựng.",
+      "nhan_cach": "Cương quyết và nhiều nghị lực, ý chí. Ít khi phải ngập ngừng, đắn đo trước một vấn đề nào. Thường cảm nghĩ cũng như hành động đều là tùy hứng. Rất nóng nảy, bộp chộp. Tuy nhiên cũng có rất nhiều duyên dáng, niềm nở. Thích các buổi hội họp, thích cười đùa ca hát và mọi chuyện phiếm. Dễ đem cái vui đến cho người xung quanh.",
+      "cong_viec_nang_khieu": "Thường có 4 đặc tính đem lại thành công: thông minh, tài ba, nghị lực và cá nhân tính. Cần phải chọn nghề cẩn thận, để khỏi phí phạm các đức tính sẵn có. Nếu chọn lựa đúng nghề, họ có thể leo lên tột đỉnh. Chẳng hạn như: viết báo, sáng tác, hội họa, nhiếp ảnh, luật gia, thể thao, phi công v..v.. Thích hợp được với các nghề: quảng cáo, tuyên truyền, hay cần giao tế.",
+      "tien_bac": "Rất bấp bênh về tiền bạc. Có thể thành triệu phú hay trắng tay trong một đêm. Rất rộng rãi về tiền bạc, ít dành dụm. Nên để cho người khác quản trị hộ. Ít lo lắng về tương lai và những khi trở trời.",
+      "tinh_duyen": {
+        "mo_ta_chung": "Dễ quyến rũ người khác và luôn luôn là kẻ hấp dẫn đối với kẻ khác phái. Thường có bản chất tình cảm và tình dục rất mạnh. Hết sức lãng mạn. Yêu cuồng sống vội. Viết thư tình một cách say mê. Đi đến đính ước một cách bất cứ. Kết hôn với họ có thể đi đến thiên đường hoặc đi đến địa ngục.",
+        "hop_nhat": [
+          5
+        ],
+        "hop_vua": [
+          1,
+          2,
+          3,
+          6,
+          8
+        ],
+        "khac_khong_hop": []
+      }
+    },
+    "6": {
+      "so": 6,
+      "hanh_tinh_lien_he": "Sao Venus",
+      "tinh_tinh": "Cứng cỏi, mạnh mẽ, tin cậy, cao thượng, tế nhị và rung động sâu xa trước cái đẹp. Bản tính nhân ái và chú trọng hạnh phúc của kẻ khác. Tuy có thể hoạt động tích cực ngoài đời, nhưng trọng tâm đời sống là gia đình. Hy sinh cho gia đình đến dễ thành chiều chuộng quá mức. Rất có lương tâm và sự chính xác, mẫu mực. Thường hay đảm đương luôn các việc của kẻ khác. Thường quá đi sâu vào chi tiết, thành ra luôn luôn bị lo lắng, không an tâm.",
+      "nhan_cach": "Tính điều hòa, mềm mỏng, nhẹ nhàng, nhu mì, trầm lặng và duyên dáng, dễ tạo nên cảm tình với người chung quanh. Bởi tính yêu mến thiên nhiên, rất dễ kết bạn và giữ được tình bạn lâu dài. Được mọi người yêu mến. Thích những cái gì xinh xắn đẹp đẽ. Thường thích hội họa, âm nhạc, điêu khắc. Thích giải trí xã giao, hội họp, tiệc tùng và tổ chức rất khéo léo. Cần phải biết từ chối, biết trả lời Không trong những trường hợp bị đòi hỏi quá đáng.",
+      "cong_viec_nang_khieu": "Có óc sáng tạo, rất dễ thành công trong các địa hạt nghệ thuật như: viết văn, hội họa, điêu khắc, nếu không dồn hết tâm trí vào gia đình. Không bị lôi cuốn bởi tham vọng. Bẩm tính nhân ái khiến họ đạt được nhiều kết quả quan trọng trong các nghề như: hội họp, hoạt động xã hội, bác sĩ, y sĩ, công cuộc từ thiện, săn sóc nhi đồng. Vì tin cậy được nên có khả năng trong các việc như: thủ quỹ, thủ kho, kế toán v. v..",
+      "tien_bac": "Thích yên ổn hơn là vượt cao hơn mọi người. Bởi vậy, ít khi họ kiếm được một tài sản khổng lồ. Tuy nhiên chi tiêu ít hợp lý, ít mắc nợ hay phung phí tiền bạc. Tuy rộng lượng về các phương thức khác, nhưng lại thường không rộng rãi về tiền bạc, kể cả đối với người trong gia đình. Tóm lại là người rất cẩn thận và chặt chẽ về tiền bạc.",
+      "tinh_duyen": {
+        "mo_ta_chung": "Quan niệm về tình yêu không viển vông hay lãng mạn. Tình yêu có mục đích rõ ràng là gắn liền với hôn nhân. Khi kết hôn, chỉ còn biết có gia đình, hầu như thế giới bên ngoài không còn gì khác để phải hướng tới nữa. Rất dễ cảm xúc và chan chứa tình thương. Sự thương cảm này có thể vượt qua mức và làm họ đau khổ.",
+        "hop_nhat": [
+          2,
+          6
+        ],
+        "hop_vua": [
+          3,
+          5
+        ],
+        "khac_khong_hop": [
+          1,
+          4,
+          7,
+          8
+        ]
+      }
+    },
+    "7": {
+      "so": 7,
+      "hanh_tinh_lien_he": "Sao Uranus",
+      "tinh_tinh": "Tư tưởng thâm trầm và có vẻ phân tích. Nhiều ý kiến cá nhân, rất tự lập, ít nghỉ ngơi về tâm trí và thể xác. Rất chú trọng và tò mò về thời thế. Thích du lịch, nhất là đến những nơi xa xôi hẻo lánh. Thích sự kín đáo, cô quạnh. Thường là kẻ sống với nội tâm, ít biểu lộ ra ngoài. Ham hiểu biết. Rất có khiếu về nghệ thuật, thẩm mỹ và rất dễ xúc cảm về cái đẹp. Tự lập luận, tự quyết, không chịu theo ý kiến người khác. Có tinh thần tự chỉ trích, tự phê bình rất nghiêm khắc.",
+      "nhan_cach": "Thường thì tính tình khó hiểu. Họ cũng rất khó tìm hiểu được người khác. Cô độc, dè dặt, bẽn lẽn, rất khó kết bạn. Tuy nhiên, khi đã là bạn rồi, họ trở thành người bạn rất tốt, trung thành, khoan dung. Không thích hợp được với các cuộc hội họp, tiệc tùng. Nói chuyện hay, biết nghe chuyện, nhưng không thích chuyện phiếm hay tán gẫu. Rất tín ngưỡng và sống nhiều về tinh thần, thích nghiên cứu về tôn giáo và thường trở nên người thâm trầm, sâu sắc và bí ẩn.",
+      "cong_viec_nang_khieu": "Thích hợp nhất với các công việc hay nghề nghiệp ít bị kiểm soát bởi người khác. Dễ thành công trong lãnh vực nghệ thuật: viết văn, điêu khắc, hội họa v.v.. Giáo dục, khoa học và tôn giáo cũng thích nghi với khả năng. Nhờ vào kiên nhẫn và kiến thức sẵn có, họ có thể gặt hái được nhiều kết quả tốt đẹp. Thích biển cả, du lịch và có nhiều khả năng trong ngành hàng hải. Ít thích thú trong việc thương mại hay các việc cần đến sự giao dịch.",
+      "tien_bac": "Ít quan tâm về tiền bạc và mãnh lực của nó. Thấy tiền bạc là cần thiết nhưng không mơ ước nhà lầu xe hơi. Thỉnh thoảng họ cũng dám tiêu xài phung phí, nhưng thường có tính tiết kiệm hơn. Không thích vấn đề hay sự việc có liên quan đến tiền bạc. Có tiền họ cũng để cho người khác quản trị dùm.",
+      "tinh_duyen": {
+        "mo_ta_chung": "Dễ kết hôn trong nhiều trường hợp và thường rất sớm. Nếu không thì rất muộn, vì càng lớn tuổi họ càng dè dặt. Sống xa cách với thế giới bên ngoài và khó biểu lộ sự cảm xúc. Rất tế nhị nhưng không hẳn là dễ thương, dễ cảm. Họ chú trọng nhiều về tinh thần và ít lệ thuộc chặt chẽ vào các việc khác. Hôn nhân, hạnh phúc có thể tìm gặp với số 9, 1 hay 7.",
+        "hop_nhat": [
+          1,
+          7,
+          9
+        ],
+        "hop_vua": [
+          3,
+          5,
+          8
+        ],
+        "khac_khong_hop": [
+          2,
+          6
+        ]
+      }
+    },
+    "8": {
+      "so": 8,
+      "hanh_tinh_lien_he": "Sao Hoả (Mars)",
+      "tinh_tinh": "Khả năng thiên phú về tập trung tư tưởng và chú ý, tự rèn luyện vào khuôn khổ kỷ luật. Có nhiều cá tính và ý chí sắt đá. Là những người có quyết tâm khai sơn, phá thạch. Ít khi làm việc gì mà không để hết nhiệt tâm. Rất nhiệt thành, cực đoan và cuồng thị. Rất ghét những gì tầm thường. Hoặc là thành công rực rỡ, hoặc là cam tâm thất bại ê chề. Tự rèn luyện khắt khe và có khuynh hướng lôi cuốn người khác đi theo con đường của mình.",
+      "nhan_cach": "Nhiều nghị lực và hoạt động, thích theo đuổi những mục đích cả tinh thần lẫn vật chất. Không chịu được sự thất bại. Khi đã dấn thân vào việc gì, dầu là việc tiêu khiển hay làm hại, cũng mong hòa hay thắng. Trong lần gặp gỡ đầu tiên, nhiều người bị quyến rũ bởi sức mạnh và nhân cách của họ. Nhưng càng tiếp xúc lâu, sự mến phục này càng giảm đi. Là người bạn rất trung thực và tin cẩn, sẵn sàng bênh vực che chở người thân. Với kẻ thù, họ trở nên đáng sợ.",
+      "cong_viec_nang_khieu": "Thường thành công rực rỡ trong những việc quan trọng. Nhất là các địa vị hữu quyền, vì ngoài khả năng tập trung, kỷ luật, họ còn làm việc có kế hoạch, có sáng kiến. Khi tận lực cho công việc, họ có thể đạt tới tột đỉnh thành công. Là nhân viên, họ rất tận tâm, tỏ ra nhanh chóng và hữu hiệu. Là chủ nhân, họ rất hăng hái hoạt động và muốn tất cả nhân viên cũng hăng hái như họ.",
+      "tien_bac": "Rất có khả năng trong vấn đề tài chánh. Có thể nói, họ nhúng tay vào việc gì là việc đó hái ra tiền. Cương quyết, có óc thực tế, biết đánh giá đồng tiền tiêu pha một cách hợp lý, xứng đáng. Không chặt chẽ về tiền bạc, nhưng không phung phí tiêu pha liều lĩnh. Kinh doanh nhiều thắng lợi. Rộng rãi với gia đình, bạn bè.",
+      "tinh_duyen": {
+        "mo_ta_chung": "Rất thay đổi, từ chỗ yêu tha thiết đến hoàn toàn dửng dưng. Tình yêu với họ là đầy ngọt ngào hay nhiều cay đắng. Tuy hôn nhân có thể trải qua nhiều đắng cay nhưng không bao giờ buồn tẻ. Rất quyến rũ với người khác phái. Trong cương vị tình nhân hay vợ chồng, họ được mến chuộng.",
+        "hop_nhat": [
+          2,
+          6
+        ],
+        "hop_vua": [
+          3,
+          4,
+          5,
+          7,
+          9
+        ],
+        "khac_khong_hop": [
+          1,
+          8
+        ]
+      }
+    },
+    "9": {
+      "so": 9,
+      "hanh_tinh_lien_he": "Sao Neptune",
+      "tinh_tinh": "Rất thụ cảm và tế nhị. Cảm thông với những nhu cầu và đòi hỏi của người xung quanh và sẵn sàng giúp đỡ họ thỏa mãn một cách nồng nhiệt. Các nạn nhân của bạo lực, người già yếu, không may mắn đều gây cảm xúc cho họ. Khi theo đuổi một nguyên do chính đáng, họ say đắm đến quên cả gia đình. Bị chi phối bởi trực giác và tình cảm nhiều hơn là lý luận. Có tính chịu đựng bền bỉ, can đảm và cương quyết. Mục đích của họ là tình yêu rộng lớn, lòng đại lượng và sự thông cảm.",
+      "nhan_cach": "Được nhiều người mến chuộng cũng như bị nhiều người ghen ghét. Kết bạn dễ dàng, nhưng lại thường không giữ được bạn bởi tính tình nông nổi, bồng bột. Không ưa cãi cọ về chuyện vụn vặt nhưng rất dễ gay gắt, giận dữ với những người không đồng quan điểm. Thường dè dặt, tự quyết, tự lập và ẩn tránh nhiều hơn. Hôm nay buồn bã ủ ê, hôm sau vui nhộn, hứng khởi. Mục tiêu duy nhất là tự do và tình yêu thương đồng loại.",
+      "cong_viec_nang_khieu": "Thích hợp hơn cả với những công việc và nghề nghiệp đòi hỏi sự giúp đỡ người khác. Nếu biết hòa đồng tính tình, họ sẽ là những nhà lãnh đạo tôn giáo, các bác sĩ, y tá, trợ tá, công tác xã hội. Tuy dè dặt, cũng có thể thành công như nhà hùng biện, thuyết pháp, chính trị gia, giảng viên triết học. Tránh các nghề như tài chánh, kế toán, quảng cáo. Học luật rất thích ứng nếu được bênh vực thẳng thắn cho chính nghĩa.",
+      "tien_bac": "Thường không thành thạo trong vấn đề quản trị tiền bạc. Có người kiếm được nhiều và giàu có thường là do may mắn nhiều hơn. Đại lượng, sẵn sàng giúp đỡ gia đình và bạn bè. Không hiếm những người số 9 bị nợ nần nhiều. Tuy thích tiền bạc, nhưng lại không nô lệ cho đồng tiền. Tiền bạc kiếm ra chỉ để tạo tiện nghi cho đời sống vật chất, chứ không phải dùng để tạo thế lực.",
+      "tinh_duyen": {
+        "mo_ta_chung": "Bạn đường rất tin cẩn và chung tình. Hôn nhân đối với họ rất thiêng liêng. Đáng kính trọng, nhưng chưa phải là người bạn lý tưởng. Dành hầu hết thì giờ và năng lực cho những người khác, nhiều khi quên lãng gia đình. Đời sống tình cảm khô khan. Bị hăng say vì công việc nên hay quên các ngày lễ quan trọng. Tuy khô khan, nhưng nhiều khi họ lại cần sự yêu thương.",
+        "hop_nhat": [
+          4,
+          7,
+          9
+        ],
+        "hop_vua": [
+          2,
+          3,
+          6,
+          8
+        ],
+        "khac_khong_hop": [
+          1,
+          5
+        ]
+      }
+    }
+  }
+}

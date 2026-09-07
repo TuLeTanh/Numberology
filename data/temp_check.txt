@@ -1,0 +1,2 @@
+Quy tắc cộng dồn các chữ số cho tới khi chỉ còn 1 chữ số (từ 1 đến 9). Nếu tổng lớn hơn 9, tiếp tục cộng các chữ số của tổng đó với nhau.
+Cứng, mạnh, tượng trưng cho nguyên lý căn bản của đời sống. Lập trường vững chắc, ít thay đổi. Ưa th
