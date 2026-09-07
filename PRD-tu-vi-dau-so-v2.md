@@ -14,7 +14,7 @@
 | Nền tảng | Web app, responsive (không cần app native) |
 | Quy mô user | Vài chục người quen dùng thử |
 | Kinh doanh | Miễn phí hoàn toàn, không có ý định thu phí |
-| Backend stack | Node.js / TypeScript |
+| Backend stack | Python / FastAPI (đã chốt theo code thực tế đang triển khai như engine_tu_vi.py, main.py, test_api.py) |
 | Giao diện lá số | Bảng 12 cung truyền thống (giữ đúng hình thức lá số giấy) |
 | Hỏi đáp tự do | **Có ngay trong MVP**, không đợi phase sau |
 | LLM provider | Cohere (trial key, free tier ~1.000 call/tháng) làm lựa chọn chính |
@@ -97,7 +97,7 @@ Vì `than_so_hoc_bang_tra.json` chưa qua audit và schema thật sự chưa rõ
 
 ```
 ┌──────────────┐      ┌───────────────────────┐      ┌─────────────────────┐
-│   Frontend    │─────▶│   Backend API (Node/TS) │─────▶│  An Sao Engine        │
+│   Frontend    │─────▶│   Backend API (Python/FastAPI) │─────▶│  An Sao Engine        │
 │  (web, nhập   │      │   (orchestration,        │      │  (thuần tính toán)    │
 │  ngày sinh,   │◀─────│    stateless — không có  │◀─────│                       │
 │  hỏi đáp)     │      │    DB user/session)       │      └─────────────────────┘
@@ -189,7 +189,7 @@ MVP: form nhập **họ tên khai sinh** (chỉ dùng cho Thần Số Học) và
 - Tìm nguồn Trung Châu phái thứ 2, đối chiếu bảng công thức an sao.
 - **Audit đầy đủ `than_so_hoc_bang_tra.json`** theo đúng quy trình grep-raw-text đã dùng cho Tử Vi — coi đây là hạng mục ngang mức ưu tiên với audit Tử Vi, không phải "làm sau".
 - [x] Làm rõ vai trò `bang_tu_vi.json`.
-- Khảo sát thư viện/giải pháp âm-dương lịch cho Node.js/TypeScript.
+- Khảo sát thư viện/giải pháp âm-dương lịch cho Python.
 - **Đầu ra**: bộ dữ liệu "khoá" (frozen) cho cả 2 module, có version. (ĐÃ HOÀN TẤT Phase 0 cho cả Tử Vi và Thần Số Học)
 
 ### Phase 1 — Hai Engine tính toán song song
@@ -225,11 +225,11 @@ MVP: form nhập **họ tên khai sinh** (chỉ dùng cho Thần Số Học) và
 - **Chi phí LLM**: theo dõi sát vì dùng Cohere trial (giới hạn ~1.000 call/tháng, ~20 call/phút cho Chat) — thiết kế retrieval lookup-first để giữ context nhỏ và giảm số call cần thiết; cân nhắc cache câu trả lời cho tổ hợp (sao, cung) hoặc (chỉ số, giá trị) phổ biến ở tầng ứng dụng (không phải theo user, vì không lưu theo user) để tránh gọi lại Cohere cho cùng 1 nội dung tĩnh.
 - **Không lưu dữ liệu cá nhân**: vì không có tài khoản/DB user, rủi ro bảo mật dữ liệu ngày sinh giảm đáng kể so với v1 — không cần chính sách lưu trữ/ẩn danh phức tạp ở giai đoạn này.
 - **Khả năng audit**: mọi câu trả lời cần truy ngược được nguồn dữ liệu gốc.
-- **Ngôn ngữ**: tiếng Việt có dấu xuyên suốt — đảm bảo xử lý Unicode nhất quán (NFC/NFD) trong Node.js/TypeScript.
+- **Ngôn ngữ**: tiếng Việt có dấu xuyên suốt — đảm bảo xử lý Unicode nhất quán (NFC/NFD) trong Python.
 
 ### 7.1 Việc cần khảo sát: chuyển đổi âm-dương lịch cho Python
 - Chưa có phương án cụ thể tại thời điểm viết PRD này.
-- Hướng xử lý: agent khảo sát các thư viện Python hiện có cho chuyển đổi âm-dương lịch Việt Nam (ví dụ `lunardate`, `lunarcalendar`, hoặc các thư viện tương đương), đề xuất cho chủ dự án lựa chọn; nếu không có thư viện đủ tin cậy, chủ dự án sẽ tự tạo bảng tra riêng sau — đây là việc **có thể làm song song, không nhất thiết chặn Phase 0** vì đã có hướng dự phòng.
+- Hướng xử lý: agent khảo sát các thư viện Python hiện có cho chuyển đổi âm-dương lịch Việt Nam (ví dụ `lunardate`, `lunarcalendar`, hoặc bảng tra tự dựng nếu cần). Lưu ý: Trong dự án hiện đang có thư mục `khao-sat-am-lich/` chứa các file `.js` (khảo sát cũ theo hướng Node.js), ta có thể kiểm tra xem logic/bảng tra trong đó có thể dùng lại cho Python được không.
 
 ---
 

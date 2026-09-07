@@ -6,13 +6,19 @@ import os
 
 # Import the existing numerology engine
 import engine_than_so_hoc
+# Import the newly created tu vi engine
+import engine_tu_vi
 
 app = FastAPI(title="Tử Vi & Thần Số Học API")
 
 # Global variable for in-memory DB
 numerology_db = {}
 
-# Pydantic input model
+# Pydantic input model for Tử Vi An Sao
+class AnSaoInput(BaseModel):
+    cuc: str
+    ngay_sinh_am: int
+
 class LassoInput(BaseModel):
     ho_ten: str
     ngay_sinh: int
@@ -21,6 +27,14 @@ class LassoInput(BaseModel):
     gio_sinh: Optional[int] = None
     phut_sinh: Optional[int] = None
     gioi_tinh: Optional[str] = None # "nam" or "nu"
+
+@app.post("/an-sao")
+def post_an_sao(data: AnSaoInput):
+    try:
+        result = engine_tu_vi.an_14_chinh_tinh(data.cuc, data.ngay_sinh_am)
+        return result
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
 
 @app.on_event("startup")
 def load_data():

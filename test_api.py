@@ -5,89 +5,128 @@ import subprocess
 import sys
 import os
 
-sys.stdout.reconfigure(encoding='utf-8')
+if __name__ == "__main__":
+    sys.stdout.reconfigure(encoding='utf-8')
 
-# Start the FastAPI server
-print("Starting FastAPI server...")
-server_process = subprocess.Popen([r".\.venv\Scripts\python", "main.py"])
+    # Start the FastAPI server
+    print("Starting FastAPI server...")
+    server_process = subprocess.Popen([r".\.venv\Scripts\python", "main.py"])
 
-# Wait for server to be ready
-print("Waiting for server to start...")
-time.sleep(3)
+    # Wait for server to be ready
+    print("Waiting for server to start...")
+    time.sleep(3)
 
-test_cases = [
-    {
-        "name": "Barack Obama",
-        "data": {
-            "ho_ten": "Barack Hussein Obama",
-            "ngay_sinh": 4,
-            "thang_sinh": 8,
-            "nam_sinh": 1961
+    test_cases = [
+        {
+            "name": "Barack Obama",
+            "data": {
+                "ho_ten": "Barack Hussein Obama",
+                "ngay_sinh": 4,
+                "thang_sinh": 8,
+                "nam_sinh": 1961
+            }
+        },
+        {
+            "name": "Emma Watson",
+            "data": {
+                "ho_ten": "Emma Charlotte Duerre Watson",
+                "ngay_sinh": 15,
+                "thang_sinh": 4,
+                "nam_sinh": 1990
+            }
+        },
+        {
+            "name": "Steve Jobs",
+            "data": {
+                "ho_ten": "Steven Paul Jobs",
+                "ngay_sinh": 24,
+                "thang_sinh": 2,
+                "nam_sinh": 1955
+            }
+        },
+        {
+            "name": "Albert Einstein",
+            "data": {
+                "ho_ten": "Albert Einstein",
+                "ngay_sinh": 14,
+                "thang_sinh": 3,
+                "nam_sinh": 1879
+            }
+        },
+        {
+            "name": "Elon Musk",
+            "data": {
+                "ho_ten": "Elon Reeve Musk",
+                "ngay_sinh": 28,
+                "thang_sinh": 6,
+                "nam_sinh": 1971
+            }
         }
-    },
-    {
-        "name": "Emma Watson",
-        "data": {
-            "ho_ten": "Emma Charlotte Duerre Watson",
-            "ngay_sinh": 15,
-            "thang_sinh": 4,
-            "nam_sinh": 1990
-        }
-    },
-    {
-        "name": "Steve Jobs",
-        "data": {
-            "ho_ten": "Steven Paul Jobs",
-            "ngay_sinh": 24,
-            "thang_sinh": 2,
-            "nam_sinh": 1955
-        }
-    },
-    {
-        "name": "Albert Einstein",
-        "data": {
-            "ho_ten": "Albert Einstein",
-            "ngay_sinh": 14,
-            "thang_sinh": 3,
-            "nam_sinh": 1879
-        }
-    },
-    {
-        "name": "Elon Musk",
-        "data": {
-            "ho_ten": "Elon Reeve Musk",
-            "ngay_sinh": 28,
-            "thang_sinh": 6,
-            "nam_sinh": 1971
-        }
-    }
-]
+    ]
 
-url = "http://127.0.0.1:8000/lasso"
-headers = {"Content-Type": "application/json"}
+    url = "http://127.0.0.1:8000/lasso"
+    headers = {"Content-Type": "application/json"}
 
-try:
-    for case in test_cases:
-        print(f"\n--- Testing: {case['name']} ---")
-        response = requests.post(url, json=case['data'], headers=headers)
-        if response.status_code == 200:
-            result = response.json()
-            # Only print the summary to not clutter the output too much, but show full for 2 cases
-            if case['name'] in ["Albert Einstein", "Steve Jobs"]:
-                print(json.dumps(result, ensure_ascii=False, indent=2))
+    try:
+        for case in test_cases:
+            print(f"\n--- Testing: {case['name']} ---")
+            response = requests.post(url, json=case['data'], headers=headers)
+            if response.status_code == 200:
+                result = response.json()
+                # Only print the summary to not clutter the output too much, but show full for 2 cases
+                if case['name'] in ["Albert Einstein", "Steve Jobs"]:
+                    print(json.dumps(result, ensure_ascii=False, indent=2))
+                else:
+                    ts = result.get('than_so_hoc', {})
+                    print(f"Đường Đời: {ts.get('duong_doi', {}).get('gia_tri')}")
+                    print(f"Sứ Mệnh: {ts.get('su_menh', {}).get('gia_tri')}")
+                    print(f"Linh Hồn: {ts.get('linh_hon', {}).get('gia_tri')}")
+                    print(f"Nhân Cách: {ts.get('nhan_cach', {}).get('gia_tri')}")
             else:
-                ts = result.get('than_so_hoc', {})
-                print(f"Đường Đời: {ts.get('duong_doi', {}).get('gia_tri')}")
-                print(f"Sứ Mệnh: {ts.get('su_menh', {}).get('gia_tri')}")
-                print(f"Linh Hồn: {ts.get('linh_hon', {}).get('gia_tri')}")
-                print(f"Nhân Cách: {ts.get('nhan_cach', {}).get('gia_tri')}")
-        else:
-            print(f"Failed! Status code: {response.status_code}")
-            print(response.text)
+                print(f"Failed! Status code: {response.status_code}")
+                print(response.text)
 
-finally:
-    print("\nShutting down server...")
-    server_process.terminate()
-    server_process.wait()
-    print("Done.")
+    finally:
+        print("\nShutting down server...")
+        server_process.terminate()
+        server_process.wait()
+        print("Done.")
+
+# ==========================================
+# PYTEST TEST CASES (Using FastAPI TestClient)
+# ==========================================
+from fastapi.testclient import TestClient
+from main import app
+import pytest
+
+client = TestClient(app)
+
+def test_an_sao_valid_1():
+    # Thủy Nhị Cục, Day 7 -> Tử Vi ở Thìn (4), Thiên Phủ ở Tý (0)
+    response = client.post("/an-sao", json={"cuc": "Thủy Nhị Cục", "ngay_sinh_am": 7})
+    assert response.status_code == 200
+    data = response.json()
+    assert "Tử Vi" in data
+    assert data["Tử Vi"] == 4
+    assert data["Thiên Phủ"] == 0
+
+def test_an_sao_valid_2():
+    # Mộc Tam Cục, Day 15 -> Tử Vi ở Ngọ (6), Thiên Phủ ở Tuất (10)
+    response = client.post("/an-sao", json={"cuc": "Mộc Tam Cục", "ngay_sinh_am": 15})
+    assert response.status_code == 200
+    data = response.json()
+    assert data["Tử Vi"] == 6
+    assert data["Thiên Phủ"] == 10
+
+def test_an_sao_invalid_cuc():
+    # Invalid cuc name
+    response = client.post("/an-sao", json={"cuc": "Kim Thất Cục", "ngay_sinh_am": 10})
+    assert response.status_code == 400
+    assert "không hợp lệ" in response.json()["detail"]
+
+def test_an_sao_invalid_day():
+    # Invalid day
+    response = client.post("/an-sao", json={"cuc": "Thủy Nhị Cục", "ngay_sinh_am": 31})
+    assert response.status_code == 400
+    assert "không hợp lệ" in response.json()["detail"]
 
