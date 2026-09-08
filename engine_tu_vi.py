@@ -7,6 +7,12 @@ CHI_MAP = {
 }
 NAME_TO_CHI = {v: k for k, v in CHI_MAP.items()}
 
+CAN_MAP = {
+    0: "Giáp", 1: "Ất", 2: "Bính", 3: "Đinh", 4: "Mậu",
+    5: "Kỷ", 6: "Canh", 7: "Tân", 8: "Nhâm", 9: "Quý"
+}
+NAME_TO_CAN = {v: k for k, v in CAN_MAP.items()}
+
 # Tải bang_tu_vi.json vào bộ nhớ (in-memory)
 _tu_vi_map = None
 

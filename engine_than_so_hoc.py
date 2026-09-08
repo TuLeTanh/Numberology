@@ -1,3 +1,9 @@
+import unicodedata
+
+def remove_diacritics(text):
+    text = text.replace('Đ', 'D').replace('đ', 'd')
+    return unicodedata.normalize('NFKD', text).encode('ascii', 'ignore').decode('utf-8')
+
 def reduce_number(num):
     master_numbers = {11, 22, 33}
     current = num
@@ -6,8 +12,7 @@ def reduce_number(num):
     return current
 
 def calculate_life_path(day, month, year):
-    date_str = f"{day}{month}{year}"
-    total = sum(int(digit) for digit in date_str)
+    total = day + month + year
     return reduce_number(total)
 
 def get_letter_value(char):
@@ -22,17 +27,17 @@ def is_vowel(char):
     return char.upper() in {'A', 'E', 'I', 'O', 'U'}
 
 def calculate_destiny(full_name):
-    clean_name = ''.join(c.upper() for c in full_name if c.isalpha())
+    clean_name = ''.join(c.upper() for c in remove_diacritics(full_name) if c.isalpha())
     total = sum(get_letter_value(c) for c in clean_name)
     return reduce_number(total)
 
 def calculate_soul_urge(full_name):
-    clean_name = ''.join(c.upper() for c in full_name if c.isalpha())
+    clean_name = ''.join(c.upper() for c in remove_diacritics(full_name) if c.isalpha())
     total = sum(get_letter_value(c) for c in clean_name if is_vowel(c))
     return reduce_number(total)
 
 def calculate_personality(full_name):
-    clean_name = ''.join(c.upper() for c in full_name if c.isalpha())
+    clean_name = ''.join(c.upper() for c in remove_diacritics(full_name) if c.isalpha())
     total = sum(get_letter_value(c) for c in clean_name if not is_vowel(c))
     return reduce_number(total)
 
