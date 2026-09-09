@@ -1,0 +1,57 @@
+{
+  "sao": "Thiên Mã",
+  "loai": "Quí tinh",
+  "cong_thuc_an_sao": "",
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "( Thiên Mã là chân tay). Thuộc Hỏa, Quí tinh. V. Dần. Đ.đ. Ty, Thân, Hợi. T.c. tài năng, hoạt bát. Chủ sự hoạt động."
+    },
+    {
+      "cung": "Thân",
+      "dien_giai": "Cung Thân, Mệnh có Thiên, Mã: mẫn tiệp, tài năng, thành đạt. Mã, Hỷ, Tràng Sinh: thanh vân, đắc lộ. Mã ngộ Không, Kiếp: kỳ nhân khước hiệp. Mã ngộ Quyền: việc trong đắc lực. Mã, Lộc giao trì: đàn bà quí hiển, lợi phu, ích tử, đàn ông buôn bán thành phú quí. Tả, Hữu, Lộc chiếu: đàn bà tần tảo giỏi. Mã , Tướng đồng cung: phú quí. Mã lạc Không vong: vô dung, lo quàng xiên. Phải ly hương. Mã ngộ Lộc Tồn, Tràng Sinh, Khôi, Việt: sự nghiệp hiển hách, khoa danh lừng lẫy. Mã, Đà: khôn ngoan, sảo trá. Mã, Hình ngộ Khốc hay Hư: võ nghiệp công danh. Mã Tràng, Tuyệt, Sý, Mã Tràng tại Hợi: bôn tẩu làm nên. Mã, Tướng, Khoa tại Tý: thợi loạn làm nên. Mã ngộ Tuần, Triệt hay Không, Kiếp: tài giỏi nhưn không có công danh sự nghiệp. Mã ngộ Tràng Sinh tại Dậu: thanh vân, đắc lộ. Mã ngộ Lộc Tồn tại Dần, Thân, Ty, Hợi: văn chương lừng lẫy, tuổi Dần, Mão, Thìn, Tuất: tốt. Hỏa: có công danh sớm. Mã, Đà, Dương: phải đi chinh chiến luôn. Mã tại Mệnh hai bên có Vũ, Tướng: làm nên oanh liệt. Mã, Tướng, Phong, Cáo: có tước lộc, bằng phong khen. Mã, Đào, Quả: đàn bà lênh đênh."
+    },
+    {
+      "cung": "Bào",
+      "dien_giai": "Cung Bào có Mã, Tướng, Lộc: anh em giàu có, ở Dương cung thì khắc mẹ, ở Âm cung thì khắc cha."
+    },
+    {
+      "cung": "Thê",
+      "dien_giai": "Cung Thê có Mã, Quang, Đồng, Nhật, Nguyệt, Đức: vợ hiền, đẹp , giàu. Mã, Lộc: lấy người làm ăn giàu có. Mã ngộ từ Không: vợ theo tình nhân."
+    },
+    {
+      "cung": "Tử",
+      "dien_giai": "Cung Tử có Mã, Khôi, Việt, tam Hóa: con thông minh, tài năng quí hiển."
+    },
+    {
+      "cung": "Tài",
+      "dien_giai": "Cung Tài có Mã, Vũ, Lộc Tồn: làm giàu phương xa, Mã, Lộc, Cơ, Lương: đại phú. Cung giải có Mã, Thái, Tuế và Địa chiếu: chết bởi đau thương."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Cung Thiên Di có Mã hãm: long đong xuôi ngược. Mã, Diêu, Xương: đi ra làm sự dâm bôn. Mã, Hỏa, Linh: phiêu lưu, đây đó, lận đận. Mã, Diêu: bông lông nơi xa. Mã ngộ Tuần, Triệt: què. Mã, Đà: du sơn du thủy."
+    },
+    {
+      "cung": "Nô",
+      "dien_giai": "Cung Nô có Mã, Tham: có thai mang bệnh. Mã, Tuần: tôi tớ ra vào luôn, không ai làm lâu được."
+    },
+    {
+      "cung": "Quan",
+      "dien_giai": "Cung Quan có Mã, Đồng, Lương, Vi, Sát tại Ngọ: võ quan to ở biên cương. Mã, Vi: làm nên bậc nhất. Mã, Thiên , Tướng: bậc nhì. Mã, Lộc: thương nghiệp. Mã, Dương, Đà: đi chinh chiến luôn."
+    },
+    {
+      "cung": "Điền",
+      "dien_giai": "Cung Điền có Mã, Tràng, Tả, Hữu, Khôi, Việt: tậu được ruộng đất."
+    },
+    {
+      "cung": "Phúc",
+      "dien_giai": "Cung Phúc có Mã, Cái đắc địa; có mầ phát hình ngựa có lọng che, phát quí. Cái, Mã hai bên cung Phúc: mả phát quí."
+    },
+    {
+      "cung": "Phụ Mẫu",
+      "dien_giai": "Cung Phụ Mẫu có Mã, Lộc: cha mẹ giàu."
+    }
+  ],
+  "cach_cuc": "Hạn có Thiên Mã: thành đạt. Mã, Triệt: phòng hạn ngã, thay đổi chỗ ở. Mã, Đà, Thai: bôn ba nhiều sự thay đổi.",
+  "ghi_chu_thieu_du_lieu": ""
+}

@@ -1,0 +1,77 @@
+{
+  "sao": "Phá Quân",
+  "loai": "Hung tinh dũng tướng",
+  "cong_thuc_an_sao": {
+    "input": [
+      "Hành Thủy"
+    ],
+    "logic": "Thuộc Thủy. Vượng tại Tý, Ngọ. Đắc địa tại Thìn, Tuất. Hãm địa tại Mão, Dậu, Thân."
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính tình hung bạo, ngỗ ngược, hồ đồ, ưa nịnh hót, người to lớn, lộ hầu lộ nhãn. Chủ sự cướp phá. Đắc địa: võ chức. Hãm địa: bất nhân thâm hiểm, quân tử tại gia. Phá Quân tại Tý, Ngọ: quý cách. Tuổi Dần, Thân, Tý, Ngọ, Hỏa: thọ 50, 60 tuổi. Canh, Nhâm, Bính, Đinh: làm nên danh vị. Sát, Phá, Liêm, Tham tam phương thủ chiếu: phú quý, nếu hãm cần Sát tinh đắc địa phù lên. Đắc địa ngộ Tử, Phủ: phát lớn. Ngộ Ky, Triệt, Không: phú quý không bền. Ngộ Đào, Hồng: đàn bà sát chồng. Sát Phá trùng giao: bần cùng thủy hận. Phá, Liêm thủ Mệnh cư Mão, Dậu ngoại Hình, Việt, Hỏa, Linh: sét đánh, điện giật, súng đạn gãy chân. Sát, Phá, Liêm, Tham, Phượng ở tuổi Thìn, Tuất, Sửu, Mùi: tốt, Kim, Mộc: làm to, các tuổi khác xấu hay bị trách oán. Lưỡng Phá hãm địa: tiếng tăm lừng lẫy vẻ vang. Phá ngộ Liêm hay Tham, Sát, Cự: trộm cướp. Phá Quân tại Thìn, Tuất: bất nhân; tại Sửu, Mùi: cương quyết, gặp thời đều làm nên, ngộ Hình, Lộc: uy danh lừng lẫy. Phá, Hỏa, Đà, Kình: gian phi. Phá tại Ngọ: nói càu nhàu, ngộ Lộc, Thiếu Dương: vui vẻ, khôi hài. Phá, Xương, Khúc tại Thìn, Tuất ngộ Hình hay Ky: đa lao khổ. Phá, Kình tại Mão, Dậu: anh hùng một phương. Phá, Phục có Hình, Diêu, Tướng quân chiếu: chồng hay ghen có khi giết nhau. Cung Thân, Mệnh có Phá củng Lộc, Quyền, Hữu, Tả tại Tý, Ngọ: võ công hiển hách, ở các cung khác trước dở sau hay. Phá ngộ Kình, Đà, Không, Kiếp hay Sát, Tham, Phá hãm: ăn mày. Phá, Tướng: tăng ni. Phá, Cái, Đào: thậm ư dâm dục. Phá ngộ tứ Sát tại Thìn, Tuất: lắm nết gian phi. Phú, Triệt, Cô: chết đường, bất đắc kỳ tử."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Phá, Tướng, Phục ngộ Cái, Đào, Hồng và Trực phù chiếu: anh chị em có người dâm đãng. Phá, Phùng, Hình, Ky: khiếm hòa."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Vợ nhị tâm, chết yểu. Phá, Quả, Không: nhân duyên trắc trở."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Sát con."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Nghèo, tài tấn bất thường nên làm nghề thủ công. Phá ngộ Vũ: làm ra tiền, song phá dữ."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Phá hãm ngộ Hình, Việt, Hỏa, Linh: điện giật, sét đánh trúng, súng đạn nạn gãy chân. Phá, Diêu tụ hội hay ngoại chiếu: thủ dâm. Phá, Liêm ngộ Hỏa: chết đuối. Phá, Hình, Ky, Kình, Đà: điên hay đau mắt. Phá, Tham: đau mắt. Phá, quân: khó huyết bất điều. Phá, Sát, Hao, Ky, Lực: bị ung thư, bị mổ cắt."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Số vất vả trắc trở. Ở Thìn, Tuất: nguy hiểm. Ở Tý, Ngọ mà có Thân cư Thiên Di: công danh ở chốn sa trường."
+    },
+    {
+      "cung": "Nô Bộc",
+      "dien_giai": "Hay bị oán thù. Ở Thìn, Tuất: tôi tớ bất nhân. Phá, Ky, Tang: làm ơn nên oán."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Công danh trắc trở, hèn kém."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Phá sản. Nếu Phá hãm thì vô điền sản. Nếu có Tử Vi, Thiên Lương thì không can gì. Phá, Liêm: của cải hao, phá hết nhưng sau có lại."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Phá Quân ở Tý, Ngọ: tuổi Dần, Thân, Tý, Hợi hiển đạt nhưng cô đơn. Coi về mồ mả mà có Phá Quân ở cung Phúc là chỉ ngôi mộ dương mộ xa đời."
+    },
+    {
+      "cung": "Phụ Mẫu",
+      "dien_giai": "Cha mẹ thọ và giàu sang. Phá, Sát, Tham hãm: cha mẹ bỏ nhau."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Thấy Phá, Sát, Tham, Trực phù mà đại tiểu hạn trùng phùng, ngộ Tuần, Triệt: chết. Phá, Phượng: Bị oán trách. Phá, Tuế: có sự kiện tụng. Phá ngộ Liêm, Sát hay Phá ngộ Quả, Tú: lâm nguy dọc đường. Phá, Liêm, Hỏa: phá hết của, có khi vào tù. Phá, Tướng, Phục ngộ Diêu, Thai: đàn bà chớ nên cả nghe mà bị lừa, tơ duyên rắc rối. Phá, Liêm, Mão, Dậu ngộ Kiếp, Hình: phòng kiện tụng. Phá, Sát, Linh: phòng tù tội. Phá hãm Linh, Hình, Việt, Hỏa: phòng súng đạn, điện sét. Phá, Hoa, Sát, Mộc, Ky: bị ung thư mổ cắt."
+    }
+  ],
+  "cach_cuc": [
+    {
+      "ten_cach": "Phá Quân Tý Ngọ",
+      "dieu_kien": "Phá Quân cư Tý hoặc Ngọ",
+      "y_nghia": "Quý cách"
+    },
+    {
+      "ten_cach": "Sát Phá Liêm Tham hội hợp",
+      "dieu_kien": "Sát, Phá, Liêm, Tham tam phương thủ chiếu",
+      "y_nghia": "Phú quý (nếu hãm cần Sát tinh đắc địa phù lên)"
+    }
+  ],
+  "ghi_chu_thieu_du_lieu": []
+}

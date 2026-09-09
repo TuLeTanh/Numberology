@@ -1,5 +1,12 @@
+import sys
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8")
+
 import json
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional, Dict, List
 import os
@@ -88,6 +95,15 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="Tử Vi & Thần Số Học API", lifespan=lifespan)
 
+# Cấu hình CORS cho phép toàn bộ origin kết nối (MVP nội bộ, không có auth/dữ liệu nhạy cảm theo PRD mục 7)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 # Pydantic input model for Tử Vi An Sao
 class AnSaoInput(BaseModel):
     cuc: str
@@ -128,44 +144,72 @@ def post_an_sao(data: AnSaoInput):
     except ValueError as e:
         raise HTTPException(status_code=400, detail=str(e))
 
+def tao_bang_12_cung(
+    muoi_hai_cung_idx: Dict[str, int],
+    can_nam_index: int,
+    chinh_tinh: Dict[str, str],
+    tu_hoa: Dict[str, str],
+    phu_tinh: Dict[str, str],
+    vong_thai_tue: Dict[str, str],
+    tuan_triet: Dict[str, list],
+    dao_hong_hi: Dict[str, str],
+    quang_quy: Dict[str, str],
+    khoc_hu_co_qua: Dict[str, str],
+    hinh_rieu_y: Dict[str, str],
+) -> Dict[str, dict]:
+    """
+    Gộp toàn bộ chính tinh và phụ tinh theo từng cung chức năng (Mệnh, Phụ Mẫu, ...).
+    Mỗi cung bao gồm:
+    - dia_chi: Tên Chi (Sửu, Dần, ...)
+    - can: Tên Can của cung theo Ngũ Hổ Độn (Kỷ, Canh, ...)
+    - chinh_tinh: Danh sách dict [{'sao': 'Thái Dương', 'tu_hoa': None}, {'sao': 'Thái Âm', 'tu_hoa': 'Hóa Kỵ'}]
+    - phu_tinh: Danh sách tên các phụ tinh đóng tại cung đó.
+    """
+    import an_menh_cuc
+    sao_to_hoa = {sao: loai_hoa for loai_hoa, sao in (tu_hoa or {}).items()}
+    
+    bang = {}
+    for ten_cung, cung_chi_idx in muoi_hai_cung_idx.items():
+        dia_chi = engine_tu_vi.CHI_MAP[cung_chi_idx]
+        can_idx = an_menh_cuc.get_can_cung(can_nam_index, cung_chi_idx)
+        can = engine_tu_vi.CAN_MAP[can_idx]
+        
+        # Danh sách chính tinh tại cung
+        ds_chinh_tinh = [
+            {"sao": sao, "tu_hoa": sao_to_hoa.get(sao)}
+            for sao, dc in chinh_tinh.items()
+            if dc == dia_chi
+        ]
+        
+        # Danh sách phụ tinh tại cung (gộp từ 7 nhóm)
+        ds_phu_tinh = []
+        for pt_dict in [phu_tinh, vong_thai_tue, dao_hong_hi, quang_quy, khoc_hu_co_qua, hinh_rieu_y]:
+            for sao, dc in pt_dict.items():
+                if dc == dia_chi:
+                    ds_phu_tinh.append(sao)
+                    
+        # Xử lý riêng Tuần/Triệt (giá trị là list 2 cung)
+        for sao_khong, list_dc in (tuan_triet or {}).items():
+            if dia_chi in list_dc:
+                ds_phu_tinh.append(sao_khong)
+                
+        bang[ten_cung] = {
+            "dia_chi": dia_chi,
+            "can": can,
+            "chinh_tinh": ds_chinh_tinh,
+            "phu_tinh": ds_phu_tinh
+        }
+        
+    return bang
+
+
 @app.post("/lasso")
 def get_lasso(data: LassoInput):
-    # 1. Tính toán bằng engine
-    life_path = engine_than_so_hoc.calculate_life_path(data.ngay_sinh, data.thang_sinh, data.nam_sinh)
-    destiny = engine_than_so_hoc.calculate_destiny(data.ho_ten)
-    soul_urge = engine_than_so_hoc.calculate_soul_urge(data.ho_ten)
-    personality = engine_than_so_hoc.calculate_personality(data.ho_ten)
-
-    # 2. Lookup dữ liệu diễn giải từ hàm dùng chung
-    result = {
-        "thong_tin_ca_nhan": {
-            "ho_ten": data.ho_ten,
-            "ngay_thang_nam_sinh": f"{data.ngay_sinh}/{data.thang_sinh}/{data.nam_sinh}"
-        },
-        "than_so_hoc": {
-            "duong_doi": {
-                "gia_tri": life_path,
-                "dien_giai": get_numerology_info("duong_doi", life_path)
-            },
-            "su_menh": {
-                "gia_tri": destiny,
-                "dien_giai": get_numerology_info("su_menh", destiny)
-            },
-            "linh_hon": {
-                "gia_tri": soul_urge,
-                "dien_giai": get_numerology_info("linh_hon", soul_urge)
-            },
-            "nhan_cach": {
-                "gia_tri": personality,
-                "dien_giai": get_numerology_info("nhan_cach", personality)
-            }
-        }
-    }
-    
-    return result
-
-@app.post("/lap-la-so")
-def lap_la_so(data: LassoInput):
+    """
+    Endpoint CHÍNH THỨC theo PRD v2 mục 5.4:
+    Nhận thông tin sinh (họ tên, ngày/tháng/năm, giờ/phút, giới tính),
+    trả về kết quả an sao Tử Vi + chỉ số Thần Số Học trong 1 lần gọi (stateless).
+    """
     import datetime as dt
     from lunar_vn import solar_to_lunar
     import an_menh_cuc
@@ -250,7 +294,32 @@ def lap_la_so(data: LassoInput):
             # Bộ Quang Quý (Ân Quang, Thiên Quý)
             quang_quy_idx = an_phu_tinh.an_quang_quy(gio_chi_idx=gio_chi_idx, ngay_am=ngay_am)
             quang_quy_ten = {sao: engine_tu_vi.CHI_MAP[idx] for sao, idx in quang_quy_idx.items()}
+
+            # Bộ Khốc Hư & Cô Quả (4 sao an theo Chi năm)
+            khoc_hu_idx = an_phu_tinh.an_khoc_hu(chi_nam_idx=chi_nam_index)
+            co_qua_idx = an_phu_tinh.an_co_qua(chi_nam_idx=chi_nam_index)
+            khoc_hu_co_qua_idx = {**khoc_hu_idx, **co_qua_idx}
+            khoc_hu_co_qua_ten = {sao: engine_tu_vi.CHI_MAP[idx] for sao, idx in khoc_hu_co_qua_idx.items()}
+
+            # Bộ Hình Riêu Y (3 sao an theo Tháng sinh)
+            hinh_rieu_y_idx = an_phu_tinh.an_hinh_rieu_y(thang_am=thang_am)
+            hinh_rieu_y_ten = {sao: engine_tu_vi.CHI_MAP[idx] for sao, idx in hinh_rieu_y_idx.items()}
             
+            # Gộp dữ liệu theo từng cung chức năng (bang_12_cung)
+            bang_12_cung = tao_bang_12_cung(
+                muoi_hai_cung_idx=muoi_hai_cung_idx,
+                can_nam_index=can_nam_index,
+                chinh_tinh=sao_ten,
+                tu_hoa=tu_hoa_sao,
+                phu_tinh=phu_tinh_ten,
+                vong_thai_tue=vong_thai_tue_ten,
+                tuan_triet=tuan_triet_ten,
+                dao_hong_hi=dao_hong_hi_ten,
+                quang_quy=quang_quy_ten,
+                khoc_hu_co_qua=khoc_hu_co_qua_ten,
+                hinh_rieu_y=hinh_rieu_y_ten,
+            )
+
             tu_vi_result = {
                 "am_lich": {
                     "ngay": ngay_am,
@@ -269,7 +338,10 @@ def lap_la_so(data: LassoInput):
                 "vong_thai_tue": vong_thai_tue_ten,
                 "tuan_triet": tuan_triet_ten,
                 "dao_hong_hi": dao_hong_hi_ten,
-                "quang_quy": quang_quy_ten
+                "quang_quy": quang_quy_ten,
+                "khoc_hu_co_qua": khoc_hu_co_qua_ten,
+                "hinh_rieu_y": hinh_rieu_y_ten,
+                "bang_12_cung": bang_12_cung
             }
         except ValueError as e:
             tu_vi_result = {"error": str(e)}
@@ -304,23 +376,41 @@ def lap_la_so(data: LassoInput):
     
     return result
 
+
+@app.post("/lap-la-so")
+def lap_la_so(data: LassoInput):
+    """
+    ALIAS cho /lasso (giữ nguyên để đảm bảo backward compatibility với code/test cũ).
+    Dùng chung 100% logic với get_lasso.
+    """
+    return get_lasso(data)
+
+
 # ── Phase 2: Retrieval routes ────────────────────────────────────────────────
 
 class DienGiaiCungInput(BaseModel):
     """
-    Client gửi lại toàn bộ kết quả đã tính từ /lap-la-so + tên cung muốn tra.
+    Client gửi lại toàn bộ kết quả đã tính từ /lasso + tên cung muốn tra.
     Dùng POST thay vì GET path param vì payload quá lớn cho URL.
     """
-    ten_cung: str                          # e.g. "Mệnh", "Phu Thê"
-    muoi_hai_cung: Dict[str, str]          # {"Mệnh": "Sửu", "Phụ Mẫu": "Dần", ...}
-    chinh_tinh: Dict[str, str]             # {"Tử Vi": "Thìn", "Tham Lang": "Dần", ...}
-    tu_hoa: Optional[Dict[str, str]] = {}  # {"Hóa Lộc": "Thiên Cơ", ...}
+    ten_cung: str                                # e.g. "Mệnh", "Phu Thê"
+    muoi_hai_cung: Dict[str, str]                # {"Mệnh": "Sửu", "Phụ Mẫu": "Dần", ...}
+    chinh_tinh: Dict[str, str]                   # {"Tử Vi": "Thìn", "Tham Lang": "Dần", ...}
+    tu_hoa: Optional[Dict[str, str]] = {}        # {"Hóa Lộc": "Thiên Cơ", ...}
+    phu_tinh: Optional[Dict[str, str]] = {}
+    vong_thai_tue: Optional[Dict[str, str]] = {}
+    tuan_triet: Optional[Dict[str, List[str]]] = {}
+    dao_hong_hi: Optional[Dict[str, str]] = {}
+    quang_quy: Optional[Dict[str, str]] = {}
+    khoc_hu_co_qua: Optional[Dict[str, str]] = {}
+    hinh_rieu_y: Optional[Dict[str, str]] = {}
+
 
 @app.post("/dien-giai-cung")
 def dien_giai_cung(data: DienGiaiCungInput):
     """
     Từ ten_cung, tìm Địa Chi của cung đó trong muoi_hai_cung,
-    sau đó tìm các sao đang đóng tại Địa Chi đó trong chinh_tinh,
+    sau đó tìm các sao đang đóng tại Địa Chi đó trong chinh_tinh và các nhóm phụ tinh,
     cuối cùng tra dien_giai thô cho từng sao.
     """
     global sao_data
@@ -338,12 +428,26 @@ def dien_giai_cung(data: DienGiaiCungInput):
         )
     dia_chi_cung = data.muoi_hai_cung[ten_cung]  # e.g. "Sửu"
 
-    # Bước 2: Tìm các sao đang ở địa chi đó
+    # Bước 2: Tìm các sao đang ở địa chi đó (gồm chính tinh và phụ tinh)
     sao_tai_cung = [
         ten_sao
         for ten_sao, dia_chi_sao in data.chinh_tinh.items()
         if dia_chi_sao == dia_chi_cung
     ]
+    for pt_dict in [
+        data.phu_tinh or {},
+        data.vong_thai_tue or {},
+        data.dao_hong_hi or {},
+        data.quang_quy or {},
+        data.khoc_hu_co_qua or {},
+        data.hinh_rieu_y or {},
+    ]:
+        for ten_sao, dia_chi_sao in pt_dict.items():
+            if dia_chi_sao == dia_chi_cung and ten_sao not in sao_tai_cung:
+                sao_tai_cung.append(ten_sao)
+    for ten_sao, list_dc in (data.tuan_triet or {}).items():
+        if dia_chi_cung in list_dc and ten_sao not in sao_tai_cung:
+            sao_tai_cung.append(ten_sao)
 
     # Bước 3: Với mỗi sao, xác định sao đang ở cung nào trong 12 cung
     # (vì sao tra cứu theo tên cung, không theo địa chi)

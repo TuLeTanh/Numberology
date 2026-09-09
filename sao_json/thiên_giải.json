@@ -1,0 +1,38 @@
+{
+  "sao": "THIÊN GIẢI",
+  "loai": "Thuộc Hỏa, Thiện tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Lòng tốt hay giúp đỡ. Chủ sự việc giải trừ tai ách. Cung Mệnh có Giải, Kình, Đồng, Nguyệt: uy danh nhất thế."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Rất tốt, giải ách trừ tai."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Rất tốt, giải ách trừ tai."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Rất tốt, giải ách trừ tai."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Thì xấu."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Thì xấu."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu dữ liệu các cung khác"
+  ]
+}

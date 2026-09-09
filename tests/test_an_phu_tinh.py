@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 import pytest
 from an_phu_tinh import (
     an_loc_ton_kinh_da,
@@ -332,3 +336,109 @@ def test_dao_hong_hi_quang_quy_invalid_inputs():
         an_quang_quy(4, 0)
     with pytest.raises(ValueError):
         an_quang_quy(4, 31)
+
+def test_khoc_hu_co_qua_hinh_rieu_y_case_1_at_mui_2015():
+    """
+    Case 1: 21/05/2015 8h00 (Ất Mùi, giờ Thìn, ngày âm 04, tháng âm 04)
+    - Chi năm: Mùi (chi_nam_idx = 7)
+    - Tháng âm: 4 (thang_am = 4)
+    Expected values:
+    - Thiên Khốc: Hợi (11) ((6 - 7) % 12 = 11)
+    - Thiên Hư: Sửu (1)    ((6 + 7) % 12 = 1)
+    - Cô Thần: Thân (8)    (nhóm Tỵ Ngọ Mùi)
+    - Quả Tú: Thìn (4)     (nhóm Tỵ Ngọ Mùi)
+    - Thiên Hình: Tý (0)   ((8 + 4) % 12 = 0)
+    - Thiên Riêu: Thìn (4) (4 % 12 = 4)
+    - Thiên Y: Thìn (4)    (đồng cung Thiên Riêu)
+    """
+    from an_phu_tinh import an_khoc_hu, an_co_qua, an_hinh_rieu_y
+    res_kh = an_khoc_hu(chi_nam_idx=7)
+    assert res_kh["Thiên Khốc"] == 11 # Hợi
+    assert res_kh["Thiên Hư"] == 1    # Sửu
+
+    res_cq = an_co_qua(chi_nam_idx=7)
+    assert res_cq["Cô Thần"] == 8    # Thân
+    assert res_cq["Quả Tú"] == 4     # Thìn
+
+    res_hry = an_hinh_rieu_y(thang_am=4)
+    assert res_hry["Thiên Hình"] == 0 # Tý
+    assert res_hry["Thiên Riêu"] == 4 # Thìn
+    assert res_hry["Thiên Y"] == 4    # Thìn
+
+def test_khoc_hu_co_qua_hinh_rieu_y_case_2_vi_du_sach_goc():
+    """
+    Case 2: Thí dụ mẫu trích xuất trực tiếp trong sách Tân Biên và Từ Điển:
+    1. Dòng 858 Tân Biên: "Sinh năm Hợi an Cô Thần ở cung Dần, Quả Tú ở cung Tuất."
+       - Chi năm: Hợi (chi_nam_idx = 11)
+       -> Cô Thần = Dần (2), Quả Tú = Tuất (10).
+    2. Dòng 669 Tân Biên & dòng 5720 Từ Điển: "Tuổi Tý: Khốc ở Ngọ, Hư ở Ngọ."
+       - Chi năm: Tý (chi_nam_idx = 0)
+       -> Thiên Khốc = (6 - 0) % 12 = 6 (Ngọ)
+       -> Thiên Hư = (6 + 0) % 12 = 6 (Ngọ).
+    3. Dòng 688, 690 Tân Biên: Tháng Giêng (thang_am = 1):
+       - Thiên Hình: khởi Dậu (9) là tháng 1 -> Dậu (9)
+       - Thiên Riêu: khởi Sửu (1) là tháng 1 -> Sửu (1)
+       - Thiên Y: đồng cung Thiên Riêu -> Sửu (1).
+    """
+    from an_phu_tinh import an_khoc_hu, an_co_qua, an_hinh_rieu_y
+    # 1. Năm Hợi
+    res_cq_hoi = an_co_qua(chi_nam_idx=11)
+    assert res_cq_hoi["Cô Thần"] == 2 # Dần
+    assert res_cq_hoi["Quả Tú"] == 10 # Tuất
+
+    # 2. Năm Tý
+    res_kh_ty = an_khoc_hu(chi_nam_idx=0)
+    assert res_kh_ty["Thiên Khốc"] == 6 # Ngọ
+    assert res_kh_ty["Thiên Hư"] == 6   # Ngọ
+
+    # 3. Tháng 1 âm lịch
+    res_hry_thang1 = an_hinh_rieu_y(thang_am=1)
+    assert res_hry_thang1["Thiên Hình"] == 9 # Dậu
+    assert res_hry_thang1["Thiên Riêu"] == 1 # Sửu
+    assert res_hry_thang1["Thiên Y"] == 1    # Sửu
+
+def test_khoc_hu_co_qua_hinh_rieu_y_case_3_binh_ty_1996():
+    """
+    Case 3: Bính Tý 1996 (chi_nam_idx = 0 Tý)
+    - Thiên Khốc = 6 (Ngọ), Thiên Hư = 6 (Ngọ)
+    - Cô Thần = 2 (Dần), Quả Tú = 10 (Tuất)
+    - Giả định sinh tháng 10 âm lịch (thang_am = 10):
+      + Thiên Hình: (8 + 10) % 12 = 6 (Ngọ)
+      + Thiên Riêu: 10 % 12 = 10 (Tuất)
+      + Thiên Y: 10 (Tuất)
+    """
+    from an_phu_tinh import an_khoc_hu, an_co_qua, an_hinh_rieu_y
+    res_kh = an_khoc_hu(chi_nam_idx=0)
+    assert res_kh["Thiên Khốc"] == 6
+    assert res_kh["Thiên Hư"] == 6
+
+    res_cq = an_co_qua(chi_nam_idx=0)
+    assert res_cq["Cô Thần"] == 2
+    assert res_cq["Quả Tú"] == 10
+
+    res_hry = an_hinh_rieu_y(thang_am=10)
+    assert res_hry["Thiên Hình"] == 6
+    assert res_hry["Thiên Riêu"] == 10
+    assert res_hry["Thiên Y"] == 10
+
+def test_khoc_hu_co_qua_hinh_rieu_y_invalid_inputs():
+    """Kiểm tra validation input sai (chi_nam_idx ngoài 0-11, thang_am ngoài 1-12)"""
+    from an_phu_tinh import an_khoc_hu, an_co_qua, an_hinh_rieu_y
+    # an_khoc_hu
+    with pytest.raises(ValueError):
+        an_khoc_hu(-1)
+    with pytest.raises(ValueError):
+        an_khoc_hu(12)
+
+    # an_co_qua
+    with pytest.raises(ValueError):
+        an_co_qua(-1)
+    with pytest.raises(ValueError):
+        an_co_qua(12)
+
+    # an_hinh_rieu_y
+    with pytest.raises(ValueError):
+        an_hinh_rieu_y(0)
+    with pytest.raises(ValueError):
+        an_hinh_rieu_y(13)
+

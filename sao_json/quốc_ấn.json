@@ -1,0 +1,49 @@
+{
+  "sao": "QUỐC ẤN",
+  "loai": "Thuộc Thổ, Quí tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính cách vui vẻ, có phong độ trượng phu. Chủ sự quyền quí. Có địa vị cao sang. Gặp Thiên Diêu thì quí tốt. Gặp Tướng, Khoa, Quyền thì đại vinh hiển. Gặp Hình, Tướng thì hiển đạt uy danh. Gặp Lộc, Cơ, Hồng, Tấu thì đắc thời hiển đạt."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Gặp Ấn Quí hay Ấn Phong, Quang, Quí thì con cái vinh hiển."
+    },
+    {
+      "cung": "Nô Bộc",
+      "dien_giai": "Gặp Ấn, Tướng thì có người giúp đỡ làm nên."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Phát quí, vinh hiển."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Gặp Ấn, Hình, Tướng thì hiển đạt uy danh."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Gặp Lộc, Cơ, Hồng, Ấn, Tấu (ở Mệnh, Quan) thì đắc thời hiển đạt."
+    }
+  ],
+  "cach_cuc": [
+    {
+      "ten_cach": "Ấn Tướng Khoa Quyền",
+      "dieu_kien": "Quốc Ấn hội hợp cùng Thiên Tướng, Hóa Khoa, Hóa Quyền",
+      "y_nghia": "Đại vinh hiển"
+    },
+    {
+      "ten_cach": "Ấn Hình Tướng",
+      "dieu_kien": "Quốc Ấn hội hợp cùng Thiên Hình, Thiên Tướng",
+      "y_nghia": "Hiển đạt uy danh"
+    }
+  ],
+  "ghi_chu_thieu_du_lieu": [
+    "Không có thông tin về công thức an sao"
+  ]
+}

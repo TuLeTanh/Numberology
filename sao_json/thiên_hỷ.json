@@ -1,0 +1,42 @@
+{
+  "sao": "THIÊN HỶ",
+  "loai": "Thuộc Thủy, Cát tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Vui vẻ, ôn hoà. Chủ sự mừng. Người ôn nhã. Hỷ, Diêu: người hay tự gây ra những tai hoạ quái dị. Hỷ, Hồng: vinh hiển, sớm có nhân duyên, già hết lộc. Hỷ, Đào, nữ Mệnh: loạn luân. Hỷ, Nhẫn."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Hỷ, Diêu, Đào gặp Phá hay Tướng Sứ chiếu: chị em có người chửa hoang, theo trai. Hỷ, Thai, Hồng, Đào: có người ngoại dâm."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Hỷ, Hồng, Đào: sánh duyên cùng người đẹp đẽ dễ dàng."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Hỷ, Cát, Tả, Hữu: vào ra cửa quí làm nên."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Đào, Hồng, Hỷ hội: làm nên lớn dễ dàng. Hỷ, Đào, Tấu, Vũ, Hồng: làm nghề ca xướng."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Hỷ Thần, Thiên Hỷ: mã phát."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Gặp Hỷ, Hồng: có tình duyên, Hỷ, Hồng, Tả, Hữu, Long, Phượng, Diêu: có hỷ sự thành gia thất. Thiên Hỷ, Hỷ Thần ngộ Đào, Hồng, Khôi, Việt: sinh đẻ. Hỷ, Nhẫn: đánh giết người nhà."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu dữ liệu cung Phụ Mẫu, Tử Tức, Tài Bạch, Tật Ách, Nô Bộc, Điền Trạch"
+  ]
+}

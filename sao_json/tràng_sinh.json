@@ -1,0 +1,46 @@
+{
+  "sao": "TRÀNG SINH",
+  "loai": "Thuộc Thủy, Quí tinh",
+  "cong_thuc_an_sao": {
+    "input": [
+      "Cục"
+    ],
+    "logic": "An theo Cục: Mộc Tam Cục ở Hợi, Hỏa Lục Cục ở Dần, Kim Tứ Cục ở Tỵ, Thủy Nhị Cục và Thổ Ngũ Cục ở Thân. Dương nam và âm nữ an theo chiều thuận, âm nam và dương nữ an theo chiều nghịch."
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Chủ thọ. Tràng, Đế, Tử, Phủ: người quảng đại. Tràng Sinh ngộ Mã tại Dần: tốt, làm nên. Tràng, Mã, Tuyệt, Sứ hay Tràng, Mã tại Hợi: vất vả mới làm nên."
+    },
+    {
+      "cung": "Thân",
+      "dien_giai": "Thọ. Tràng, Đế, Tử, Phủ: người quảng đại. Tràng Sinh ngộ Mã tại Dần: tốt, làm nên. Tràng, Mã, Tuyệt, Sứ hay Tràng, Mã tại Hợi: vất vả mới làm nên."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Có Tràng Sinh, Đế Vượng: anh chị em đông và sung túc."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Có Tràng Sinh, Nhật, Nguyệt: con cái làm quan to."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Mã ngộ Tràng Sinh đắc địa: thanh vân đắc lộ. Tràng Sinh, Lộc, Mã; Tràng Sinh, Tử, Phủ, Vũ, Tướng: vinh hiển."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Gặp Mã, Tràng, Tả, Việt, Khôi: ruộng đất có nhiều."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Thọ mà tổ phát."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Có Mã, Tràng hội Long, Phượng: sinh đẻ. Tràng, Triệt: công vụ trắc trở."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": []
+}

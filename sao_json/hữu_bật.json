@@ -1,0 +1,64 @@
+{
+  "sao": "Hữu Bật",
+  "loai": "Hộ tinh",
+  "cong_thuc_an_sao": {
+    "input": ["Hành Thổ"],
+    "logic": "Vượng tại Thìn, Tuất, Sửu, Mùi. Đắc địa tại Dần, Thân, Tỵ, Hợi, Mão, Dậu."
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Hữu Bật là cái vai bên hữu. Tính cách tài năng, tuấn tú, độ lượng, trung hậu. Chủ sự giúp đỡ, ngộ cát phù cát, ngộ hung phù hung. Có Bật, Vi, Xương, Khúc: thông minh văn võ toàn tài. Tả, Hữu củng chủ (Tử Vi): quý cách, nếu ngộ Tứ Sát thì hỏng hết (Phá cách). Tả, Hữu, tứ Mộ (Thìn, Tuất, Sửu, Mùi): tốt, đại thành, thêm có Văn Xương: thông minh. Tả, Hữu độc thủ Mệnh cung: bỏ nhà lìa họ, nhưng nếu gặp Bát Tọa thì lại được vinh hiển."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Tả, Hữu, Lộc Tồn: anh em đông khá giả. Tả, Hữu, Tử, Tang: chị em có người lộn chồng. Bật, Vi cư Tý: trong họ có người phản chồng."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Tả, Hữu, Xương, Khúc: vợ chồng thông minh, bách niên giai lão. Tả, Hữu: lấy nhau không cần mối lái."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Tả, Hữu, Vượng, Đồng thêm có Tử Phù: con đông tài giỏi làm nên. Thai, Tả, Hữu: vợ lẽ có con."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Hữu, Bật, Tử, Phủ: giàu. Tả, Hữu, tam Hóa: dễ giàu. Tả, Hữu, Việt, Khôi: tài vượng."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Tả, Hữu, Tử Phù, Lộc: ốm gặp thuốc, nạn gặp người cứu."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Tả, Hữu, Tử, Phủ với Việt, Khôi hoặc Khúc, Xương, Khoa, Quyền, Đồng, Tướng: đi ra gặp quý nhân trọng dụng thân tín. Tả, Hữu, Hỷ, Cái: ra vào vào cửa quý. Tả, Hữu, Cơ, Xương: thường gặp may có nhiều người giúp đỡ. Tả, Hữu, Quan, Quý: được người giúp đỡ hết lòng nên giàu sang."
+    },
+    {
+      "cung": "Nô Bộc",
+      "dien_giai": "Tả, Hữu, tam Hóa: có nhiều người giúp đỡ chân tay đắc lực, làm nên phú quý."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Tả, Hữu, Khôi, Việt, Khúc, Xương: đại quý càng về già càng phát. Thân cư Quan giáp Tả, Hữu, Nhật, Nguyệt: đại quý. Tả, Hữu, tam Hóa, Phá Quân Tý, Ngọ: có quân công vinh hiển lớn. Bật, Phá, Âm hãm: làm nghề hộ sinh (đỡ đẻ)."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Tả, Hữu, Tướng, Lương, Vũ, Lộc hay Tả, Hữu, Khôi, Việt, Mã, Tràng: điền sản rất nhiều."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Tả, Hữu: thọ, mả phát."
+    },
+    {
+      "cung": "Phụ Mẫu",
+      "dien_giai": "Tả, Hữu: cha mẹ song toàn."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Tả, Hữu cư Mộ cung: thăng quan. Hữu Bật ngộ Địa Kiếp: bị lừa."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": []
+}

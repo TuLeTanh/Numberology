@@ -1,0 +1,24 @@
+{
+  "sao": "Long Đức",
+  "loai": "Thiện tinh (Thuộc Thủy)",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": "Đứng vị trí thứ 8 trong Vòng Thái Tuế."
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Sao vua, ngay thẳng (sincere, loyal), phước đức (virtuous, blessing). Có đức độ, đoan chính, hòa nhã, nhân hậu, từ thiện. Giải trừ những bệnh tật, tai họa. Gặp Thiên Đức, Nguyệt Đức, kết hợp thành bộ Tứ Đức chế được tính hoa nguyệt, dâm đãng của Đào, Hồng."
+    }
+  ],
+  "cach_cuc": [
+    {
+      "ten_cach": "Tứ Đức hội tụ",
+      "dieu_kien": "Long Đức hội tụ Thiên Đức, Nguyệt Đức, Phúc Đức",
+      "y_nghia": "Gia tăng phúc thiện, nhân hậu đoan chính, giải trừ tai ương tật bệnh, chế ngự dâm tính."
+    }
+  ],
+  "ghi_chu_thieu_du_lieu": [
+    "Trong các cổ thư và tư liệu gốc (Tự Điển Tử Vi Đẩu Số, Tân Biên), Long Đức chỉ có đặc tính cứu giải tổng quát, không có mục diễn giải riêng lẻ cho từng cung. Chưa có tư liệu diễn giải riêng tại: Phụ Mẫu, Phúc Đức, Điền Trạch, Quan Lộc, Nô Bộc, Thiên Di, Tật Ách, Tài Bạch, Tử Tức, Phu Thê, Huynh Đệ."
+  ]
+}

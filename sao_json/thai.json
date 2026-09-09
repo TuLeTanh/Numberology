@@ -1,0 +1,38 @@
+{
+  "sao": "THAI",
+  "loai": "Thổ, Cát Tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Đần độn, học hành không thành tài, mê gái, a dua. Thai, Dưỡng cư Mệnh: đàn bà khó sinh."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Thai phùng Không, Kiếp: sinh nhiều nuôi ít. Thai phùng Âm, Hỏa: con cầu tự mới nuôi được. Thai, Tướng, Phục: vợ chồng có con riêng hay chửa đẻ trước rồi. Thai, Âm, Dương hay Thai giáp Âm: có con sinh đôi. Thai, Quả: 10 phần còn 2. Thai, Đào: hiếm con. Thai, Sát: sẩy thai. Thai, Dưỡng cư Tử: đàn bà khó sinh."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Có Vượng, Thai đắc địa: anh chị em đông và đều hiển đạt, hãm thì chỉ có một. Thai: có anh chị em dị bào. Thai, Hỷ, Hồng, Đào ngộ Binh, Tướng: có người ngoại dâm."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Có Thai, Binh, Tướng, Quân: đôi lứa có con rồi mới lấy nhau. Thai, Đào: tiền dâm hậu thú."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Thai, Dưỡng cư Giải: đàn bà khó sinh."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Hạn có Thai ngộ Long, Hỷ hay Thai ngộ Long, Đế Vượng: sinh đẻ. Thai, Kiếp: khó sinh, thai nghén bị bệnh tật. Thai, Diêu, Tướng, Phá, Phục: cả nghe bị lừa, tình duyên rắc rối. Thai ngộ Hóa, Linh: động thai, thêm Hình, Kiếp, Sát: đẻ thiếu tháng."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu công thức an sao"
+  ]
+}

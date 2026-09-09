@@ -1,0 +1,50 @@
+{
+  "sao": "THIÊN KHỐC",
+  "loai": "Thuộc Thủy, Hại tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Sầu thảm, bất chính. Chủ sự đau thương, thảm khốc. Người buồn lòng, gian hiểm. Khốc, Hổ: có nhiều sự đau thương. Nhược Đồng cư Tý, Ngọ: bớt sự đau thương, tiền bần hậu phú. Khốc, Quyền đồng cung: danh giá rỡ ràng. Khốc ngộ Khôi, Việt, Xương, Khúc: tài giỏi hiển danh. Khốc, Đà, Dần, Thân: văn võ kim toàn. Khốc, Hình, Mã: võ nghiệp công danh. Khốc, Điếu, Kiếp, Phù ngộ Cự, Dương: suốt đời nước mắt (đa hận)."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Khốc, Hư, Kình, Đà: vợ chồng xung khắc. Thiên Khốc: xa nhau rồi mới lấy được nhau. Khốc, Tang, Hỏa: đàn bà chồng bị loà không thì góa sớm."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Khắc con, cô đơn, Khốc, Hư ngộ Dưỡng: sinh nhiều nuôi con ít."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Khốc, Hư: nghèo túng, tán tài."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Khốc, Cơ, Hư: bệnh phong đàm, ho lao."
+    },
+    {
+      "cung": "Nô Bộc",
+      "dien_giai": "Khốc, Hư: tôi tớ trộm cấp."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Khốc, Hư hãm thì hèn hạ. Vượng ở Tý, Ngọ thì hiển đạt danh giá."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Khốc: tổn thọ. Khốc (hãm) có âm hồn báo oán. Đắc địa ngộ Phúc tinh: mã phát, ngộ Quí, Cát tinh: hiển đạt."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Khốc, Hư, Tý, Ngọ: trước khó sau thành. Khốc, Hổ, Tang: thương người hại của."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu dữ liệu cung Phụ Mẫu, Huynh Đệ, Điền Trạch, Thiên Di"
+  ]
+}

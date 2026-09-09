@@ -1,0 +1,50 @@
+{
+  "sao": "TANG MÔN",
+  "loai": "Thuộc Mộc, Hại tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính cách đa sầu não. Chủ sự tang thương, một đời đau khổ. Nữ mệnh có Tang Môn, Đào Hoa hoặc giáp Mệnh thì quá thì ở vậy."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Gặp Tử Vi thì có chị em lộn chồng. Gặp Trực Phù, Tuế Phá thì anh chị em kém hòa thuận. Gặp Thiên Mã thì ly tán."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Gặp Bạch Hổ, Địa Không, Địa Kiếp thì 2 hoặc 3 con chết sớm, sau mới nuôi được. Gặp Hổ, Kiếp, Sát, Mộc ở Phụ Mẫu và Thiên Giải chiếu thì sinh con thiếu tháng hoặc chân tay thừa ngón. Đơn thủ Tang Môn thì về già mới có con."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Gặp Đào Hoa, Dưỡng thì làm nghề thủ công. Gặp Đà La, Hóa Lộc thì được hưởng của thừa tự của người trong họ."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Gặp Phục Binh hoặc Không, Phủ thì vô điền sản. Đơn thủ Tang Môn thì có nhà cửa. Gặp Cự Môn thì có lâu đài trong dinh thự."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Tổn thọ."
+    },
+    {
+      "cung": "Nô Bộc",
+      "dien_giai": "Gặp Hóa Kỵ, Phá Quân thì làm ơn nên oán."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Tang Môn nhập hạn ở Mệnh hoặc gặp Phục Binh thì có tang. Gặp Hỏa Tinh ở phương nào thì bị cháy ở phương ấy. Gặp Bạch Hổ thì có sự đau thương. Gặp Điền Trạch thì ốm đau tang chế. Gặp Thiên Khốc, Bạch Hổ thì thương người hại của. Gặp Điếu Khách, Thái Tuế chiếu thì ngã đau, té cao, xe cán. Gặp Thiên Hình, Thiên Khốc thì tang thương súc vật chết. Gặp Địa Không thì tán tài, có sự thay đổi."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Đau yếu gân cốt hay có bệnh thuộc về máu huyết."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Không có thông tin về công thức an sao"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "sao": "THAI PHỤ",
+  "loai": "Thổ, Văn tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Vinh hiển. Thai Phụ ngộ Xương, Khúc, Khoa, Quyền: vinh hiển tột bực. Ngộ Tuần, Không, Kiếp: vô ngoại. Thai Phụ, Phong, Cáo: làm quan binh."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Có Thai Phụ: vinh hiển."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Có Thai Phụ ngộ Thai sinh quý tử."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Có Phụ, Vi: trong họ có người phần chồng."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu công thức an sao"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "sao": "VĂN XƯƠNG",
+  "loai": "Thuộc Kim, Văn tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Văn chương tài giỏi, ngộ Tham tại Dần, Thân: gặp thời làm nên. Tướng, Quốc, Xương hãm ngộ Thiên Thương: chết yểu. Xương, Diêu hãm Dần, Thân: rất xấu, bị tù thì gia án. Xương, Diêu, Cơ, Nguyệt: văn chương phong tình. Xương, phùng Diêu, Nhật, nữ Mệnh: dâm bôn thậm xú. Xương, Diêu, Tham, Dần, Thân: lao tù. Văn Xương đi đôi với Văn Khúc mới đắc lực nhiều (coi thêm mục Văn Khúc)."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Có Xương, Diêu, Mã: ngoại dâm. Coi thêm các mục nói về Văn Khúc."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Các cung khác không được mô tả chi tiết riêng biệt mà chỉ dẫn chiếu sang mục Văn Khúc."
+  ]
+}

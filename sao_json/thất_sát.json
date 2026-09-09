@@ -1,0 +1,62 @@
+{
+  "sao": "THẤT SÁT",
+  "loai": "Kim, Hung tinh (quyền tướng)",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Miếu địa: khôn ngoan, oai hùng, quân tử. Sát, Hình miếu địa: chân chính anh hùng. Hãm thì khắc khổ cô đơn. Sát, Quyền: hiển đạt ở Ngọ thì phát lớn. Sát, Phá trùng giao: bần cùng thủy tận. Vượng thì đi ra được vẻ vang. Sát, Vi, Lộc, Cự: danh tiếng lừng lẫy. Sát, Liêm, Hình, Hỏa: nam đa tu nữ đa mao. Thất Sát, Dần, Thân: vinh hiển, ngộ Quyền, Lộc: hiển đạt, uy quyền, thọ 80 tuổi. Ở các cung khác, gặp Không, Kiếp, Hình: làm đồ tể phát tài và tránh khỏi hình ngục. Sát, Phá, Liêm, Tham: vinh hiển, hội tứ Phủ: phát lớn, nếu có Hóa Khoa càng thêm rạng rỡ, nếu hội Kỵ, Kiếp, Không: phú quý không bền. Hội Đào, Hồng: số đàn bà thì sát chồng, nếu gặp trung tinh đắc cách và thêm có hung tinh đắc địa (Kình, Đà, Hình, Hổ) thì làm nên sự nghiệp phi thường. Nhưng nếu gặp hạn Tử, Phủ, Vũ, Tướng thì kém tốt. Sát, Phá, Liêm, Tham: dù hãm mà có được sát tinh đắc địa cũng tốt. Sát, Tham, Phượng: tuổi Thìn, Tuất, Sửu, Mùi thì tốt, Kim, Mộc: làm to, các tuổi khác thì xấu hay bị trách oán. Sát, Vũ tọa Mệnh tại Tý: công danh hiển đạt. Sát triều đẩu: vinh hiển. Sát, Phá, Kiếp, Không chính tinh hãm địa: chết non. Sát, Liêm, Tham, Vũ nữ Mệnh: khắc hại chồng con. Sát, Tham ngộ Xương, Tuế: tuổi Đinh, Tân có danh vọng. Sát, Tham nữ Mệnh: đàn bà bạc tình."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Có Sát Tham: giết chồng. Thất Sát: lấy trưởng nữ người ta. Sát môn: trăng hoa, dâm dục, khắc xung: 3 người. Sát, Hình là đi hương phối kết. Sát, Phá, Tham, Xương, tam Hóa: đàn bà có danh phận lớn. Thêm có Cô, Quả: tuổi Quý thì góa chồng sớm."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Có Sát, Hình, Hổ hay Sát hãm địa: không con."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Có Sát, Cự: trước nghèo sau giàu, ở Tý, Ngọ: hao tài có hoạnh tài."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Có Sát, Hình, Không, Kiếp: chết bởi đao thương. Thất Sát: mặt có vết ngang. Sát, Hổ, Quan, Phù hoặc Sát, Không, Hình, Kiếp: hình tù. Sát, Trì, Âm: đau bụng. Sát, Trì, Dương: đau đầu. Sát, Kỵ, Đà: bệnh tật ở mặt. Sát ngộ tứ Sát: tử, phong, sang. Sát, Phá, Hao, Mộc, Kỵ: ung thư bị mổ xẻ."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Có Sát, Phá: đi xa không yên. Sát, Phá, Liêm: thường bị nguy hiểm dọc đường. Thất Sát, Nhị Phù, Kình Dương: ký ngụ phong tú."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Có Sát, Quyền: oai dũng phục muôn người. Thất Sát: làm quan. Sát cư Tý, Ngọ: làm võ quan, thêm có tam Hóa: làm lớn, nếu Sát hãm thì hình danh. Sát, Vi, Lương, Mã, Đồng tại Ngọ: võ chức lớn ở biên cương. Sát, Thân, Dần ngộ tam Hóa: văn võ toàn tài. Sát, Liêm giáp Quan Lộc: công danh về già."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Có Sát: bỗng chốc có ruộng đất, hãm thì thường. Sát, Long, Lộc: nhiều ruộng đất."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Có Sát, Liêm: bần yểu."
+    },
+    {
+      "cung": "Phụ Mẫu",
+      "dien_giai": "Có Sát hãm: khắc cha mẹ, đắc địa thì cha mẹ thọ và vinh hiển. Sát, Phá, Tham hãm: cha mẹ bỏ nhau."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Hạn có Sát, Kình, Phục, Thiên, Không, Hao, có Hỏa, Linh, Kỵ, Kiếp chiếu vào hạn: chết. Sát, Kỵ: có sự đau nhục. Sát, Liêm, Tham, Phượng: bị trách oán. Sát ở Thìn, Tuất (khốn cùng): gặp một hạn thì ốm đau không thuốc chữa, gặp hai hạn thì chết chóc. Sát, Hao: tang thương đau ốm. Sát, Phá, Tham phùng Đào, Hồng, Suy, Tuyệt mà Mệnh vô chính diệu: chết. Sát, Phá, Hình: phòng tù tội. Sát, Phá, Hao, Mộc, Kỵ: bị ung thư, mổ cắt."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Đơn thủ tại Dần, Thân: may mắn lắm mới có hai người, tuy khá giả nhưng khiếm hòa. Đơn thủ tại Tý, Ngọ: may mắn lắm mới có một người, thường bị hình thương hay mang tật, trong gia đinh thiếu hòa khí. Đơn thủ tại Thìn, Tuất: không có anh chị em. Tử đồng cung: nhiều nhất là ba người, đều được hưởng phú qúy. Liêm đồng cung: may mắn lắm mới có một người, thường mang tật, nên suốt đời cùng khổ, hay chết non, anh chị em bất hòa. Vũ đồng cung: một người, nhưng mang cố tật hay bị hình thương, nếu không sớm xa cách nhau, tất bị hình khắc."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu công thức an sao"
+  ]
+}

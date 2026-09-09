@@ -1,0 +1,37 @@
+{
+  "sao": "Phong Cáo",
+  "loai": "Cát tinh",
+  "cong_thuc_an_sao": "",
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Thuộc Thổ, Cát tinh. T.c. tự đắc. Chủ bằng sắc công danh. Cung Mệnh có Phong Cáo: vinh hiển. Ngộ Xương, Khúc, Khoa, Quyền: vinh hiển tột bực. Cáo ngộ Am hay Dương ( đối diện triển đẩu): quí cách. Phong, Tướng: hiển đạt, thêm có Khoa, Quyền hay Quang, Quí : phát lớn."
+    },
+    {
+      "cung": "Tử",
+      "dien_giai": "Cung Tử có Phong, Ấn, Quang, Quí: con hiển đạt."
+    },
+    {
+      "cung": "Nô",
+      "dien_giai": "Cung Nôn có Phong Cáo: có người giúp đỡ. Phong Cáo gặp Thiên Quan hay Thiên Phúc: Có quí nhân giúp đỡ làm nên."
+    },
+    {
+      "cung": "Quan",
+      "dien_giai": "Cung Quan có Phong, Ấn, Quang, Quí: làm nên vinh hiển có tước phong, Phong, Tướng: con hiển đạt."
+    },
+    {
+      "cung": "Điền",
+      "dien_giai": "Cung Điền có Phong, Ấn: có điền sản. Phong, Ấn ngộ Tử, Phủ: giàu điền sản. Phong Các ( Phượng), Tử, Phủ: giàu nhà cửa."
+    },
+    {
+      "cung": "Phúc",
+      "dien_giai": "Cung Phúc có Phong, Ấn, Quang, Quí: vinh hiển. Phong Cáo: đại thọ."
+    },
+    {
+      "cung": "Phụ Mẫu",
+      "dien_giai": "Cung Phụ Mẫu có phong Cáo : cha mẹ có chức vị."
+    }
+  ],
+  "cach_cuc": "Hạn gặp Phong Cáo, Long Trì: thăng quan.",
+  "ghi_chu_thieu_du_lieu": ""
+}

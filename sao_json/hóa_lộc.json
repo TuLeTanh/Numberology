@@ -1,0 +1,68 @@
+{
+  "sao": "Hóa Lộc",
+  "loai": "Tài tinh",
+  "cong_thuc_an_sao": {
+    "input": ["Hành Mộc"],
+    "logic": "Vượng tại Thìn, Tuất, Sửu. Hãm địa tại Tý, Ngọ, Thân, Dậu."
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Hóa Lộc là râu, ngộ Tham: râu rậm, râu quai nón. Tính cách dịu dàng, tinh anh. Chủ về tài lộc. Hóa Lộc vô hung: thường được may mắn phát đạt. Lộc ngộ Thiên Hỷ, Cự, Vũ: chuyên chính. Nữ mệnh: đại cát, sánh hữu Lộc Tồn: vượng phu ích tử. Lộc tọa Không vong, Không, Kiếp hay tam Hóa Kiếp, Kình hoặc song Lộc ngộ Tuần, Không, Kiếp: tài không bền, mà bần tiện. Song Lộc mà Tử Vi, Thái Âm tam hợp, hay Lộc, Lương, Lộc Tướng: tài phú diệc nhiên. Lộc, Mã đồng cung: đích thị phú thương chi nghiệp, tuổi Dần, Mão, Thìn, Tuất: hỏa công danh sớm. Song Lộc triều nguyên hay Uyên ương Lộc Hội (tuổi Dần, Mão, Tý, Hợi): phú quý uy quyền; (Thìn, Tuất): giàu mà không danh giá gì. Song Lộc tam Thai: phú quý nhàn hạ. Tam Hóa củng Mệnh hay thêm Tả, Hữu: làm tới công khanh. Lộc, Quyền, Sát: võ tướng."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Tướng, Quan, Song Lộc: anh em có người quyền quý. Lộc, Mã: có người buôn bán giàu."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Lộc, Long, Phượng: sáng duyên cùng người giàu sang đẹp đẽ. Tam Hóa, Khôi, Việt: quý nhân phối hợp. Lộc, Hồng: nhờ của vợ làm giàu."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Tam Hóa: con quý nhân làm nên sang giàu."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Làm ăn phát tài. Lộc, Mã, Cơ, Lương hay song Lộc: đại phú. Lộc, Hồng, Đà: hưởng của thừa tự người trong họ. Lộc, Ân Quang: hiển đạt. Lộc, Hao: kiếm được nhiều hết sạch. Lộc, Mộ: của đến tận tay. Lộc, Hồng: nhờ của vợ làm giàu."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Lộc Đồng, Lương, Tử, Phủ: ốm gặp thuốc, nạn gặp người cứu. Tam Hóa, Thanh Long: không có tai nạn, gặp rủi hóa may. Vũ, Lộc, Tham: râu quai nón."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Lộc, Mã: sinh tài, hữu lực."
+    },
+    {
+      "cung": "Nô Bộc",
+      "dien_giai": "Hóa Lộc và Tử Vi chiếu: được người chân tay trung thành. Lộc, Quyền: nhờ bạn thân làm nên. Lộc, Hồng: nhờ vợ làm giàu."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Lộc, Quyền, Tử, Phủ, Tràng Sinh: đại quý. Lộc, Quyền, Mã có Âm, Dương đắc địa: giàu sang rạng rỡ. Nếu Âm, Dương hãm thì quyền lợi bị hao. Lộc, Mã: thương nghiệp."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Lộc, Tướng: có ruộng đất nhiều. Tam Hóa, Cơ, Âm: có đất nhiều."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Lộc, Quyền: vinh hiển. Song Lộc: đại phú. Coi về mồ mả có Hóa Lộc: ngôi mả phát hình cờ thì giàu."
+    },
+    {
+      "cung": "Phụ Mẫu",
+      "dien_giai": "Lộc, Mã: cha mẹ giàu có."
+    }
+  ],
+  "cach_cuc": [
+    {
+      "ten_cach": "Song Lộc triều nguyên hay Uyên ương Lộc Hội",
+      "dieu_kien": "Hóa Lộc và Lộc Tồn gặp nhau (chú ý: cùng ngồi một cung thì không được tốt vì Mộc khắc Thổ, có của mà khổ vì tiền của)",
+      "y_nghia": "Tại Dần, Mão, Tý, Hợi: phú quý uy quyền. Tại Thìn, Tuất: giàu mà không danh giá."
+    }
+  ],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu ý nghĩa tại cung Hạn."
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "sao": "VŨ KHÚC",
+  "loai": "Thuộc Kim, Tài tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Đắc địa: giàu có mà hách dịch. Vũ, Phá, Tỵ, Hợi hay Vũ ngộ Phá, Tham: người có mưu giỏi nhưng hoang đàng, phá tán. Vũ, Tham thủ chiếu: Vũ, Văn, Liêm miếu; Vũ miếu Thìn, Tuất ngộ Văn, Xương: văn võ toàn tài, làm nên phú quý. Vũ, Liêm đồng thủ: cô đơn bần hàn. Vũ, Sát, Thai, Tọa, Hình: vô cách. Vũ, Quyền, nữ Mệnh: khôn ngoan, tần tảo, chồng phải nể sợ. Vũ, Liêm, Sát, Tham: dâm dật. Vũ, Tướng, Dần, Thân: đại phú. Tử, Phủ, Vũ, Tướng, tuổi Tý, Ngọ: phú quý. Canh, Bính, Mộc, Kim: thọ. Vũ, Diêu, Toái: câm. Tham, Xương, Khúc: lắm nốt ruồi. Vũ Khúc tọa Thân: có một nốt ruồi ở chỗ kín. Vũ, Tham: đàn bà khắc, hại chồng con. Vũ, Lộc cư Mộ cung: phú quý sớm mà không bền. Vũ, Phục, Dương: quan võ (cư Ngọ)."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Có Vũ, Tướng: anh em có người làm nghề thủ công."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Có Vũ, Âm; Vũ, Phủ: giàu. Vũ, Lộc: đại phú. Vũ, Tướng: làm ra song khó nhọc, chìm nổi. Vũ, Lộc, Thiên Mã: làm giàu phương xa. Vũ, Phá: làm ra nhiều lại phá nhiều."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Có Vũ hãm địa hay Vũ, Diêu, Toái: câm. Diêu: tê thấp hay phù. Vũ, Tham, Xương, Khúc: lắm nốt ruồi. Vũ, Long: nốt ruồi đỏ."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Có Vũ: không ở nhà được, phải đi phương xa mới phát tài được. Vũ, Liêm đồng cung: bần cùng. Vũ, Lương: cự phú."
+    },
+    {
+      "cung": "Nô Bộc",
+      "dien_giai": "Có Vũ Khúc: tôi tớ bạc nghĩa."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Có Vũ, Lộc, Khoa, Quyền: vô phát quận công. Vũ, Lộc hay thêm có Mã: hiển vinh. Vũ, Tham: thương nghiệp. Vũ, Tham ngộ Âm: chậm công danh, gặp hạn ở năm nào, năm ấy phát."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Có Vũ, Cơ: có nhiều ruộng đất. Vũ, Phủ, Kiếp: hao tán. Vũ, Văn, Tả, Hữu, Tướng, Lương, Khoa: giàu có về ruộng đất."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Có Vũ, Tham, Thìn, Tuất: phúc hưởng phú quý. Vũ, Tham, Khoa: phát anh hùng."
+    },
+    {
+      "cung": "Phụ Mẫu",
+      "dien_giai": "Có Vũ Khúc: cha mẹ thọ."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Có Vũ, Lộc, Mã, Cơ, Hỷ, Loan: thành gia thất. Vũ, Tham cư Sửu, Mùi, Mệnh, giáp Nhật, giáp Nguyệt, phùng Đồng, Cự: hạn đến đó công thành danh toại. Vũ, Cự, Quyền: làm quan được lệnh ra ngoài biên cương (trấn thủ hay đại sứ)."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Đơn thủ tại Thìn, Tuất: sinh nhiều, nuôi ít, sau thường chỉ có một con nhưng rất khá giả. Phủ đồng cung: hai con, sau đều qúy hiển. Tướng đồng cung: may mắn lắm mới có một con, nếu có con nuôi, tất thêm con đẻ. Tham đồng cung: muộn sinh con mới dễ nuôi, sau có hai con. Sát đồng cung: cô đơn, hiếm con, nếu may mắn có một con, tất đứa con đó cũng chỉ là phế nhân, nếu không cũng là hạng chơi bời phá tán, có sự hình khắc giữa cha mẹ và con cái. Phá đồng cung: hai con, nhưng rất khó nuôi."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Đơn thủ tại Thìn, Tuất: nên muộn đường hôn phối. Vợ chồng đều tài giỏi, bằng (hay gần bằng tuổi nhau). Đàn ông nhờ vợ mà có tiền còn đàn bà nhờ chồng mà được hưởng giàu sang. Phủ đồng cung: vợ chồng đôi khi có sự bất hòa, nhưng chung hưởng giàu sang đến lúc bạc đầu. Tướng đồng cung: đàn ông lấy được vợ đảm đang, tài giỏi và giàu, đàn bà lấy được chồng hiền và sang. Cả hai đều cương cường, lúc trẻ hòa thuận, về sau hay xích mích nhưng đều được hưởng phú qúy trọn vẹn."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": []
+}

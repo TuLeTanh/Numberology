@@ -1,0 +1,30 @@
+{
+  "sao": "TẤU THƯ",
+  "loai": "Thuộc Kim, Văn tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính cách thanh bạch, lanh lợi, thông minh, tính tình hay thay đổi. Chủ về văn thư. Có tài năng nhưng hay sinh khẩu thiệt. Gặp Thái Dương, Thái Âm thì là người thanh cao. Gặp Thiên Tướng thì tha hương nghĩ làm sự kỳ dị. Gặp Thiên Việt, Thiên Quý, Ân Quang, Thiên Cơ, Thiên Hồng: trai làm cận thần, gái làm cung phi. Gặp Vũ Khúc, Thiên Hình, Thiên Cơ thì làm thợ mộc giỏi."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Gặp Thiên Tướng nhị Phù mà Mệnh có Tả Phù, Hữu Bật thì làm tăng ni. Gặp Thiên Diêu, Thiên Cơ, Vũ Khúc, Đào Hoa, Hồng Loan thì có tài khôi hài, ca xướng."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Miếu địa thì có ngôi mả hình bút pháp văn. Gặp Thiên Diêu thì có ngôi mả bên ruộng úng thủy."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Gặp Ân Quang thì sinh con như thần giáng sinh."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Không có thông tin về công thức an sao"
+  ]
+}

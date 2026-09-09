@@ -1,0 +1,38 @@
+{
+  "sao": "Mộc Dục",
+  "loai": "Phóng Đãng tinh",
+  "cong_thuc_an_sao": {
+    "input": [
+      "Hành Thủy"
+    ],
+    "logic": "Thuộc Thủy"
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính tình sạch sẽ, hay dâm dục, ưa hào nhoáng. Chủ sự trang điểm và phong tình. Cung Mệnh có Mộc Dục đơn thủ: hao. Mộc, Quyền, Thiên Tài, Thiên Phúc: vinh hiển hơn người. Mộc, Cái thủ nữ mệnh: tất loạn dâm, làm đĩ. Nam mệnh: loạn dâm. Mộc, Đào: dâm dục."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Mộc, Cái: vợ loạn dâm."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Hao con, 10 phần còn 2."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Mộc, Linh, Hỏa: bỏng nước, bỏng lửa. Mộc, Kình, Triệt: sét đánh. Mộc hãm: tê thấp."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Mộc, Long, Trì: có ngôi mộ bên giếng."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Mộc, Kiếp: khó sinh, thai nghén có bệnh tật. Mộc, Ky, Hao, Sát, Phá: ung nhọt mổ xẻ. Mộc, Cái, Mộc Diêu: thủ dâm."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": []
+}

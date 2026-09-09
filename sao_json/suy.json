@@ -1,0 +1,34 @@
+{
+  "sao": "SUY",
+  "loai": "Thuộc Thủy, Hung tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính cách yếu kém, bạc nhược. Chủ sự suy bại. Không ai ưa."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Hiếm con."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Công danh kém."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Làm tôi tớ. Nếu ngộ Dưỡng, Tướng thì làm tôi tớ nơi quyền môn."
+    },
+    {
+      "cung": "Tổng quát",
+      "dien_giai": "Bất cứ ở cung nào cũng chỉ sự suy bại ít kém."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Không có thông tin về công thức an sao"
+  ]
+}

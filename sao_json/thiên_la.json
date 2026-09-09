@@ -1,0 +1,22 @@
+{
+  "sao": "THIÊN LA",
+  "loai": "Ác tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Táo bạo, gan góc. Chủ sự giam bắt, cản trở. La võng ngộ tung hoành cát, ngộ cát thành hung. Có Thiên La, Thiên Lương: tuy táo bạo song trung hậu, làm việc gì cũng bị trở ngại."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "La hoặc thêm Kình, Không, Kiếp mà có Nhật Nguyệt giao huy thì đắc thời. La, Linh, Đà, Mã, Mệnh có Tham, Liêm: bị tử hình."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu dữ liệu các cung khác"
+  ]
+}

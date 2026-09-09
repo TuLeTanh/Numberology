@@ -1,0 +1,780 @@
+:root {
+  --bg-main: #0a0d14;
+  --bg-card: #121824;
+  --bg-palace: #161e2e;
+  --border-color: #2a364f;
+  --border-gold: #c5a059;
+  --gold: #dfb15b;
+  --gold-light: #fef08a;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --red-accent: #ef4444;
+  --green-accent: #22c55e;
+  --purple-accent: #a855f7;
+  --blue-accent: #38bdf8;
+  --font-main: 'Be Vietnam Pro', sans-serif;
+  --font-serif: 'Cinzel', serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: var(--font-main);
+  line-height: 1.5;
+  padding: 24px 16px;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.app-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.header-badge {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 9999px;
+  background: rgba(197, 160, 89, 0.15);
+  border: 1px solid var(--border-gold);
+  color: var(--gold);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.header-title {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.03em;
+  margin-bottom: 8px;
+  text-shadow: 0 0 20px rgba(223, 177, 91, 0.2);
+}
+
+.header-subtitle {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* Form Section */
+.form-section {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 32px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.required {
+  color: var(--red-accent);
+}
+
+.form-group input,
+.form-group select {
+  background: #0d121c;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: var(--text-main);
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 2px rgba(223, 177, 91, 0.2);
+}
+
+.field-error {
+  color: var(--red-accent);
+  font-size: 0.75rem;
+  margin-top: 4px;
+  min-height: 16px;
+}
+
+.form-actions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #c5a059 0%, #a47d33 100%);
+  color: #0a0d14;
+  font-family: var(--font-main);
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(197, 160, 89, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(1px);
+}
+
+.error-banner {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid var(--red-accent);
+  color: #fca5a5;
+  padding: 14px 20px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  font-size: 0.9rem;
+}
+
+/* Sections */
+.section-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--gold);
+  margin-bottom: 16px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: var(--gold);
+}
+
+/* 12 Cung Bàn Cờ Layout (4x4) */
+.tuvi-section {
+  margin-bottom: 48px;
+}
+
+.tuvi-board-wrapper {
+  overflow-x: auto;
+  padding: 8px 0;
+}
+
+.tuvi-board {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(220px, 1fr));
+  grid-template-rows: repeat(4, minmax(160px, auto));
+  gap: 8px;
+  background: #080b11;
+  padding: 12px;
+  border: 2px solid var(--border-gold);
+  border-radius: 12px;
+  min-width: 900px;
+}
+
+/* Từng Cung */
+.palace-cell {
+  background: var(--bg-palace);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.palace-cell:hover {
+  border-color: var(--gold);
+  background: #1a2337;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(223, 177, 91, 0.15);
+}
+
+.palace-cell.is-menh {
+  border-color: #f59e0b;
+  box-shadow: inset 0 0 12px rgba(245, 158, 11, 0.15);
+}
+
+.palace-cell.is-than {
+  border-color: #38bdf8;
+}
+
+.palace-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 6px;
+  margin-bottom: 8px;
+}
+
+.palace-title-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.palace-name {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--gold);
+}
+
+.badge-menh {
+  background: #f59e0b;
+  color: #000;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.badge-than {
+  background: #38bdf8;
+  color: #000;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.palace-canchi {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.palace-stars {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Danh sách chính tinh */
+.chinh-tinh-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.chinh-tinh-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--gold-light);
+}
+
+.tu-hoa-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: 4px;
+  margin-left: 6px;
+}
+
+.tu-hoa-HoaLoc {
+  background: rgba(34, 197, 94, 0.2);
+  color: var(--green-accent);
+  border: 1px solid var(--green-accent);
+}
+
+.tu-hoa-HoaQuyen {
+  background: rgba(168, 85, 247, 0.2);
+  color: var(--purple-accent);
+  border: 1px solid var(--purple-accent);
+}
+
+.tu-hoa-HoaKhoa {
+  background: rgba(56, 189, 248, 0.2);
+  color: var(--blue-accent);
+  border: 1px solid var(--blue-accent);
+}
+
+.tu-hoa-HoaKy {
+  background: rgba(239, 68, 68, 0.2);
+  color: var(--red-accent);
+  border: 1px solid var(--red-accent);
+}
+
+/* Danh sách phụ tinh */
+.phu-tinh-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  border-top: 1px dashed rgba(255, 255, 255, 0.05);
+  padding-top: 6px;
+}
+
+.phu-tinh-item {
+  white-space: nowrap;
+}
+
+/* Điểm nhấn màu cho sát tinh / bại tinh quan trọng */
+.phu-tinh-sat {
+  color: #f87171;
+}
+
+.phu-tinh-tuan-triet {
+  color: #facc15;
+  font-weight: 600;
+}
+
+/* Trung Cung (Thiên Bàn) */
+.center-cell {
+  grid-row: 2 / span 2;
+  grid-column: 2 / span 2;
+  background: #0f1522;
+  border: 2px solid var(--border-gold);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.center-title {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.center-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 16px;
+  width: 100%;
+  max-width: 380px;
+  font-size: 0.88rem;
+  text-align: left;
+}
+
+.center-item strong {
+  color: var(--text-muted);
+}
+
+.center-item span {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+/* Thần Số Học Grid */
+.numerology-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.numerology-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.numerology-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--gold);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 12px;
+  margin-bottom: 14px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.card-number {
+  font-size: 1.8rem;
+  font-weight: 800;
+  font-family: var(--font-serif);
+  color: var(--gold-light);
+  background: rgba(223, 177, 91, 0.15);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--border-gold);
+}
+
+.card-body {
+  font-size: 0.88rem;
+  color: #cbd5e1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-body p strong {
+  color: var(--gold);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 1.6rem;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Khung Hỏi Đáp Chat (/hoi) ── */
+.chat-section {
+  margin-top: 48px;
+}
+
+.chat-intro {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-top: -16px;
+  margin-bottom: 24px;
+}
+
+.chat-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  height: 520px;
+}
+
+.chat-history {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: rgba(10, 13, 20, 0.6);
+}
+
+.chat-message {
+  max-width: 85%;
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  animation: fadeIn 0.25s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.user-message {
+  align-self: flex-end;
+  background: linear-gradient(135deg, rgba(223, 177, 91, 0.2), rgba(197, 160, 89, 0.1));
+  border: 1px solid var(--border-gold);
+  color: var(--text-main);
+  border-bottom-right-radius: 4px;
+}
+
+.user-message .message-sender {
+  color: var(--gold);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  letter-spacing: 0.05em;
+}
+
+.bot-message {
+  align-self: flex-start;
+  background: var(--bg-palace);
+  border: 1px solid var(--border-color);
+  color: #e2e8f0;
+  border-bottom-left-radius: 4px;
+}
+
+.bot-message .message-sender {
+  color: var(--blue-accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  letter-spacing: 0.05em;
+}
+
+.bot-message.error-message {
+  background: rgba(239, 68, 68, 0.15);
+  border-color: var(--red-accent);
+}
+
+.bot-message.error-message .message-sender {
+  color: var(--red-accent);
+}
+
+.bot-message.loading-message {
+  opacity: 0.75;
+  font-style: italic;
+}
+
+.chat-input-form {
+  padding: 16px 20px;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+}
+
+.chat-input-wrapper {
+  display: flex;
+  gap: 12px;
+}
+
+.chat-input {
+  flex: 1;
+  background: rgba(10, 13, 20, 0.8);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: var(--text-main);
+  font-family: var(--font-main);
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.chat-input:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 2px rgba(223, 177, 91, 0.2);
+}
+
+.btn-chat-send {
+  background: linear-gradient(135deg, #c5a059, #dfb15b);
+  color: #000;
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.btn-chat-send:hover:not(:disabled) {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+.btn-chat-send:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ── Modal Diễn Giải Chi Tiết Cung (/dien-giai-cung) ── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(4, 7, 12, 0.85);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: modalFadeIn 0.2s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal-container {
+  background: var(--bg-card);
+  border: 1px solid var(--border-gold);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 720px;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 20px rgba(223, 177, 91, 0.15);
+  animation: modalSlideUp 0.25s ease-out;
+}
+
+@keyframes modalSlideUp {
+  from { transform: translateY(16px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.modal-header {
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(22, 30, 46, 0.5);
+}
+
+.modal-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.modal-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.modal-title {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  color: var(--text-main);
+  margin: 0;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 8px;
+  transition: color 0.15s;
+}
+
+.modal-close:hover {
+  color: var(--red-accent);
+}
+
+.modal-body {
+  padding: 24px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal-loading {
+  text-align: center;
+  padding: 32px 0;
+  color: var(--gold);
+  font-style: italic;
+}
+
+.modal-error {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid var(--red-accent);
+  color: #fca5a5;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.modal-sao-card {
+  background: var(--bg-palace);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 16px;
+  transition: border-color 0.2s;
+}
+
+.modal-sao-card:hover {
+  border-color: rgba(223, 177, 91, 0.4);
+}
+
+.modal-sao-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding-bottom: 8px;
+}
+
+.modal-sao-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--gold-light);
+}
+
+.modal-sao-dien-giai {
+  font-size: 0.92rem;
+  color: #cbd5e1;
+  line-height: 1.65;
+  white-space: pre-line;
+}
+
+

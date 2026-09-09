@@ -1,0 +1,71 @@
+{
+  "sao": "Ân Quang",
+  "loai": "Quý tinh (Thuộc Mộc)",
+  "cong_thuc_an_sao": {
+    "input": [
+      "Văn Xương",
+      "Ngày sinh"
+    ],
+    "logic": "Xem Văn Xương ở cung nào kể cung ấy là mồng một, bắt đầu đếm theo chiều thuận đến ngày sinh, lùi lại một cung an Ân Quang."
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Thông minh, vui vẻ, ôn hòa, trọng ân nghĩa. Nhân hậu, từ thiện. Cứu khổn, phò nguy. Đem lại nhiều sự may mắn. Giải trừ bệnh tật tai họa. Chế được tính hoa nguyệt, dâm đãng của sao Đào, Hồng. Gặp Sát tinh vô hại."
+    },
+    {
+      "cung": "Phụ Mẫu",
+      "dien_giai": "Cung Phụ Mẫu có Ân Quang: cha mẹ nhân hậu từ thiện, có ân đức, con cái được che chở nâng đỡ hoặc có bố mẹ nuôi."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Cung Phúc Đức có Ân Quang: được hưởng phúc ấm tổ tiên, dòng họ nhân từ đức độ. Có ân nhân tìm đất để giúp mồ mả."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Cung Quan có Ân Quang: hiển đạt, làm việc quang minh chính đại, thân cận người trên, được người trên nâng đỡ, cất nhắc."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Cung Thê có Ân Quang: vợ chồng thuận hòa, ân ái, có ơn nghĩa sâu nặng, lấy được người hiền lương."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Cung Tử có Ân Quang: con cái hiếu thuận, biết đền đáp công ơn cha mẹ, có quý tử."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Cung Tài có Ân Quang: nghèo túng có người giúp đỡ, được hưởng của thừa tự hoặc ân huệ tiền bạc của người khác."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Cung Điền có Ân Quang: gia đạo an cư, nhà cửa yên ấm, lúc khó khăn về nơi ăn chốn ở có ân nhân tương trợ."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Cung Thiên Di có Ân Quang: ra ngoài gặp nhiều người giúp đỡ, có bằng hữu tốt, kết giao ân nghĩa."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Cung Giải có Ân Quang: ốm đau gặp thầy giỏi thuốc hay, tai nạn được người cứu vớt, giải trừ tai họa bệnh tật."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Cung Huynh Đệ có Ân Quang: anh chị em thuận hòa, tương thân tương ái, có anh chị em kết nghĩa giúp đỡ lẫn nhau."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Hạn có Ân Quang: đi thi đỗ cao, thành danh phận, gặp quý nhân phù trợ, tai qua nạn khỏi."
+    }
+  ],
+  "cach_cuc": [
+    {
+      "ten_cach": "Quang Quý đồng minh",
+      "dieu_kien": "Ân Quang hội tụ Thiên Quý",
+      "y_nghia": "Công thành danh toại, thi cử đỗ đạt, luôn có quý nhân giúp đỡ."
+    }
+  ],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu ý nghĩa tại cung Nô Bộc."
+  ]
+}

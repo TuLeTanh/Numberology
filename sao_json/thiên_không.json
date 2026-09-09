@@ -1,0 +1,42 @@
+{
+  "sao": "THIÊN KHÔNG",
+  "loai": "Thuộc Hỏa, Sát tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Gian hùng mà chẳng nên việc gì. Chủ sự thất bại. Hoàn toàn thất bại, lúc trẻ thì vất vả gian nan, không được nhờ người thân thích, nếu vượng địa thì ngoài 30, 40 tuổi mới khá. Mệnh vô chính diệu đắc tam Không: Mệnh có Thiên Không, gặp Địa Không, Tuần Không hay Tuần Triệt mà không có sao chính: bộc phát phú quí nhưng không bền. Thiên Không, Địa Kiếp: gian phi. Nhược cư Tỵ, Hợi: hoạch phát công danh. Thiên Không, Địa Kiếp ngộ Thiên Giải: giải được tất cả. Không, Kiếp, Cái, Quyền: người trên không dùng, dìm hại. Không có Khốc chiếu: hay thương người."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Thiên Không ngộ Hồng, Đào: đắc cách, tài hoa lỗi lạc, giảo quyệt phi thường."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Thiên Không ngộ Hồng, Đào: đắc cách, tài hoa lỗi lạc, giảo quyệt phi thường."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Nghèo, không làm ra tiền. Thiên Không ngộ Lộc Tồn, Hóa Lộc: tiền của tán tụ bất thường."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Nghèo, không làm ra tiền. Thiên Không ngộ Lộc Tồn, Hóa Lộc: tiền của tán tụ bất thường."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Ít bệnh tật."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Cùng đường, phá tán, thất bại. Tuổi già thì không thọ, ốm đau thì khỏi hết, nhưng nếu ngộ Tuần, Triệt: bệnh khó khỏi."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu dữ liệu cung Phụ Mẫu, Phu Thê, Tử Tức, Nô Bộc, Phúc Đức"
+  ]
+}

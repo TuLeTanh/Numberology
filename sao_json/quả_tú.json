@@ -1,0 +1,45 @@
+{
+  "sao": "Quả Tú",
+  "loai": "Hung tinh",
+  "cong_thuc_an_sao": "",
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Thuộc Thổ, Hung tinh. T.c. lạnh lùng, cô độc, keo kiệt. Chủ sự cô đơn. Quả Tú thủ hay chiếu Mệnh cung: lạnh lùng. Cô độc. Quả, Phúc: hay nói xấu, nói nhảm. Quả, Kỳ: thường bị người ta ghét bỏ. Quả, Đào ngộ Mã: đàn bà số phận lênh đênh."
+    },
+    {
+      "cung": "Bào",
+      "dien_giai": "Cung Bào có Quả Tú: không có anh em. Quả, Tồn : con một."
+    },
+    {
+      "cung": "Tử",
+      "dien_giai": "Cung Tử có Quả Tú : có con nuôi."
+    },
+    {
+      "cung": "Tài",
+      "dien_giai": "Cung Tài có Quả Tú: giữ của khỏi hao tán."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Cung Thiên Di có Quả, Phá : đi đường hay bị nguy hiểm."
+    },
+    {
+      "cung": "Điền",
+      "dien_giai": "Cung Điền có Quả Tú: điền sản không hao tán."
+    },
+    {
+      "cung": "Phúc",
+      "dien_giai": "Cung Phúc có Quả, Tang: trong họ thường có quả phụ. Quả, Triệt, Dưỡng: đời nào cũng có nhà thất tự và có con nuôi. Quả, Tồn: độc đinh."
+    },
+    {
+      "cung": "Quan",
+      "dien_giai": "Cung Quan có Quả Tú: công danh hèn kém."
+    },
+    {
+      "cung": "Thê",
+      "dien_giai": "Cung Thê có Quả Tú: công danh hèn kém. Cung Thê có Quả, Phá , Không: nhân duyên trắc trở, Tú, Các tương phùng: vợ chồng là lương nhân giúp ích cho nhau."
+    }
+  ],
+  "cach_cuc": "",
+  "ghi_chu_thieu_du_lieu": ""
+}

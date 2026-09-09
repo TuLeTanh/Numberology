@@ -1,0 +1,68 @@
+{
+  "sao": "Thiên Cơ",
+  "loai": "Quý tinh",
+  "cong_thuc_an_sao": {
+    "input": ["Hành Mộc"],
+    "logic": "Vượng tại Thìn, Tuất. Đắc địa tại Mão, Dậu. Hãm địa tại Sửu, Tý, Mùi."
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính mưu trí, tài năng, hiền hậu. Chủ về thời thế và sự biến hóa. Cơ, Quyền: có thao lược, tài năng (Cơ tối kỵ: Linh, Hỏa, Hình, Sát). Cơ, Cự Mão cung thủ Mệnh: quý cách, thêm có Xương, Khúc, Tả, Hữu: đại phú quý. Cơ, Nguyệt, Đồng, Lương cần có Hóa Lộc thì mới tốt, gặp hạn Sát Phá Liêm Tham thì hỏng hết, duy có Hóa Khoa mới giải được; ngộ Không Kiếp: rất xấu. Cơ miếu địa: tài năng, hãm: vô tài, vất vả. Cơ, Mã: làm thợ mộc. Cơ, Lương Thìn Tuất: phú quý, văn võ giỏi, có đức hạnh. Cơ, Lương, Lộc, Mã: triệu phú. Cơ, Ấn, Quý, Việt, Tấu, Hồng: đại hiển đạt. Cơ, Vũ, Hồng (nữ Mệnh): giỏi nghề kim chỉ. Cơ, Kỵ: gian truân vất vả, ăn mày. Cơ ngộ Linh, Hỏa: nghèo cùng ty tiện, đàn bà sầu não suốt đời. Cơ ngộ Sát tinh nữ Mệnh: vất vả. Cơ, Lương, Nhật, Nguyệt: thọ."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Thiên Cơ: đông anh em."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Cơ, Đồng: vợ chồng lấy nhau còn ít tuổi. Cơ, Lương: lấy con nhà lương thiện, tử tế. Cơ, Lương Thìn Tuất ngộ tam Hóa: vợ chồng hiền lành, lấy nhau dễ dàng, làm ăn khá giả."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Cơ, Lương Thìn Tuất: đông con mà hiếu thảo. Cơ, Lương, Tang, Thái Tuế: hiếm con. Cơ ngộ hung phá: 10 phần còn 2."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Cơ, Vũ, Đồng: tay không làm giàu. Cơ, Lương, tam Hóa Thìn Tuất: làm giàu dễ dàng. Cơ, Lương ngộ Mã: triệu phú."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Cơ, Lương, Tả, Hữu: rất tốt, người ưa kẻ giúp, tôi tớ có công."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Cơ, Lương, Quang, Quý Thìn Tuất: đại quý hiển. Cơ, Ấn, Việt, Quý, Tấu, Hồng: hiển đạt lớn."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Cơ: tê thấp. Cơ, Vũ / Cơ, Hư, Khốc: ho lao, phòng đờm. Cơ, Phùng, Phá, Triệt: chặt cây què chân. Cơ, Hình, Không, Kiếp, Kỵ: bệnh hoạn tai nạn thất thường. Cơ, Hỏa, Linh: bị ma làm thánh bắt."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Cơ, Vũ: có của song bị hoán dịch nhiều lần. Cự, Cơ Mão Dậu: giàu về nhà cửa."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Cơ, Lộc: hưởng phúc, phú quý. Cơ: mã sáu đời."
+    },
+    {
+      "cung": "Phụ Mẫu",
+      "dien_giai": "Cơ, Lương Thìn Tuất: cha mẹ thọ và làm quan."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Cơ, Quả Mệnh có hao: chết đói. Cơ, Thương Sứ: đau ốm tai nạn đánh nhau. Cơ, Tang, Khốc: tang thương đau ốm. Cơ, Lương, Tang, Tuế: té cao ngã đau. Cơ, Khốc, Hỏa, Hình: trong nhà không có hòa khí. Cơ, Kỵ, Hỏa, Kình Thương Sứ: tang thương, đau ốm, khẩu thiệt quan tụng. Cơ, Nguyệt, Đồng, Lương ngộ Hữu, Sát: gặp thời làm quyền gian."
+    }
+  ],
+  "cach_cuc": [
+    {
+      "ten_cach": "Cơ Nguyệt Đồng Lương",
+      "dieu_kien": "Thiên Cơ, Thái Âm, Thiên Đồng, Thiên Lương hội chiếu",
+      "y_nghia": "Quý cách, cần có Hóa Lộc thì mới tốt, kỵ Không Kiếp và Hạn Sát Phá Liêm Tham"
+    }
+  ],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu ý nghĩa tại cung Nô Bộc."
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "sao": "Hồng Loan",
+  "loai": "Cát tinh",
+  "cong_thuc_an_sao": {
+    "input": ["Hành Thủy"],
+    "logic": "Vượng tại Tý, Thìn, Ngọ. Đắc địa tại Dậu, Thân, Tý, Hợi."
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Hồng Loan là tóc, ngộ Phi Liêm: tóc dài. Tính cách đẹp, vui vẻ, mặt nồng. Chủ sự mừng và nhân duyên. Hồng Loan cư Tý: đỗ đạt sớm. Hồng Loan nhập Thân ở cung Mộ: công danh không bền. Hồng Loan cư tứ vượng (cung): đẹp, vinh hiển, sớm nhân duyên. Nữ nhân Hồng Loan thủ Mệnh: đích thị lưỡng phu. Hồng Loan thủ Mệnh ngộ Không, Kiếp: yểu vong. Hồng Loan ngộ Đào Hoa tại Tý (tuổi Dần): làm nên nhưng yểu. Hồng Loan Thiên Tướng: quý nhân hảo phối. Hồng, Cơ, Tấu: khéo may thêu. Hồng, Tấu, Vũ, Hỷ, Đào: số hèn thì làm nghề ca xướng, số vượng thì quan ty. Hồng Loan ngộ Kỵ: giây oan nghiệt, thêm có Linh, Hỏa: chết treo thắt cổ. Hồng, Cơ, Tấu, Sứ (nữ Mệnh) / Hồng, Cơ, Lộc, Sứ (nam Mệnh): gặp thời làm nên. Hồng, Tọa: công danh sớm, nếu cư Thân ở Mộ cung: phú quý lắm. Hồng, Khôi, Xương, Tú, Trì (Long): danh vọng lớn. Hồng, Phùng, Long Trì, Hỷ: phúc họa kế liền."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Hồng, Đào, Cái ngộ Tướng, Phá, Phúc có Trực phù chiếu: anh em có người dâm đãng. Hồng, Đào, Thai, Hỷ ngộ Phục, Tướng: anh chị em có người ngoại dâm."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Hồng Loan đắc địa: sớm có nhân duyên, nếu hãm thì hại chồng khổ vợ. Hồng, Thiên Tướng: lấy được quý nhân. Đào, Hồng, Hỷ: vợ chồng giai nhân tài tử lấy nhau dễ dàng. Hồng, Kỵ: vợ chồng yêu nhau mà chồng vẫn có ngoại tình. Hồng, Kỵ, Đào: vừa bỏ nhau hay mới góa đã có người muốn lấy. Hồng, Đào, Phượng, Cái: vợ chồng bỏ nhau mà không dứt tình."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Con cái giỏi canh cửi thêu thùa."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Hồng, Đào: tha hương viễn phối. Hồng, Đào, Vượng, Lộc: gặp quý nhân sánh đôi."
+    },
+    {
+      "cung": "Nô Bộc",
+      "dien_giai": "Hồng, Lộc: đàn ông nhờ của vợ làm giàu. Hồng, Đào, Phù, Bật chiếu: nhiều vợ."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Hồng, Lộc: nhờ của vợ làm giàu."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Hồng, Đào cư Tý (tuổi Tý, Dậu): làm nên nhưng yểu. Hồng, Đào, Hỷ: làm nên danh phận lớn dễ dàng. Hồng, Diêu có Cơ, Tấu, Vũ, Đào hay Hồng, Tấu, Vũ, Hỷ, Đào: khôi hài, ca xướng."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Hồng, Đào, Cái ngộ Tử Vi, Thái Dương: đàn bà đại quý hiển."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Hồng, Đào có hội Sát, Phá, Liêm, Tham / Hồng, Hỷ, Long, Phượng, Tả, Hữu, Thiên Diêu: có hỷ sự, thành gia thất. Hồng, Kiếp: duyên nghiệp long đong trắc trở. Hồng, Cự, Kỵ: tơ duyên rắc rối. Hồng, Đào ở cung Quan: có sự mừng. Hồng, Hỷ, Diêu, Đào: có nhân tình. Loan, Long, Hỷ: tai nạn bất ngờ."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu ý nghĩa tại cung Tật Ách, Phúc Đức, Phụ Mẫu."
+  ]
+}

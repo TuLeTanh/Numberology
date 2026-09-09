@@ -1,0 +1,23 @@
+{
+  "sao": "LƯU NIÊN VĂN TINH",
+  "loai": "Văn tinh, thuộc Hỏa",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính cách chăm học, thông thái. Chủ về văn học. Có Lưu Niên Văn Tinh thủ Mệnh, Thân thì văn hay chữ tốt, thông minh, thành danh sĩ. Ngộ Khoa Quyền thì đỗ đạt lớn."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Có Lưu Niên Văn Tinh thủ cung Quan thì văn hay chữ tốt, thông minh, thành danh sĩ. Ngộ Khoa Quyền thì đỗ đạt lớn."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu công thức an sao cụ thể",
+    "Thiếu ý nghĩa tại các cung Phụ Mẫu, Phúc Đức, Điền Trạch, Nô Bộc, Thiên Di, Tật Ách, Tài Bạch, Tử Tức, Phu Thê, Huynh Đệ, Hạn"
+  ]
+}

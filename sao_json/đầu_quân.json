@@ -1,0 +1,34 @@
+{
+  "sao": "ĐẦU QUÂN",
+  "loai": "Hung tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính trì thủ, cô độc. Chủ điền tài. Đẩu Quân thủ Mệnh ngộ quý tinh: có địa vị, nhưng cô độc, ít thầy ít bạn."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Giữ cửa vững, có ruộng đất."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Gặp Hình, Kình: bị châm chích, đâm cắt, mổ xẻ."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Ngộ quý tinh: làm nên."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Gặp Hình, Kình: bị đâm, bị cắt hay mổ xẻ."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu công thức an sao"
+  ]
+}

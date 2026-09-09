@@ -1,0 +1,46 @@
+{
+  "sao": "THIÊN HƯ",
+  "loai": "Thuộc Thủy, Hại tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Sai ngoa, đĩ bợm, bất chính. Chủ sự sầu bi. Hư ngộ Hình, Mã: võ nghiệp công danh. Thiên Hư giáp Mệnh: hư sinh. Hư ngộ Sát hay Phá ở Tý, Ngọ: uy danh khiếp phục người, một lời nói ai cũng sợ."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Hư, Khốc, Đà, Kình: vợ chồng xung khắc. Hư: xa nhau rồi mới lấy nhau được."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Khắc con. Hư, Khốc ngộ Dưỡng: sinh nhiều nuôi ít."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Hư, Phá: nghèo cùng, tán tài."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Hư, Cơ, Khốc: phong đàm, ho lao."
+    },
+    {
+      "cung": "Nô Bộc",
+      "dien_giai": "Hư, Khốc, Hình: tôi tớ trộm cắp."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Hư, Khốc, Vượng ở Tý, Ngọ: hiển vinh, danh tiếng. Hãm thì hèn hạ. Hư, Quyền: người dưới khinh ghét. Hình, Hư, Mã: võ nghiệp làm nên."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Hư, Khốc, Tang: tang thương, súc vật nuôi chết."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu dữ liệu cung Phụ Mẫu, Phúc Đức, Điền Trạch, Thiên Di"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "sao": "THÁI TUẾ",
+  "loai": "Hỏa, Hung tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Thái Tuế ngộ Cơ, Cự: hay nói ngọt. Ngộ Kỵ: đa ngôn. Tuế, Nhật: đàn bà hay bị vạ miệng. Tuế ngộ Đà, Diêu, Trì: miệng rộng, nói lắp, nói hấp tấp. Tuế, Đào tại Mệnh, Loan tại Thân: hưởng phúc gia đình. Tuế ngộ Đà, Kỵ: xấu, khó mong gặp sự lành. Tuế cư Thân có Kình, Quả hợp về: tốt. Thái Tuế ngộ Cát tinh: thịnh vượng. Ngộ hung tinh: chuân chuyên. Tuế, Phù: đại sự, đấu tranh, kiện tụng, ở vượng cung thì thắng, ở tuyệt cung thì bại. Tuế tại Mệnh: vận gian truân vất vả."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Có Tuế, Tang, Trực: anh chị em khiếm hòa. Tuế, Xương, Khúc: có người khôn ngoan làm nên."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Có Tuế, Không, Kiếp: cưới hỏi có lắm sự lôi thôi, vợ chồng bất hòa. Tuế, Đà: vợ ăn nói sai ngoa."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Có Tuế, Âm: sinh con phật thần. Tuế, Xương, Khúc: con thành đạt."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Có Tuế, Đà, Kình, Phù: có kiện tụng mới có của."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Có Tuế ngộ Không, Kiếp hoặc Kiếp chiếu: chết đâm chết chém. Tuế, Đà, Sát, Kỵ: chết trôi. Thiên Tuế, Thiên Mã có Địa chiếu: chết đâm chết chém."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Có Tuế, Hình, Phục: đi ra ngoài bị tranh đấu nguy hiểm hoặc bị kiện tụng."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Có Tuế, Đào, Tọa: làm nên sớm. Tuế phùng Xương, Khúc, Quyền, Khoa tại Quan hay Mệnh: văn chương đanh thép lừng lẫy."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Có Tuế, Phù: thường bị kiện tụng tương tranh. Tuế, Tang: con khắc cha."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Hạn có Tuế, Nhẫn: khẩu thiệt. Tuế, Hình tại Dậu: tai bay vạ gió, khẩu thiệt. Tuế ngộ Đào ở Mệnh, Loan ở Thân: vợ con xum họp đề huề. Tuế, Thiên, Thọ ở Mệnh, Lộc ở Quan, Di, Tài: hạn đến đó thì phú quý mà không thọ. Tuế, Đà, Kiếp, Sát: đi ra lắm nguy, hại đến tính mệnh. Tuế, Đà: vạ miệng, lắm chuyện bực mình. Thái Tuế tại Mệnh, Hồng, Loan tại Thân: đánh đuổi vợ. Tang, Trực, Tuế: có sự bất hòa, gây thù oán."
+    },
+    {
+      "cung": "Phụ Mẫu",
+      "dien_giai": "Trong nhà thiếu hòa khí, cha mẹ và con không hợp tính nhau."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu công thức an sao"
+  ]
+}

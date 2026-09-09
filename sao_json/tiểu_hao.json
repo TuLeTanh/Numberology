@@ -1,0 +1,27 @@
+{
+  "sao": "TIỂU HAO",
+  "loai": "Thuộc Hỏa, Sát tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính cách hoang phí. Chủ sự hao tán. Người có vóc dáng bé nhỏ. Đóng tại Mão, Dậu (nhị Hao) thì bất hao; người tuổi Thân gặp cách này thì tuy có lúc bông lông nhưng vẫn làm nên phú quý."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Gặp Hao đắc địa thì có hoạnh tài."
+    },
+    {
+      "cung": "Tổng quát",
+      "dien_giai": "Ý nghĩa tương tự như Đại Hao."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Không có thông tin về công thức an sao",
+    "Thiếu thông tin chi tiết về ý nghĩa tại các cung khác ngoài Mệnh và Hạn"
+  ]
+}

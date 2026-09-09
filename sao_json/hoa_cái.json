@@ -1,0 +1,34 @@
+{
+  "sao": "Hoa Cái",
+  "loai": "Đài Các tinh",
+  "cong_thuc_an_sao": {
+    "input": ["Hành Kim"],
+    "logic": "Vượng tại Tý."
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tướng mạo đẹp, ưa xa hoa lộng lẫy, hay làm bộ. Hoa Cái tọa Mệnh ngộ phúc tinh: rất tốt, có địa vị. Hoa Cái, Tấu Thư: thanh cao. Ngộ Thương, Hóa Quyền, Tướng, Ấn, Long, Phượng: được trọng dụng làm nên lớn. Hóa, Phượng, Đào, Hồng: chê vợ, chê chồng, không ưa nhau muốn bỏ. Hoa Cái trùng Thiên Lương: bần tiện. Cái, Long, Phượng: đẹp và thông minh. Hoa Cái thủ Thân: đàn ông đi ra được nhiều người ưa và đàn bà thương yêu, đàn bà thì đa tình. Cái, Mộc thủ Thân Mệnh: làm đĩ."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Hoa, Đào, Hồng ngộ Tướng, Phá, Phục và Trực Phù chiếu: anh chị em có người dâm đãng."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Hoa, Hỷ, Tả, Hữu: thân cận người quyền quý và được trọng dụng."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Cái, Đào ngộ Tử Vi, Thái Dương: đàn bà đại quý hiển. Coi về mồ mả: tân phần. Hai bên cung Phúc có Hoa Cái, Thiên Mã: mả phát."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Hao phí bất thường. Cái ngộ phúc tinh thì tốt."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu ý nghĩa tại cung Phu Thê, Tử Tức, Tài Bạch, Tật Ách, Nô Bộc, Quan Lộc, Điền Trạch, Phụ Mẫu."
+  ]
+}

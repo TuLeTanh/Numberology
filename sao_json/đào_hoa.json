@@ -1,0 +1,62 @@
+{
+  "sao": "ĐÀO HOA",
+  "loai": "Dâm tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính lẳng lơ, hay trang điểm phù phiếm. Chủ về tình và yểu. Đào Hoa chủ yểu, duy Lộc Tồn phương chế. Đào Hoa cư Mệnh: quả phu quả thê. Đào, Tang giáp Mệnh: đàn bà qua nhiều đời chồng hay quá thì ở vậy. Ngộ Diêu: đẹp mà vô duyên, chồng đi vắng đón trai vào nhà. Ngộ Triệt: hai đời chồng trước lang thang. Ngộ Hỷ: loạn luân. Đào, Diêu ngộ Mã: gái giang hồ. Ngộ Hình hay Quý thì khỏi chuyện dâm bôn, xấu xa. Ngộ Tử Vi, Thiên Phủ: chính chuyên. Đào Hoa thủ Mệnh không có chính tinh: đàn bà chỉ làm tỳ thiếp. Đào, Tử, Phùng, Mã: lênh đênh. Đào Hoa chiếu Mệnh ngộ cát tinh: rất tốt. Đào, Diêu, Phủ, Tướng ở nữ Mệnh: gái giang hồ mà sung sướng. Đào (Tý), Tham (Hợi): đàn bà hiểm độc, ngộ Tuần Triệt thành ôn hòa, thanh nhã. Đào, Hồng, Cơ, Cự, Hao, Quyền: đàn bà có dung nghi đức lượng."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Gặp Diêu, Hỷ và Phá, Tướng, Sứ chiếu: chị em có người theo trai, chửa hoang. Đào, Hồng, Tham, Hỷ có Binh, Tướng chiếu: có người dâm đãng."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Có Đào Hoa: vợ đẹp. Đào, Hồng, Thiên Hỷ hội: hôn phối dễ dàng, gái lấy chồng đẹp, trai lấy vợ đẹp. Đào, Hồng, Phượng, Cái: bỏ vợ, bỏ chồng. Ngộ Thai: dan díu với nhau rồi mới lấy nhau."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Có Đào Hoa: con dâm đãng. Ngộ Thai: hiếm con."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Gặp Tang, Dưỡng: làm nghề thủ công."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Gặp Diêu, Hỷ: có bệnh mộng tinh."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Gặp Hồng: viễn phố tha hương. Đào, Hồng, Vượng, Lộc: xa nhà gặp quý nhân."
+    },
+    {
+      "cung": "Nô Bộc",
+      "dien_giai": "Có Đào Hoa: vợ có ngoại tình, tốt phước cũng bất hòa. Đào, Hồng, Cái có Tả Phù, Hữu Bật chiếu: nhiều vợ."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Đào, Hồng tại Tý: tuổi Tý, Dậu làm ăn nên sớm nhưng yểu. Đào, Hồng, Hỷ hội: làm nên công danh lớn dễ dàng."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Gặp Hồng, Quang, Quý, Tang Môn: có người thất tự để của cho."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Gặp Hồng, Cái ngộ Tử Vi, Thái Dương: đàn bà đại quý vinh hiển. Về mồ mả: Đào Hoa có ngôi mộ bát hình."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Hạn có Đào Hoa hãm: có tang. Ngộ Cơ, Tả, Hữu, Cự, Tuế: chết. Đào, Hồng, Sát, Phá, Liêm, Tham: có hỷ sự, thành gia thất. Đào cư Mệnh, Tang cư Phụ Mẫu: đàn bà bị góa, hay ly dị chồng. Đào, Diêu, Hồng, Hỷ: có nhân tình. Già mà hạn gặp Đào: xấu có tang. Ngộ Tả, Hữu, Cự, Cơ, Tuế: chết."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu công thức an sao"
+  ]
+}

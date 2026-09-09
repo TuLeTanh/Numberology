@@ -57,8 +57,11 @@ data/differences.txt
 data/truth_out.txt
 *.docx
 
-# Prevent sensitive raw JSON files from being pushed
-sao_json/*
-!sao_json/tu_hoa_bang_chuan.json
+# Temporary search and scratch artifacts
+search_output*.txt
+search_script*.py
+data/search_output*.txt
+data/search_script*.py
+data/extract_script.py
 /sao_thien_co.json
 /sao_tu_vi.json

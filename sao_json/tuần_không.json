@@ -1,0 +1,58 @@
+{
+  "sao": "Tuần Không",
+  "loai": "Ấn tinh",
+  "cong_thuc_an_sao": {
+    "input": ["Hành Thủy"],
+    "logic": "Vượng tại Dần, Thìn, Mão, Dậu."
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính bạo ngược, ác tâm. Cung Mệnh vô chính diệu ngộ Không Vong (Tuần): thọ, làm nên bền vững. Tuần, Triệt tương ngộ: vô kế sinh nhai, bông lông vô định, bất hưởng phúc, mồ côi. Đàn bà thêm chồng con trắc trở. Tuần, Triệt giao đầu: thiếu niên đau khổ. Tuần phùng Khoa, Lộc: một bước khanh tướng."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Tuần: anh chị em xung khắc."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Tử, Không (Tuần, Triệt, Thiên, Địa ngộ Mã): bỏ chồng theo trai. Tuần: viễn phối tốt lấy người đồng hương, xấu, mà phải trắc trở nhiều lần mới thành. Tuần ngộ Mã: vợ chồng thế nào cũng phải bỏ nhau."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Tuần (tại cung Giải): khỏi hết tai ách."
+    },
+    {
+      "cung": "Nô Bộc",
+      "dien_giai": "Tuần: tôi tớ không được ở lâu, ra vào đổi mới luôn."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Tuần, Việt: vô điền, của ông cha không được hưởng."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Tuần, Thiên Tướng là giàu."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Tuần, Triệt: trước khó sau dễ sinh."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Tuần, Không, Kiếp: bần cùng có mả tiền nhân mất ở hoang sơn."
+    },
+    {
+      "cung": "Phụ Mẫu",
+      "dien_giai": "Tuần, Triệt, Hình hay Âm, Dương, Tuần, Triệt: cha mẹ mất sớm."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Tuần, Triệt củng Đế (Tử Vi) ở Đại Tiểu Hạn trùng phùng: chết."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu ý nghĩa tại cung Tài Bạch, Thiên Di."
+  ]
+}

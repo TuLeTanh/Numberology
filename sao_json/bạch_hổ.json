@@ -1,0 +1,66 @@
+{
+  "sao": "Bạch Hổ",
+  "loai": "Bại tinh (Thuộc Kim)",
+  "cong_thuc_an_sao": {
+    "input": [
+      "Dần",
+      "Thân",
+      "Mão",
+      "Dậu"
+    ],
+    "logic": "Đắc địa tại Dần, Thân, Mão, Dậu; Vượng tại Dần, Dậu; Đắc địa tại Tý, Ngọ; Hãm tại Tuất. Vị trí thứ 9 trong Vòng Thái Tuế, đối chiếu Tang Môn."
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Bạch Hổ toạ Kim, Mệnh: trai 2 đời vợ, gái 2 đời chồng. Hổ ngộ Kình: anh hùng mưu trí. Bạch Hổ cư Dậu: tốt. Các cung khác: hay yếu đau. Bạch Hổ, Thiên Khốc đồng cung tại Tý, Ngọ: tiền bần hậu phú. Hổ, Tham toạ Mệnh tại Tuất: bị hại vì thú dữ. Hổ, Diêu, nữ Mệnh: nhiều điều sầu tư. Hổ, Tang, Khốc: thương người hại của, làm ơn nên oán. Cung Mệnh có Tang Môn hay Bạch Hổ tọa thủ, là người can đảm, cương nghị, nhưng bao giờ cũng có sự buồn phiền."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Cung Thê có Hổ, Kỵ: vợ chồng thường giận oán nhau."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Cung Quan có Hổ, Tấu (hổ đội hòm sắt): văn học làm nên, lợi ích cho việc học hành, thi cử, cầu công danh. Chủ chức vị, quyền thế."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Cung Tử có Hổ ngộ Tang, Mộc, Kiếp, Sát: đẻ con thiếu tháng hoặc chân tay thừa ngón. Số đàn bà có Hổ, Thai: đẻ con thiếu tháng. Hổ, Tang, Không, Kiếp: trước đó có vài ba đứa con chết non sau mới nuôi được. Hổ, Kình, Sát: không con."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Cung Giải có Bạch Hổ: có bệnh huyết hư, đau yếu gân cốt hay có bệnh thuộc về máu huyết. Hổ ngộ Thiên Diêu hay Tham Lang: thú dữ cắn chết. Hổ ngộ Đà La, Kình Dương: chó dại cắn. Hổ, Phù: bị đày."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Cung Phúc gặp Bạch Hổ coi về mồ mả thì tức là có đá trắng bên mồ, đất có lẫn nhiều đá. Nếu hai bên cung Phúc có Thanh Long, Bạch Hổ và Hoa Cái, Thiên Mã thì mã phát lớn, hai bên chỉ có Long, Hổ thôi thì phát nhỏ. Trái lại nếu gặp Bạch, Tang, Kỵ, Kiếp thì suy."
+    },
+    {
+      "cung": "Phụ Mẫu",
+      "dien_giai": "Cung Phụ Mẫu có Bạch Hổ, Tang Môn thì con khắc cha, cha mẹ hay đau yếu, nếu không sớm xa cách cha mẹ tất phải chịu sớm một tang."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Cung Huynh Đệ có Bạch Hổ: anh chị em bất hòa, có người đau yếu, tàn tật."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Hạn gặp Bạch, Mộ, Phục cùng Hình, Phi, Bệnh, Hao, Không, Kiếp, Suy, Phù (Quan Phù, Quan Phủ) Tử, Kỵ: chết vì hình phạt, tù tội. Hổ ngộ Kiếp, Hình: ngã đau. Hổ, Khốc: bị chó cắn. Hổ, Tang, Điếu: có tang (nếu hạn ở cung Thê thì vợ chết). Có tang, ốm đau, bị kiện, tù tội."
+    }
+  ],
+  "cach_cuc": [
+    {
+      "ten_cach": "Hổ đội hòm sắc (Bạch Hổ Tấu Thư)",
+      "dieu_kien": "Bạch Hổ đồng cung hoặc hội Tấu Thư",
+      "y_nghia": "Lợi ích cho việc học hành, thi cử, cầu công danh. Chủ chức vị, quyền thế."
+    },
+    {
+      "ten_cach": "Hổ mọc cánh (Bạch Hổ Phi Liêm)",
+      "dieu_kien": "Bạch Hổ đồng cung hoặc hội Phi Liêm",
+      "y_nghia": "Vui vẻ, nhanh nhẹn, đem những sự may mắn đáng mừng đến một cách mau chóng."
+    }
+  ],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu ý nghĩa tại cung Điền Trạch, Nô Bộc, Thiên Di, Tài Bạch."
+  ]
+}

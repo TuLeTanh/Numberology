@@ -85,7 +85,6 @@ Vì `than_so_hoc_bang_tra.json` chưa qua audit và schema thật sự chưa rõ
 - Áp dụng đúng quy trình đã dùng cho Tử Vi: grep raw text, đối chiếu, không suy đoán, checklist đầy đủ trước khi tin.
 
 ### 3.3 Việc cần làm trong Phase 0 (cập nhật, mở rộng so với v1)
-- [ ] Validate 101 file Tử Vi (schema, rác OCR sót) — vẫn giữ như v1.
 - [x] **Tìm và đối chiếu ≥1 nguồn Trung Châu phái thứ 2** cho bảng công thức an sao trước khi code hoá thành engine (khác v1: v1 để "nếu có thể", nay là yêu cầu bắt buộc theo quyết định mới của chủ dự án). Resolved: Đối chiếu bang_tu_vi.json với data/tan_bien.txt dòng 393-444 (Tử Vi Đẩu Số Tân Biên, Thái Thứ Lang) + công thức toán Định Cục, phát hiện và sửa 2 lỗi OCR gốc (ngày 18 bị đọc nhầm thành 8 ở Kim Tứ Cục/Thân; ngày 21 bị lặp sai vào Mùi thay vì chỉ thuộc Thìn).
 - [ ] **Audit toàn bộ `than_so_hoc_bang_tra.json`** theo quy trình grep-raw-text — bắt buộc, không phải "cân nhắc" như v1.
 - [x] Xác định vai trò `bang_tu_vi.json`: Đã làm rõ đây là bảng tra tính toán an sao Tử Vi, giữ lại nguyên vẹn cho Phase 1.

@@ -1,0 +1,17 @@
+{
+  "sao": "AN SAO",
+  "loai": "Phương pháp an sao",
+  "cong_thuc_an_sao": {
+    "input": [
+      "Năm sinh",
+      "Cục",
+      "Hàng Can"
+    ],
+    "logic": "a. Tuần, Triệt: Tuần theo Lục Tuần Hoa Giáp. Triệt theo hàng Can: Giáp/Kỷ ở Thân/Dậu; Ất/Canh ở Ngọ/Mùi; Bính/Tân (văn bản ghi Bính/Thân) ở Thìn/Tỵ; Đinh/Nhâm ở Dần/Mão; Mậu/Quý ở Tý/Sửu. b. Vòng Thái Tuế: 12 sao theo chiều thuận, sinh năm nào Thái Tuế ở cung ấy. c. Lộc Tồn: theo hàng Can (Giáp-Dần, Ất-Mão, Bính/Mậu-Tỵ, Đinh/Kỷ-Ngọ, Canh-Thân, Tân-Dậu, Nhâm-Hợi, Quý-Tý). d. Vòng Tràng Sinh: an theo Cục (Mộc Tam Cục ở Hợi, Hỏa Lục Cục ở Dần, Kim Tứ Cục ở Tỵ, Thủy Nhị Cục & Thổ Ngũ Cục ở Thân)."
+  },
+  "y_nghia_theo_cung": [],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Đây là phần hướng dẫn phương pháp an sao, không phải một sao cụ thể nên không có ý nghĩa theo các cung."
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "sao": "Hóa Khoa",
+  "loai": "Cát tinh",
+  "cong_thuc_an_sao": {
+    "input": ["Hành Thủy"],
+    "logic": "Vượng tại Thìn, Tuất, Dần, Thân. Đắc địa tại Hợi, Dần. Hãm địa tại Tỵ, Dậu."
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Chủ khoa giáp. Khoa, Quyền (Thân Mệnh) hay tốt nhất là Mệnh, Tài, Quan có đủ Khoa, Quyền, Lộc (tam Hóa liên châu): quý cách, phúc lớn, tuổi Canh, Tân làm to mà yểu; các tuổi khác công danh vinh hiển. Khoa, Kỵ tại Mệnh: ngôn lành danh thuận. Tam Hóa củng Mệnh, Tả, Hữu lai triều: làm tới công khanh. Khoa, Lộc trung nhiên ư Mệnh: phụ tử văn chương cái thế, ngộ Xương, Khúc: đỗ đạt; ngộ Không, Kiếp: không làm nên nhưng cũng là tay danh sĩ làm thầy người ta; ngộ Lộc Tồn tại Hợi, Dần, Thân: danh vị oanh liệt. Ngộ Tuần, Triệt: một bước lên quan nhưng không bền. Hóa Khoa độc thủ: sáng suốt, hợp với Khôi, Việt, Thiên Hỷ: dễ thành công trong việc làm."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Tam Hóa, Khôi, Việt: quý nhân hảo phối."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Tam Hóa: sinh quý tử, làm nên sang giàu."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Tam Hóa: ruộng vườn tiền của nhiều, có Khoa, Vũ, Tướng, Tả, Hữu: điền tài vượng phát."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Tam Hóa: ruộng vườn tiền của nhiều, có Khoa, Vũ, Tướng, Tả, Hữu: điền tài vượng phát."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Cung Giải có tam Hóa hay Hóa Khoa, Tả, Hữu, Tử, Phủ: ốm gặp thuốc, tai nạn gặp người cứu."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Khoa, Quyền: đi ra có tài lợi người ta quý nể. Khoa, Quyền, Tả, Hữu, Khôi, Việt hay Khoa, Việt, Âm, Dương, Tử, Phủ: đi ra làm nên lớn, gặp quý nhân, được tín nhiệm trọng dụng. Tam Hóa: quyền bính giàu sang."
+    },
+    {
+      "cung": "Nô Bộc",
+      "dien_giai": "Tam Hóa: rất tốt, nhiều người giúp đỡ đắc lực, làm nên."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Khoa, Quyền, Tử, Phủ, Vũ, Mã: hiển vinh. Tam Hóa, Tả, Hữu, Phá Quân cư Tý, Ngọ: có quân công lớn, hiển hách."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Khoa, Quyền, Xương, Khúc: dòng dõi văn gia. Khoa, Xương, Khúc: đỗ lớn. Khoa, Lộc, Thọ / Khoa, Vũ, Tham: phát anh hùng. Coi về mồ mả có Hóa Khoa tức là chủ ngôi dương phần."
+    },
+    {
+      "cung": "Phụ Mẫu",
+      "dien_giai": "Khoa, Khôi: giàu lớn."
+    }
+  ],
+  "cach_cuc": [
+    {
+      "ten_cach": "Tam Hóa Liên Châu",
+      "dieu_kien": "Mệnh, Tài, Quan có đủ Khoa, Quyền, Lộc",
+      "y_nghia": "Quý cách, phúc lớn"
+    }
+  ],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu ý nghĩa tại cung Huynh Đệ, Hạn."
+  ]
+}

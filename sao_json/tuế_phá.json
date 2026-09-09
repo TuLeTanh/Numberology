@@ -1,0 +1,17 @@
+{
+  "sao": "Tuế Phá",
+  "loai": "Hung tinh",
+  "cong_thuc_an_sao": {
+    "input": ["Hành Hỏa"]
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính cứng đầu, ngang ngược. Chủ sự phá hoại. Tuế Phá, Thiên Diêu: chơi bời lếu láo. Tuế Phá: răng, ngộ Kình là răng vẩu. Ngộ Hư, Khốc là răng đau sâu."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu ý nghĩa tại tất cả các cung khác ngoài Mệnh."
+  ]
+}

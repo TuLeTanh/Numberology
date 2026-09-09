@@ -324,3 +324,72 @@ def an_quang_quy(gio_chi_idx: int, ngay_am: int) -> Dict[str, int]:
         "Ân Quang": an_quang,
         "Thiên Quý": thien_quy
     }
+
+
+# 7. BỘ KHỐC HƯ (THIÊN KHỐC, THIÊN HƯ)
+def an_khoc_hu(chi_nam_idx: int) -> Dict[str, int]:
+    """
+    An Thiên Khốc, Thiên Hư theo Chi năm sinh (tan_bien.txt dòng 659-670).
+    - Thiên Khốc: khởi Ngọ (6), đếm nghịch đến Chi năm sinh -> (6 - chi_nam_idx) % 12.
+    - Thiên Hư: khởi Ngọ (6), đếm thuận đến Chi năm sinh -> (6 + chi_nam_idx) % 12.
+    """
+    if not (0 <= chi_nam_idx <= 11):
+        raise ValueError(f"chi_nam_idx không hợp lệ: {chi_nam_idx}. Phải từ 0 đến 11.")
+    return {
+        "Thiên Khốc": (6 - chi_nam_idx) % 12,
+        "Thiên Hư": (6 + chi_nam_idx) % 12
+    }
+
+
+# 8. BỘ CÔ QUẢ (CÔ THẦN, QUẢ TÚ)
+BANG_CO_QUA: Dict[int, Dict[str, int]] = {
+    # Hợi, Tý, Sửu -> Cô: Dần (2), Quả: Tuất (10)
+    11: {"co": 2, "qua": 10},
+    0:  {"co": 2, "qua": 10},
+    1:  {"co": 2, "qua": 10},
+    # Dần, Mão, Thìn -> Cô: Tỵ (5), Quả: Sửu (1)
+    2:  {"co": 5, "qua": 1},
+    3:  {"co": 5, "qua": 1},
+    4:  {"co": 5, "qua": 1},
+    # Tỵ, Ngọ, Mùi -> Cô: Thân (8), Quả: Thìn (4)
+    5:  {"co": 8, "qua": 4},
+    6:  {"co": 8, "qua": 4},
+    7:  {"co": 8, "qua": 4},
+    # Thân, Dậu, Tuất -> Cô: Hợi (11), Quả: Mùi (7)
+    8:  {"co": 11, "qua": 7},
+    9:  {"co": 11, "qua": 7},
+    10: {"co": 11, "qua": 7},
+}
+
+
+def an_co_qua(chi_nam_idx: int) -> Dict[str, int]:
+    """
+    An Cô Thần, Quả Tú theo Chi năm sinh (tan_bien.txt dòng 836-858).
+    """
+    if not (0 <= chi_nam_idx <= 11):
+        raise ValueError(f"chi_nam_idx không hợp lệ: {chi_nam_idx}. Phải từ 0 đến 11.")
+    res = BANG_CO_QUA[chi_nam_idx]
+    return {
+        "Cô Thần": res["co"],
+        "Quả Tú": res["qua"]
+    }
+
+
+# 9. BỘ HÌNH RIÊU Y (THIÊN HÌNH, THIÊN RIÊU, THIÊN Y)
+def an_hinh_rieu_y(thang_am: int) -> Dict[str, int]:
+    """
+    An Thiên Hình, Thiên Riêu, Thiên Y theo Tháng sinh âm lịch (tan_bien.txt dòng 687-692).
+    - Thiên Hình: khởi Dậu (9) là tháng 1, đếm thuận đến tháng sinh -> (8 + thang_am) % 12.
+    - Thiên Riêu: khởi Sửu (1) là tháng 1, đếm thuận đến tháng sinh -> (thang_am) % 12.
+    - Thiên Y: đồng cung với Thiên Riêu.
+    """
+    if not (1 <= thang_am <= 12):
+        raise ValueError(f"thang_am không hợp lệ: {thang_am}. Phải từ 1 đến 12.")
+    hinh = (8 + thang_am) % 12
+    rieu = thang_am % 12
+    return {
+        "Thiên Hình": hinh,
+        "Thiên Riêu": rieu,
+        "Thiên Y": rieu
+    }
+

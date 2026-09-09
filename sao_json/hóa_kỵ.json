@@ -1,0 +1,64 @@
+{
+  "sao": "Hóa Kỵ",
+  "loai": "Ác tinh",
+  "cong_thuc_an_sao": {
+    "input": ["Hành Thủy"],
+    "logic": "Vượng tại Thìn, Tuất, Dậu, Mão. Đắc địa tại Dần, Thân. Hãm địa tại Tỵ, Ngọ, Tý, Sửu, Mùi, Hợi."
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Hóa Kỵ là cái lưỡi ngộ Xương, Khúc, Thái Tuế thì lắm điều. Tính cách hay ích kỷ, ghen ghét, rất ác và thâm hiểm. Đa chiêu oán thù. Người xấu làm việc trắc trở, hay bị ghen ghét. Cư Tý: thuật sĩ phong lưu. Ngộ Thái Dương từ Thân đến Tý hay ngộ Thái Âm: Kỵ thành cát Kỵ. Đào, Diêu giao triều: họa vô đơn chí. Kỵ, Dương, Đà, Sát, Kiếp, Không: đạo tặc. Kỵ ngộ Cơ hãm hay Kỵ, Đà, Tuế cư Thân: gian nan, vơ vất. Cư Tỵ ngộ Khoa, Lương chiếu: trên dưới ai cũng ưa chuộng. Kỵ ngộ văn tinh Xương, Khúc, Khôi, Việt: công danh trắc trở. Kỵ ngộ Cự hay Kỵ, Tham cư Thân, Tướng quân, Triệt ở Thiên Di: chết đâm."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Kỵ, Phục, Phá: anh chị em khiếm hòa."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Kỵ, Hồng: hay lừa dối chồng, vợ chồng yêu nhau mà chồng vẫn ngoại tình. Kỵ, Kiếp: hại chồng. Kỵ, Dương: đắng cay, hại chồng. Hóa Kỵ độc thủ: không có gia thất. Kỵ, Diêu: loạn dâm. Kỵ có Phục chiếu: vợ chồng hay ghét nhau, lừa dối nhau, làm cho nhau tai tiếng."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Xung khắc."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Tán tài, nghèo."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Kỵ, Cự, Diêu, Tham: chết đuối. Ở Dương cung: đàn bà sinh đẻ phải lo. Kỵ, Nhật, Hư: đàn bà có bệnh không đẻ. Kỵ ngộ Hình ở Tý, Hợi: đau mắt, mù lòa. Kỵ, Đà, Sát: mục tật. Kỵ, Hình, Liêm, Phá: điên. Gặp Tham: vận hạn nhiều. Kỵ, Dương ở Tý, Hợi: mù lòa vì đau mắt. Kỵ, Mộc, Hao, Sát, Phá: bị ung thư, mổ xẻ. Hóa Kỵ độc thủ: dương hư, hiếm con. Kỵ, Đà, Diêu: nhiều tai nạn. Kỵ, Diêu: sứt môi. Kỵ, Âm: bệnh âm hư. Kỵ, Tang, Điếu: tự sát."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Kỵ, Tham: tai nạn chết đường. Kỵ, Diêu: nhiều người thù ghét."
+    },
+    {
+      "cung": "Nô Bộc",
+      "dien_giai": "Đầy tớ nói xấu, oán hại. Phá, Kỵ, Tang: làm ơn nên oán."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Công danh chật vật, chẳng nên chi. Ngộ Âm, Dương: về già mới khá giả."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Vô điền sản."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Ngộ Kiếp hay Không: vận nhà suy nghèo. Ngộ Sát, Hình, Đà: đạo tặc. Kỵ, Hình, Bệnh, Phù: có người điên hay phù. Kỵ, Việt: câm. Hóa Kỵ: tổn thọ, có ngôi mả ở chỗ sâu ngập nước. Kỵ, Diêu: sát nhân hoàng tuyền."
+    },
+    {
+      "cung": "Phụ Mẫu",
+      "dien_giai": "Cha mẹ không thuận hòa với nhau. Kỵ, Không: cha mẹ thanh bần."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Kỵ, Phục, Linh, Hỏa, Hao, Không, Kình, Sát, Địa Kiếp chiếu: chết. Hóa Kỵ độc thủ: bị oán thù, việc làm bị trắc trở. Kỵ, Phá, Tuế: thị phi cãi nhau, miệng tiếng. Kỵ, Hình, Kiếp: phòng nạn giáo mác hình thương hay bệnh phải mổ xẻ. Kỵ, Cự: phòng sông nước và lắm chuyện lôi thôi bực mình. Kỵ, Hồng: tơ duyên rắc rối. Kỵ ngộ Âm, Dương: đau mắt, cha mẹ mất sớm. Kỵ, Đà: phòng miệng tiếng. Kỵ, Đà, Sát / Hổ: đi xa phòng nguy hại. Kỵ, Hình, Phá: đánh nhau. Kỵ, Sát: gian nan nhục nhã. Kỵ, Kình, Tý, Hợi: tranh giành nhiều sự lôi thôi."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": []
+}

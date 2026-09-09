@@ -1,0 +1,42 @@
+{
+  "sao": "THANH LONG",
+  "loai": "Thủy, Quí tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Mọi sự đều phát đạt. Long, Liêm, Sát, Phá tam phương thủ chiếu: phú quý. Thanh Long, Hóa Kỵ, Thìn, Tuất, Sửu, Mùi ở Mệnh hay Quan, Di, Tài: tiến phát lớn. Loan, Long, Hỷ: tai họa nhiều."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Có Long, Mã giáp hai bên: rất tốt, hiển đạt, thịnh vượng."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Có Long, tam Hóa: vô tai nạn, rủi hóa may."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Có Long, tam Hóa hay Long, Hỏa: làm ăn tiến phát."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Có Long, Phủ, Lộc Tồn hay Long, Sát, Lộc Tồn: nhiều ruộng đất."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Có Long, Hổ hai bên: mả phát. Long: có nước mạch chảy vào mả."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Hạn gặp Thanh Long: cơ hội phát triển và tránh được hạn xấu. Tốt nhất là Long, Kỵ. Long, Loan, Hỷ: tai họa bất ngờ."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu công thức an sao"
+  ]
+}

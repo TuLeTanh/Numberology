@@ -1,0 +1,35 @@
+{
+  "sao": "Điếu Khách",
+  "loai": "Phóng đãng tinh",
+  "cong_thuc_an_sao": {
+    "input": [
+      "Hành Hỏa"
+    ]
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính khoe khoang, khoác lác, liến thoắng (liến sảo). Điếu Khách ngộ Quan Phủ: cờ bạc."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Cung Giải có Điếu Khách: tai nạn ngã cây. Điếu, Tang, Kỵ: tự sát."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Điếu phùng Mã, Khốc: làm nên."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Có Điếu, Tang thì thường hay có tang. Điếu, Hỏa: tang nhỏ. Điếu: ngã cây."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Cờ bạc dông dài."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu ý nghĩa tại cung Huynh Đệ, Phu Thê, Tử Tức, Tài Bạch, Thiên Di, Nô Bộc, Điền Trạch, Phúc Đức, Phụ Mẫu."
+  ]
+}

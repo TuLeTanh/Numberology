@@ -1,0 +1,62 @@
+{
+  "sao": "TRIỆT KHÔNG",
+  "loai": "Thuộc Thủy, Không tinh",
+  "cong_thuc_an_sao": {
+    "input": [
+      "Năm sinh (hàng Can)"
+    ],
+    "logic": "An giữa hai cung dựa theo hàng Can của năm sinh: Giáp/Kỷ ở Thân/Dậu; Ất/Canh ở Ngọ/Mùi; Bính/Tân (văn bản ghi Bính/Thân) ở Thìn/Tỵ; Đinh/Nhâm ở Dần/Mão; Mậu/Quý ở Tý/Sửu."
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Sinh bất phùng thời, thất bại, vất vả, nhưng chỉ trong vòng 30 tuổi thôi. Nếu ở Kim cung: thung dung, tinh thần thanh sảng. Tuần, Triệt, Tướng ngộ: vô kế sinh nhai, bông lông vô định, bất hưởng phúc, mồ côi, đàn bà chồng con trắc trở. Tuần, Triệt giao đấu (ở hai cung đối chiếu hay tam hợp): thiếu niên tân khổ. Mệnh và tam hợp trùng Sát thì xấu, ngộ Triệt giải được."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Cô đơn."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Tứ Không (Thiên, Địa, Tuần, Triệt) ngộ Mã: đàn bà bỏ chồng theo trai. Triệt: lấy chồng xa thì tốt, lấy đồng hương xấu mà nhân duyên trắc trở phải nhiều lần mới thành. Triệt, Đào, nữ Mệnh: hai đời chồng, người trước lang thang."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Có Triệt, Tướng: gặp giặc bị giết."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Khỏi hết tai ách."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Vô điền sản, của cha ông để lại không được hưởng."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Vô điền sản, của cha ông để lại không được hưởng."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Có Triệt, Tướng: bị thải bỏ, bị cách."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Sinh con trước dữ, sau dễ sinh."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Bần cùng. Triệt, Tử, Phủ: có mả tiền nhân táng ở đất hoang. Triệt đắc địa: đi xa mới có thể làm nên. Triệt, Dưỡng: đời nào cũng có nhà thất tự, có con nuôi."
+    },
+    {
+      "cung": "Phụ Mẫu",
+      "dien_giai": "Có Triệt, Hình hay Âm, Dương, Tuần, Triệt: cha mẹ mất sớm."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Ngộ Tướng ở Thiên Di, Cơ, Kỵ ở Thân: chết đâm chết chém."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": []
+}

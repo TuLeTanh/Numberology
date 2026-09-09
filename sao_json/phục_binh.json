@@ -1,0 +1,54 @@
+{
+  "sao": "Phục Binh",
+  "loai": "Ám tinh",
+  "cong_thuc_an_sao": {
+    "input": [
+      "Hành Hỏa"
+    ],
+    "logic": "Thuộc Hỏa"
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính tình gian ác, hiểm sâu, gặp sự lừa đảo. Mệnh có Phục Binh: thứ nhân, đàn bà bị chồng ruồng bỏ. Phục Binh đồng Bạch Hổ: người hay nói dở bậy, hại nước hại nhà. Phục, Vũ, Dương cư Ngọ: gặp thời làm quan võ. Phục, Phá có Hình, Diêu, Thái, Tướng quân chiếu: vợ chồng ghen có khi giết nhau."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Phục, Phá, Tướng ngộ Đào, Hồng, Cái và Trực phù chiếu: có chị em theo trai chửa hoang."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Phục, Tướng, Thai: vợ chồng có con riêng hoặc chửa đẻ rồi mới lấy nhau."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Phục, Hình: nói ngọng."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Phục, Thai, Tướng quân: trai gái đi lại với nhau có con, hoặc có con riêng rồi mới lấy nhau. Phục, Ky chiếu Thê cung: vợ chồng xung khắc."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Phục, Hình, Tuế: hay có sự tranh giành, không vui."
+    },
+    {
+      "cung": "Nô Bộc",
+      "dien_giai": "Phục Binh: tôi phản chủ. Phục, Tướng quân: nô bộc tư thông có hoang thai."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Phục: danh hèn. Phục, Phú: danh phận chẳng ra gì."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Phục ngộ Tử hay Tướng quân: nhà có người chết trận."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Phục, Tang: có tang. Phục, Hổ: khẩu thiệt. Phục, Tuế, Ky: có sự cạnh tranh, lo lắng. Phục, Phá, Tướng, Thai, Diêu: cả nghe bị lừa dối, tơ duyên trắc trở."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": []
+}

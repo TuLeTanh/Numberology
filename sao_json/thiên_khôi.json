@@ -1,0 +1,58 @@
+{
+  "sao": "THIÊN KHÔI",
+  "loai": "Thuộc Hỏa, Quí tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Thông minh, tài năng, thanh bạch, khoan hòa. Chủ sự về khoa giáp. Văn học tài năng cái thế, ngộ Thai phụ: khoan dung, ngộ Thiên Mã: công danh lừng lẫy, ngộ Tuần, Thiên Không, Địa Kiếp: không làm nên sự nghiệp. Khôi có Việt, Thiên Quan, Thiên Phúc chiếu: hiển đạt phú quí. Toạ Khôi hướng Việt (Thiên Khôi có Thiên Việt chiếu): quí nhân, tuổi Tý, Mão, Thuỷ, Hỏa: tài năng, công danh sự nghiệp vang lừng. Khôi, Việt, Lộc: đỗ cao làm nên. Khôi cư Mệnh hay Giải tại Tý: có nốt ruồi chỗ kín."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Thiên Khôi: 4, 5 anh chị em. Toạ Khôi hướng Việt: có người tài giỏi danh tiếng."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Khôi, Việt, Lộc, Quyền, Khoa: sánh duyên cùng quí nhân. Khôi, Việt, Lộc, Phong, Phủ: gia nhân tài tử sánh duyên sang giàu."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Khôi, Việt, Phủ, Vi: Việt, Khôi, Thiên Mã: có quí tử."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Việt, Khôi, Tả, Hữu, Lộc, Quyền: tài điền đều vượng."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Việt, Khôi, Tử, Phủ, Tả, Hữu, Xương, Khúc, tam Hóa: ốm đau gặp thuốc, tai nạn gặp người cứu."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Việt, Khôi, Tử, Phủ, Tả, Hữu, Âm, Dương, Lương, Đồng: đi ra gặp quí nhân trọng dụng tín cẩn."
+    },
+    {
+      "cung": "Nô Bộc",
+      "dien_giai": "Việt, Khôi, Tả, Hữu, Lương, Đồng hay Việt, Khôi, Tử, Phủ, Tả, Hữu, tam Hóa: kẻ giúp người đỡ nên công, tôi tớ đắc lực."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Việt, Khôi, Xương, Khúc, Tả, Hữu: đại quí, càng về già càng phát. Khôi, Việt, Quang, Quí, Sửu, Mùi: đại quí. Việt, Cơ, Tấu, Ấn, Quí, Hồng: hiển đạt lớn, thân cận người trên. Việt, Khôi, Tả, Hữu, Mã, Tràng: ruộng đất có nhiều."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Khôi, Việt, Khoa: đỗ lớn mà cao. Việt, Khôi, Quyền, Lộc, Vượng, Tham: thọ."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Khôi, Việt, Tử: mọi sự lôi thôi đều thắng lợi."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu dữ liệu cung Phụ Mẫu, Điền Trạch"
+  ]
+}

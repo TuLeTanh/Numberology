@@ -1,0 +1,82 @@
+{
+  "sao": "Kình Dương",
+  "loai": "Sát tinh, thuộc Kim",
+  "cong_thuc_an_sao": {
+    "input": [
+      "Thìn",
+      "Tuất",
+      "Sửu",
+      "Mùi",
+      "Tý",
+      "Hợi",
+      "Dần",
+      "Thân",
+      "Mão",
+      "Ngọ"
+    ],
+    "logic": "Vượng tại Thìn, Tuất, Sửu, Mùi. Đắc địa tại Tý, Hợi, Dần, Thân. Hãm tại Mão, Tý, Ngọ."
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính cách mình gầy, tai điếc, ác, hùng hổ, lăng nhăng. Kình Dương ngộ Hình hay Hổ là người sắt đá. Tại Thìn, Tuất, Sửu, Mùi thì võ quyền oai hùng thắng trận. Ở các cung khác thì hay đánh nhau lôi thôi. Cư Ngọ (Mã đầu đới kiếm) nếu thêm Cô, Sát chiếu thì bất đắc kỳ tử. Nhập miếu ngộ Thiên Không, Triệt Không thì tuổi Thìn, Tuất thọ 90 tuổi, tuổi Sửu, Mùi thọ 70 tuổi. Ngộ Hỏa tại Thìn, Tuất, Sửu, Mùi là anh hùng, thêm Tham, Vũ thì có oai quyền nhưng ai cũng ghét. Kình, Đà, Linh, Hỏa thủ Mệnh (tứ Sát thủ Mệnh) thì mệnh cát phúc hãm, gian tà, biển lận. Kình, Đà, Kiếp, Không, Sát, Kỵ là đạo tặc. Tứ Sát yên tàng vượng địa hoặc tứ Sát cập Cự Môn thì dâm dật. Dương, Nhẫn, Đà, Hỏa, Kỵ chủ tang thương. Dương ngộ Hình, Diêu thì đàn bà sát chồng. Kình, Đà, Diêu, Sát ngộ Hỏa Linh thì giết người. Nhẫn, Đà, Hổ thì chuân chuyên. Kình, Đà, Không, Kiếp, Tham thì xấu. Kình, Lực thì là tướng có công mà không được phong."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Gặp Kình, Đà, Không, Kiếp thì anh chị em cùng khổ ly tán."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Gặp Dương, Đà, Thái Tuế, Quan Phù thì phải có kiện tụng mới có của. Gặp tứ Sát, Kình, Đà, Linh, Hỏa thì tán tài."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Kình tối kỵ cung Tử. Gặp tứ Sát thì hiếm con, con ngu ngốc ngẩn ngơ; hoặc vợ lẽ có con làm nên."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Có tì thương, đau chân. Gặp Kình, Đà thì điếc, bệnh trĩ. Gặp Kình, Đà, Hổ thì bị chó dại cắn. Gặp Dương, Đà, Kình, Kỵ, Phá, Liêm thì điên và đau mắt. Gặp Dương, Kỵ ở Tý, Hợi thì mù lòa vì đau mắt. Gặp tứ Sát ngộ Kiếp Sát hay Thất Sát, Kình, Tuế thì khẩu thiệt. Gặp Kình, Hình, Sát thì tù tội hay tàn tật."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Gặp Dương, Đà, Không, Kiếp thì cô độc, tán tài, danh bại, viễn đồ kỳ thực."
+    },
+    {
+      "cung": "Nô Bộc",
+      "dien_giai": "Gặp Dương, Đà, Linh, Hỏa thì mang tội ngỗ ngược."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Kình tối kỵ cung Quan. Gặp Dương, Đà, Mã thì phải đi trận mạc luôn. Gặp Kình, Đà, Không, Kiếp thì công danh hèn kém."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Kình tối kỵ cung Thê. Gặp Kình, Đà, Diêu, Sát ngộ Hỏa thì vợ giết chồng. Gặp Kình, Đà, Hư, Khốc thì vợ chồng xung khắc."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Gặp Kình, Đà, Không, Kiếp thì vô điền sản."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Gặp Nhẫn, Linh, Hỏa thì trong họ có người cuồng tín. Gặp Dương, Hỷ thì người nhà đánh giết lẫn nhau. Gặp Dương, Đà, Không, Kiếp, Sát thì có người đạo tặc. Nếu Kình Dương đắc địa ở cung Phúc thì có ngôi mả phát hình voi phục. Gặp Kình, Đà ngộ Dưỡng thì có mả đạo táng."
+    },
+    {
+      "cung": "Phụ Mẫu",
+      "dien_giai": "Gặp Dương, Đà, Tuế thì con khắc cha mẹ."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Gặp Kình, Cái, Đà thì bị bệnh đậu, lên sởi. Gặp Kình, Kiếp, Hà, Hình, Kỵ thì phòng nạn đau thương. Gặp Kình, Kỵ ở Tý, Hợi thì nhiều chuyện lôi thôi. Gặp Kình, Đà, Không, Kiếp thì tán tài, tang thương. Gặp Kình, Đà, Mã thì bôn ba, nhiều sự thay đổi, dời chuyển. Gặp Kình, Diêu thì ghẻ lở, mụn nhọt. Gặp Kình, Kiếp, Cái thì đánh nhau thành tai nạn. Gặp Kình, Đồng, Linh thì cầu hôn không thành."
+    }
+  ],
+  "cach_cuc": [
+    {
+      "ten_cach": "Mã đầu đới kiếm",
+      "dieu_kien": "Kình Dương cư Ngọ",
+      "y_nghia": "Hay gặp tai họa, nếu có thêm Cô, Sát chiếu thì bất đắc kỳ tử."
+    }
+  ],
+  "ghi_chu_thieu_du_lieu": [],
+  "ten_khac": "Kình Dương Hay Dương Nhân"
+}

@@ -1,0 +1,34 @@
+{
+  "sao": "LINH TINH",
+  "loai": "Sát tinh, thuộc Hỏa",
+  "cong_thuc_an_sao": {
+    "input": [
+      "Sửu",
+      "Dần",
+      "Thìn",
+      "Ngọ",
+      "Mùi",
+      "Tuất",
+      "Mão",
+      "Thân",
+      "Dậu",
+      "Tý",
+      "Hợi"
+    ],
+    "logic": "Vượng tại Sửu, Dần, Thìn, Ngọ, Mùi, Tuất. Đắc địa tại Mão, Thân, Dậu. Hãm tại Tý, Hợi."
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính cách mặt buồn, người gầy ốm, nóng tính mà đa sầu. Đắc địa thì can đảm nhưng mọi sự việc thường bị trắc trở. Linh cư Mão, Dậu ngộ Tham thì công danh hoạch phát. Linh cư Sửu, Mùi ngộ Tham thì tuổi Mậu, Kỷ làm nên danh tướng. Linh, Hỏa, Kình, Đà (tứ Sát) thủ Mệnh thì mệnh cát phúc hãm, gian tà biển lận. Tứ Sát cập Cự thì dâm dật. Linh tinh thường đi đôi với Hỏa Tinh mới có hiệu lực lớn."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Gặp Linh, Xương, Vũ, La thì phòng chết trôi. Gặp Linh, Việt thì phòng điện, sét. Gặp Linh, Sát, Phá thì phòng bị tù."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu ý nghĩa tại các cung Phụ Mẫu, Phúc Đức, Điền Trạch, Quan Lộc, Nô Bộc, Thiên Di, Tật Ách, Tài Bạch, Tử Tức, Phu Thê, Huynh Đệ"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "sao": "THIÊN QUAN",
+  "loai": "Phúc tinh (Thuộc Hỏa)",
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Thiên Quan, Thiên Phúc toạ Mệnh: người có đạo đức lớn, có danh vị, nếu chiếu Thân, Mệnh thì đỗ cao. Gặp hạn xấu có thánh thần hay ân nhân giúp đỡ."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Thiên Quan, Thiên Phúc cư Phúc cung: nhà có phúc lớn, mồ mả tiền nhân chôn gần chùa. Gặp hạn xấu có thánh thần hay ân nhân giúp đỡ."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Gặp hạn xấu có thánh thần hay ân nhân giúp đỡ."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Gặp hạn xấu có thánh thần hay ân nhân giúp đỡ."
+    }
+  ],
+  "cach_cuc": [
+    {
+      "ten_cach": "Thiên Quan, Thiên Phúc toạ Mệnh",
+      "dieu_kien": "Thiên Quan, Thiên Phúc đồng tọa hoặc chiếu Mệnh, Thân",
+      "y_nghia": "Người có đạo đức lớn, có danh vị, nếu chiếu Thân, Mệnh thì đỗ cao."
+    },
+    {
+      "ten_cach": "Thiên Quan, Thiên Phúc cư Phúc cung",
+      "dieu_kien": "Thiên Quan, Thiên Phúc cư cung Phúc Đức",
+      "y_nghia": "Nhà có phúc lớn, mồ mả tiền nhân chôn gần chùa."
+    }
+  ]
+}

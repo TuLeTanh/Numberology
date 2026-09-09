@@ -1,0 +1,64 @@
+{
+  "sao": "Tử Vi",
+  "loai": "Phúc Quý tinh",
+  "cong_thuc_an_sao": {
+    "input": ["Hành Thổ"],
+    "logic": "Vượng tại Ngọ, Sửu, Dần, Mùi. Đắc địa tại Mão, Tỵ, Thân, Mùi (?). Hãm địa tại Thìn, Tuất, Tý, Hợi."
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tử Vi là vua các sao, đứng ở Ngọ là chính, vua tại ngôi, ở Tý là vua mất ngôi. Tính uy nghi, đức độ. Chủ sự quyền quý. Mệnh có Tử Vi: khỏi sợ vận hạn, ung dung, đường bệ. Nữ Mệnh thì vượng phu ích tử, đông anh em, nếu gặp Hỏa Tinh: lanh lợi, hoạt động chăm chỉ. Hãm địa (Thìn, Tuất): bất trung, nguy khó cứu. Tử Vi chính chiếu Ngọ cung: tuổi Giáp, Đinh, Kỷ thì vô hung nhược đa hội cát tinh: đại hiển đạt; tuổi Bính, Ngọ, Dần: thọ 90 tuổi, ngộ Khôi, Khoa: đại tài năng. Tử, Phủ đồng cung ở chính chiếu, hợp, tốt nhất tại Dần, Thân (tuổi Dần, Thân, Tỵ, Hợi mệnh Hỏa): làm nên bậc nhất. Tử Vi ngộ Văn, Vũ, Tướng, Âm hay Tử Phủ Tý Ngọ, Tử Phủ Nhật Nguyệt Tả Hữu: quý cách. Tử, Tướng, Đồng, Liêm, Thiên Quan, Thiên Phúc có tam hợp: trinh bạch. Tử, Phủ, Vũ, Tướng mà hung tinh đắc địa (Kình, Đà): rất tốt, như vua hiền có tướng giỏi. Tử, Phủ, Đồng, Lương, Cơ, Cự: tối kỵ Không, Kiếp (người hiền gặp cường đạo). Tử, Phủ, Vũ, Tướng: tài năng hiển đạt. Tử, Tướng Mệnh tại Ngọ: đàn bà có chồng quý con hiển. Tử ngộ Phá ở Thìn, Tuất: trọc phú. Tử ngộ hung sát: xấu, cường đồ. Tử, Tham Mão Dậu: đi tu thành danh phận. Tử, Tướng tại Mệnh, Vượng, Phá, Tuần tại Thân: gian hùng. Tử, Phủ, Kỵ, Quyền: mưu trí, thao lược (số Trương Lương). Tử, Ấn cư Ngọ, Mệnh: con thứ thành con trưởng. Tử, Kiếp, Hồng, Đào: giảm thọ. Tử, Phủ, Tràng Sinh, Đế Vượng: người quảng đại."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Tử Vi: có anh trên. Tử Vi Tả Hữu tương phùng hay Tử Tang Tả Hữu: có chị em lộn chồng."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Tử, Phủ: vợ đẹp tốt con nhà danh giá, vợ chồng hòa hợp, bách niên giai lão."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Tử, Phủ, Khôi: có quý tử. Tử, Phủ, Vượng, Đồng, Tả, Hữu: con đông mà tài giỏi khá giả."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Tử, Phủ đồng cung: đại phú. Tử, Phủ, Vũ, Lộc hay Vi, Lộc, Long, Phượng, Tả, Hữu: đại phú."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Cung Giải có Tử, Phủ, Tả, Hữu, Lộc Tồn hay Hóa Lộc: ốm gặp thuốc, nạn gặp người cứu."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Tử, Phủ: đi ra gặp quý nhân giúp nếu thêm có Khoa, Quyền, Tả, Hữu thì được trọng vọng thân quý."
+    },
+    {
+      "cung": "Nô Bộc",
+      "dien_giai": "Tử, Phủ: tốt."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Vi, Sát, Mã, Đồng, Lương: địa vị lớn ngoài biên cương. Tả, Phá, Khoa, Quyền: hiển vinh. Vi, Mã: hiển đạt."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Tử, Phủ: tài điền vượng."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Vi, Tham vượng địa: phú quý. Đế tinh Tử Vi miếu địa: đại quý hiển. Vi ngộ Hồng, Đào, Cái: đàn bà đại quý hiển. Tử, Phủ, Đồng, Lương: thọ 80, 90 tuổi. Xem về mồ mả, Tử Phủ chỉ về ngôi tổ mộ, ngộ Triệt: có mả chôn đất hoang."
+    },
+    {
+      "cung": "Phụ Mẫu",
+      "dien_giai": "Tử, Phủ: cha mẹ sang giàu."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Đại tiểu hạn trùng phùng Đế tinh hãm địa ngộ Triệt lộ, Không vong: chết. Tử ngộ tam Không, Kiếp, Kỵ: tán tài vong gia thất thổ. Tử ngộ Kình, Đà, Kỵ, Kiếp: ốm đau. Vận suy hạn nhược gặp Tử Vi thì giải nguy được. Tử, Kiếp: ốm đau bị lừa. Tử, Phủ, Vũ, Tướng: gặp thời thành bậc lương tướng. Tử, Khôi, Việt: có sự lôi thôi với ai thì thắng lợi."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": []
+}

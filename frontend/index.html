@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tử Vi Đẩu Số & Thần Số Học</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="header-badge">Trung Châu Phái & Thần Số Học Pytago</div>
+      <h1 class="header-title">TỬ VI ĐẨU SỐ & THẦN SỐ HỌC</h1>
+      <p class="header-subtitle">Luận giải lá số cá nhân hoá chính xác 100% theo phương pháp cổ truyền</p>
+    </header>
+
+    <!-- Form nhập thông tin -->
+    <section class="form-section">
+      <form id="lasso-form" class="lasso-form" novalidate>
+        <div class="form-grid">
+          <div class="form-group full-width">
+            <label for="ho_ten">Họ và tên khai sinh <span class="required">*</span></label>
+            <input type="text" id="ho_ten" name="ho_ten" placeholder="Ví dụ: Nguyễn Văn An" required>
+            <span class="field-error" id="error-ho_ten"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="ngay_sinh">Ngày sinh (Dương lịch) <span class="required">*</span></label>
+            <input type="number" id="ngay_sinh" name="ngay_sinh" min="1" max="31" placeholder="Ngày (1-31)" required>
+            <span class="field-error" id="error-ngay_sinh"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="thang_sinh">Tháng sinh (Dương lịch) <span class="required">*</span></label>
+            <input type="number" id="thang_sinh" name="thang_sinh" min="1" max="12" placeholder="Tháng (1-12)" required>
+            <span class="field-error" id="error-thang_sinh"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="nam_sinh">Năm sinh (Dương lịch) <span class="required">*</span></label>
+            <input type="number" id="nam_sinh" name="nam_sinh" min="1900" max="2100" placeholder="Năm (VD: 2015)" required>
+            <span class="field-error" id="error-nam_sinh"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="gio_sinh">Giờ sinh <span class="required">*</span></label>
+            <input type="number" id="gio_sinh" name="gio_sinh" min="0" max="23" placeholder="Giờ (0-23)" required>
+            <span class="field-error" id="error-gio_sinh"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phut_sinh">Phút sinh <span class="required">*</span></label>
+            <input type="number" id="phut_sinh" name="phut_sinh" min="0" max="59" placeholder="Phút (0-59)" required>
+            <span class="field-error" id="error-phut_sinh"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="gioi_tinh">Giới tính <span class="required">*</span></label>
+            <select id="gioi_tinh" name="gioi_tinh">
+              <option value="nam" selected>Nam</option>
+              <option value="nu">Nữ</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" id="btn-submit" class="btn-primary">
+            <span class="btn-text">Lập Lá Số & Khám Phá</span>
+            <span class="btn-loader" style="display: none;">Đang tính toán...</span>
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Error message banner -->
+    <div id="api-error" class="error-banner" style="display: none;"></div>
+
+    <!-- Kết quả -->
+    <main id="result-container" class="result-container" style="display: none;">
+      <!-- Bảng 12 Cung Tử Vi -->
+      <section class="tuvi-section">
+        <h2 class="section-title">Lá Số Tử Vi Đẩu Số</h2>
+        <div class="tuvi-board-wrapper">
+          <div id="tuvi-board" class="tuvi-board">
+            <!-- 12 Cung và Trung Cung (Thiên Bàn) sẽ được JS chèn vào đây -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 4 Chỉ số Thần Số Học -->
+      <section class="numerology-section">
+        <h2 class="section-title">Hồ Sơ Thần Số Học</h2>
+        <div id="numerology-grid" class="numerology-grid">
+          <!-- 4 Card Thần số học sẽ được JS chèn vào đây -->
+        </div>
+      </section>
+
+      <!-- Khung Hỏi Đáp Tự Do (AI Chat /hoi) -->
+      <section class="chat-section" id="chat-section">
+        <h2 class="section-title">Hỏi Đáp Tử Vi &amp; Thần Số Học</h2>
+        <p class="chat-intro">Đặt câu hỏi tự do về sự nghiệp, tình duyên, tài lộc hoặc các chỉ số thần số học dựa trên lá số của bạn.</p>
+        <div class="chat-box">
+          <div id="chat-history" class="chat-history">
+            <div class="chat-message bot-message">
+              <div class="message-sender">Trợ lý Luận Giải:</div>
+              <div class="message-content">Chào bạn! Tôi đã phân tích toàn bộ lá số Tử Vi và Thần Số Học của bạn. Bạn muốn tìm hiểu điều gì về vận mệnh hay chỉ số nào?</div>
+            </div>
+          </div>
+          <form id="chat-form" class="chat-input-form">
+            <div class="chat-input-wrapper">
+              <input type="text" id="chat-input" class="chat-input" placeholder="Ví dụ: Sự nghiệp của tôi thế nào? Hay: Số đường đời nói lên điều gì?" autocomplete="off" />
+              <button type="submit" id="btn-chat-send" class="btn-chat-send">
+                <span class="btn-chat-text">Gửi</span>
+                <span class="btn-chat-loader" style="display: none;">Đang suy nghĩ...</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Modal Diễn Giải Chi Tiết Cung (/dien-giai-cung) -->
+  <div id="palace-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-badge">Chi tiết luận giải</span>
+          <h3 id="modal-palace-title" class="modal-title">Cung Mệnh</h3>
+        </div>
+        <button type="button" id="btn-modal-close" class="modal-close" aria-label="Đóng">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Danh sách sao & diễn giải sẽ render tại đây -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

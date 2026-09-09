@@ -1,0 +1,37 @@
+{
+  "sao": "Tướng Quân",
+  "loai": "Vũ tinh",
+  "cong_thuc_an_sao": {
+    "input": ["Hành Mộc"]
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính cương trực, nóng hay phá. Chủ sự binh quyền. Tướng Quân: ngang tàng, đảm lực. Tướng Quân ngộ Phủ: nữ mệnh bị hiếp dâm. Tướng, Ấn ngộ Mã: làm quan võ to. Tướng, Phục ngộ Thai hay Hỷ, Hồng, Đào: ngoại dâm, đàn bà có hoang thai. Tướng, Binh có Hình, Ấn chiếu: văn võ toàn tài, quan võ làm ở văn phòng."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Tướng Quân Lộc, Lộc tương phùng: anh chị em có người quyền quý."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Tướng, Thai, Phục: trai gái có con với nhau, hoặc có con riêng rồi mới lấy nhau."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Cung Giải có Tướng bị Phục chiếu: dễ bị tai nạn."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Tướng ngộ Tử hay Tuyệt: nhà có người chết trận."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Tướng Quân ngộ Tử hay Tuyệt: đi ra lâm nguy hại đến tính mệnh."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu ý nghĩa tại cung Phu Thê, Tài Bạch, Thiên Di, Nô Bộc, Quan Lộc, Điền Trạch, Phụ Mẫu."
+  ]
+}

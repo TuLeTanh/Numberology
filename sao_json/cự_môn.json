@@ -1,0 +1,91 @@
+{
+  "sao": "CỰ MÔN",
+  "loai": "Ám tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính hay thay đổi, giỏi lý sự. Chủ về thị phi và giàu có (nhà cửa). Cự hãm: ngu tối, phòng tiếng thị phi. Cự đắc địa: sáng, gặp cát tinh thì tài hoa và hay lý sự, gặp hung tinh thì gian trá, lắm điều thâm hiểm, đa nghi. Cự, Nhật ở Dần, Thân: ba đời vinh hiển."
+    },
+    {
+      "cung": "Thân",
+      "dien_giai": "Gặp Kỵ: chết đuối."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Gặp Hóa Kỵ (Cự Ám hung tinh): chết đuối hay tự trầm mình. Gặp Nhật, Nguyệt: hình thù kỳ dị. Cự Môn thủ cung tật thì mặt có vết, tứ chi đái tật."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Khấu thiệt đảo điên. Cự Môn ở Thìn, Tuất hay gặp Linh, Hỏa: chết đường."
+    },
+    {
+      "cung": "Nô Bộc",
+      "dien_giai": "Tôi oán chủ và nói xấu. Gặp Kỵ ở Thìn, Tuất: tôi phản chủ."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Tổ nghiệp tan tành nhưng sau rồi hoán cải được. Gặp Cơ: giàu về nhà cửa."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Ở Mão, Dậu mà gặp Cơ: phúc hưởng phú quý. Gặp Lộc Tồn, Hóa Lộc (song Lộc): phú quý nhiều đời. Gặp Tướng (Thiên), Lộc Tồn: thọ ngoài 70 tuổi, vượng thì thư thái, hãm thì tân toan."
+    },
+    {
+      "cung": "Phụ Mẫu",
+      "dien_giai": "Gặp Đồng ở Thìn, Tuất ngộ hung tinh thì cha mẹ bỏ nhau."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Cự Môn ở Thìn, Tuất: bỏ nhau và thay đổi nhiều lần, vợ chồng bất hòa. Đàn bà cung Phu có Cự, Mệnh có Cô, Quả, Linh, Kình, Tử, Tràng Sinh: lấy nhiều chồng và nhiều con. Gặp Linh, Hỏa: mối lái nhiều mà không xong."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Gặp Kiếp, Sát: trước nghèo sau giàu. Nếu ở Tý, Ngọ: hao tài rồi có hoạnh tài."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Gặp Sát ở Tý, Ngọ: vượng thì làm nên võ chức, hãm thì hình danh."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Gặp Kỵ: phải phòng chết đuối. Ở Thìn, Tuất, Sửu, Mùi: phải phòng xe ngựa, tuổi Tân không lo. Gặp Vũ, Quyền: làm quan to ở biên cương (nếu Mệnh tốt, Cự: bị tiếng thị phi)."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Đơn thủ tại Hợi, Tý, Ngọ: từ năm con trở lên. Con sớm xa cha mẹ. Đơn thủ tại Tỵ, Thìn, Tuất: may mắn lắm mới có hai con. Sinh nhiều, nuôi ít. Con lớn lên cũng không hiển đạt. Thường xung khắc với cha mẹ. Trong nhà thiếu hòa khí."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Đơn thủ tại Hợi, Tý, Ngọ: hai người, nhưng bất hòa. Đơn thủ tại Tỵ, Thìn, Tuất: may mắn lắm mới có một người, nên ở riêng. Nhưng đôi khi lại có thêm rất nhiều anh chị em dị bào. Đồng đồng cung: may mắn lắm mới có hai người, trong nhà thiếu hòa khí, anh chị em có sớm xa cách nhau mới được toàn vẹn, có người mang cố tật hay mắc hình ngục. Cự đồng cung Thái Dương tại Dần: ba người, cũng khá giả. Cự đồng cung Thái Dương tại Thân: may mắn lắm mới có hai người, nhưng bất hòa phải xa cách nhau. Cự đồng cung Thiên Cơ: hai người, khá giả, nhưng không hợp tính nhau."
+    }
+  ],
+  "cach_cuc": [
+    {
+      "ten_cach": "Thạnh trung ẩn ngọc",
+      "dieu_kien": "Cự Môn tại Tý, Ngọ, tuổi Đinh, Quí, Mệnh Thổ, Mộc",
+      "y_nghia": "Quí nhân, nếu thêm có Khoa, Lộc: đại phú quí. Nếu là Lộc Tồn thì không tốt vì ngọc nằm trong đá, nếu ngộ Hao thì tốt vì lửa đá nứt ngọc sáng ra."
+    },
+    {
+      "ten_cach": "Cự Môn Thìn Tuất",
+      "dieu_kien": "Cự Môn tại Thìn, Tuất, tuổi Tân",
+      "y_nghia": "Tốt, lợi lộc, vẻ vang. Các tuổi khác xấu, nhu nhược, yếu đuối, chết non. Cự tại Thìn ngộ Tấu: quí, tốt."
+    },
+    {
+      "ten_cach": "Cự Cơ Mão Dậu",
+      "dieu_kien": "Cự, Cơ tại Mão, Dậu, tuổi Sửu, Mùi",
+      "y_nghia": "Đại phú quí, ngộ Hao càng thêm tốt."
+    },
+    {
+      "ten_cach": "Cự Nhật Dần Thân Tị Hợi",
+      "dieu_kien": "Cự, Nhật tại Dần, Thân, Tị, Hợi",
+      "y_nghia": "Thời tốt vận lên."
+    }
+  ],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu công thức an sao"
+  ]
+}

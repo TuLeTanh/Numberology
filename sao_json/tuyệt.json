@@ -1,0 +1,29 @@
+{
+  "sao": "Tuyệt",
+  "loai": "Hung tinh",
+  "cong_thuc_an_sao": {
+    "input": ["Hành Thổ"]
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính bất lương. Chủ sự hết. Tuyệt, Phùng, Hỏa, Tài, Hợi: chí khí hiên ngang, gặp thời thì ung dung. Tuyệt độc thủ: rất xấu. Tuyệt, Hỏa, Tham, Hình thủ chiếu: hiển hách lừng lẫy."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Tuyệt đắc địa thì 5, 6 anh chị em, hãm địa thì chỉ có một người. Tuyệt, Kiếp: có người gian xảo. Tuyệt, Tướng, Vượng, Thai: có anh chị em dị bào."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Tuyệt, Tướng Quân: có người chết vì binh đao."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Tuyệt, Hao: hao tán sạch nhà. Tuyệt, Suy, Hồng, Đào, Sát, Phá, Tham mà Mệnh vô chính diệu: chết."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu ý nghĩa tại cung Phu Thê, Tử Tức, Tài Bạch, Tật Ách, Thiên Di, Nô Bộc, Quan Lộc, Điền Trạch, Phụ Mẫu."
+  ]
+}

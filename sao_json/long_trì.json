@@ -1,0 +1,51 @@
+{
+  "sao": "LONG TRÌ",
+  "loai": "Cát tinh, thuộc Thủy",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính cách trì chậm, điềm đạm, bình tĩnh. Chủ về khoa giáp và hỷ sự. Long, Phượng lâm Mão, Dậu thì giàu lớn, đỗ cao, vinh hiển; đàn bà thì tốt đôi với bậc hiền lương hoặc khách văn chương. Ngộ Không, Kiếp, Kỵ thì là người nho nhã nhưng không đạt công danh. Ngộ Phượng và Xương, Khúc hoặc Việt, Khôi thì đứng đắn, thông minh, khoa danh, sự nghiệp. Giáp Phượng hay Loan thủ Mệnh ngộ Không, Kiếp thì chết yểu. Ngộ Diêu, Hỷ thì đắc thời."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Gặp Long, Phượng thì vợ chồng giai nhân tài tử, thêm Hóa Lộc thì giàu có. Gặp Long, Phủ, Khôi, Việt, Lộc Tồn thì vợ chồng đẹp, thông minh, quân tử."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Gặp Long, Phượng thì sinh con phú quý."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Gặp Long, Phượng, Mộ thì giàu sang dòng dõi."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Gặp Trì, Sát, Âm thì có bệnh đau bụng. Gặp Trì, Sát, Dương (Thái Dương) thì có bệnh đau đầu. Gặp Long, Mộc có Kiếp chiếu thì phòng chết trôi."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Gặp Long, Phượng thì phú quý."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Coi về mồ mả: Gặp Long, Mộc tại Phúc thì có ngôi mả bên giếng tốt. Gặp Long, Kiếp (địa) thì mả bên giếng khô lấp."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Gặp Long, Phượng, Tử, Phủ, Tả, Hữu, Khoa, Quyền thì đại hiển đạt."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Gặp Trì, Mộc thì phòng nạn nước. Ngộ Thai Phụ thì thăng quan. Ngộ Diêu, Hỷ thì thời đến."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu công thức an sao cụ thể",
+    "Thiếu ý nghĩa tại các cung Phụ Mẫu, Nô Bộc, Thiên Di, Huynh Đệ"
+  ]
+}

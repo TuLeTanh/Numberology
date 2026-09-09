@@ -1,0 +1,64 @@
+{
+  "sao": "THIÊN ĐỒNG",
+  "loai": "Thuộc Thuỷ, Quí tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính hay thay đổi, không quyết định được việc gì. Đàn bà thì tốt, về sau vinh hiển. Thiên Đồng tại Tuất: tuổi Đinh, Nhâm: tốt. Thiên Đồng, Thái Âm tại Ngọ ngộ Dương, Nhẫn: anh hùng vang danh bốn cõi. Đồng, Tham, Vũ, Xương, Khúc thủ Mệnh cư Sửu, Mùi: chết đuối. Đồng ngộ Hỏa, Linh, Không, Kiếp: u mê mà nghèo khổ. Đồng, Khoa, Quyền, Tấu: có uy quyền. Đồng, Lương có Nguyệt, Đức chiếu: tăng ni. Thiên Đồng thủ Mệnh tại Tỵ: lông bông. Đồng, Cự, Khoa, Lộc tại Thìn, Tuất: tuổi Đinh, Tân đại phú quí. Các tuổi khác đều xấu. Đồng thủ thân, Mệnh cư Ngọ có Thái Dương nhập chiếu: võ nghiệp làm nên, cư Dần, Thân: tuổi Giáp, Canh, Thân làm nên. Đồng toạ Mệnh tại Tý, Cự tại Dần, Lương tại Thân và có tam Hóa: đại tài. Đồng, Lương, Dần, Thân: tuổi Giáp, Canh, Thân làm nên danh giá. Đồng, Lương, Cơ, Nguyệt: quí cách. Đồng, Tham: tay trắng làm nên. Đồng, Lương, Cự, Tú chiếu thân, Mệnh: đại tài. Đồng ngộ Việt cư Tỵ: người dáng điệu đẹp. Đồng cư Ngọ ngộ Kình: anh hùng một phương. Đồng, Nguyệt, Giải, Kình ngộ Mệnh: nhất thế uy danh."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Đồng, Cơ: vợ chồng lấy nhau khi ít tuổi. Đồng, Quang, Mã, Thái Dương, Nguyệt Đức: vợ đẹp hiền và giàu có. Đồng, Lương, Cơ, Nguyệt: vợ chồng có họ hàng xa với nhau hay dính dáng bà con với nhau. Đồng Cự cư Mộ cung: muộn vợ. Đồng, Âm, Quang, Đức, Mã: vợ giàu. Đồng, Lương: hai vợ cùng một giòng họ."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Đồng, Vượng, Tả, Hữu, Xương, Khúc, Tử, Phủ: con phú quí. Đồng, Lương, Dần, Thân: con hiền. Ở Tỵ, Hợi thì du đãng. Thiên Đồng, Nguyệt Đức: con sớm có vợ chồng. Đồng, Cự cư Mộ cung: muộn con."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Đồng, Cơ, Vũ hay Đồng, Tham: tay không làm giàu."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Làm nên song trước khó sau dễ."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Đồng, Lương, Lộc: tốt. Đồng, Lương hãm địa: phải lo các bệnh hàn nhiệt. Đồng, Văn, Khúc: thư ký."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Đồng, Tướng, Âm, Tả, Hữu: gặp quí nhân tín nhiệm trọng dụng."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Đồng, Mã tại Ngọ: võ quan to ở biên cương. Đồng, Lương, Cơ, Nguyệt: phú quí. Đồng, Cự, Hình: nhờ ơn trên giúp làm nên."
+    },
+    {
+      "cung": "Nô Bộc",
+      "dien_giai": "Đồng, Lương hay Đồng cư Dần, Thân: tốt. Ở Tỵ, Hợi thì tôi tớ bất lương."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Đồng, Cơ, Khôi, Việt, Tướng: nhà có thần đồng. Đồng, Tướng: võ nghiệp đại phát. Đồng: mã bốn đời."
+    },
+    {
+      "cung": "Phụ Mẫu",
+      "dien_giai": "Đồng, Dần, Thân: cha mẹ giàu sang."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Đồng, Kình, Linh: cầu hôn thành. Người đang bệnh hoặc hay buồn mà thấy Đồng ở hạn là bệnh tương tư."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Đơn thủ tại Mão: bốn người trở lên. Đơn thủ tại Dậu: nhiều nhất là ba người, thường sớm xa cách nhau. Đơn thủ tại Tỵ, Hợi: nhiều nhất là hai người, thường xa cách nhau từ lúc thiếu thời, có người du đãng, hoang tàng. Đơn thủ tại Thìn, Tuất: may mắn lắm mới có một người nhưng cũng phiêu bạt hay cùng khổ cô đơn. Lương đồng cung: ba người, khá giả. Nguyệt đồng cung tại Tý: bốn hay năm người, chị em nhiều hơn anh em, tất cả đều thuận hòa và khá giả. Nguyệt đồng cung tại Ngọ: nhiều nhất là hai người, anh chị em bất hòa và xa cách nhau. Cự đồng cung: may mắn lắm mới có hai người, trong nhà thiếu hòa khí, anh chị em có sớm xa cách nhau mới được toàn vẹn, có người mang cố tật hay mắc hình ngục."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": []
+}

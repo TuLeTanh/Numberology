@@ -1,0 +1,56 @@
+{
+  "sao": "KIẾP SÁT",
+  "loai": "Ấc tinh, thuộc Hỏa",
+  "cong_thuc_an_sao": {
+    "input": [
+      "Thìn",
+      "Tuất",
+      "Sửu",
+      "Mùi",
+      "Tý",
+      "Hợi",
+      "Dần",
+      "Thân",
+      "Mão",
+      "Tỵ",
+      "Ngọ"
+    ],
+    "logic": "Vượng tại Thìn, Tuất, Sửu, Mùi. Đắc địa tại Tý, Hợi, Dần, Thân. Hãm tại Mão, Tỵ, Ngọ."
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính cách nóng nảy, độc ác, bất chính, chủ sự phá hoại. Người bất chính. Nếu gặp Nhị Sát (Kiếp Sát, Thất Sát) thì cuồng ngôn, loạn thuyết. Gặp Sát, Kỵ thì gian nan nhục nhã."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Gặp tứ Sát hoặc Cơ, Kỵ thì bị giết hoặc bị ác bệnh."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Gặp Phục Binh thì vô sản."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Gặp Phục Binh thì vô sản."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Gặp Liêm Trinh thì bần yểu."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Gặp Liêm Trinh thì bần yểu. Gặp Thất Sát thì can đảm, oai hùng."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Gặp Sát, Hình, Hổ thì không có con. Gặp Sát, Đà, Không, Kiếp thì sinh con ngớ ngẩn."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Bị lừa. Gặp Sát, Kỵ thì gian nan, nhục nhã."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": []
+}

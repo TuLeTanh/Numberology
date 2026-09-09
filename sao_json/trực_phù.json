@@ -1,0 +1,26 @@
+{
+  "sao": "Trực Phù",
+  "loai": "Gian tinh (Thuộc Kim hoặc Hỏa)",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": "Đứng vị trí thứ 12 trong Vòng Thái Tuế."
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Thuộc Kim, Gian tinh. Tính cách gian tà, nhỏ mọn, buồn thảm. Chủ tang thương, gây rắc rối, ngăn trở mọi việc. Cung Mệnh có Trực Phù: người xấu, lòng gian tà."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Cung Bào có Trực chiếu mà chính cung có Đào, Hồng, Cái, Phúc, Phá: anh em có người dâm đãng. Trực, Tang, Tuế: khiếm hòa."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Hạn có Trực, Phá, Hao, Kiếp, Triệt, Vong: chết. Tử Vi, Thiên Tướng tam hợp: họa may không chết. Tang, Trực, Tuế: có bất hòa, gây oán thù."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu ý nghĩa tại cung Phụ Mẫu, Phúc Đức, Điền Trạch, Quan Lộc, Nô Bộc, Thiên Di, Tật Ách, Tài Bạch, Tử Tức, Phu Thê."
+  ]
+}

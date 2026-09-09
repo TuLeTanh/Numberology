@@ -1,0 +1,49 @@
+{
+  "sao": "Mộ",
+  "loai": "Hung tinh",
+  "cong_thuc_an_sao": {
+    "input": [
+      "Hành Thủy"
+    ],
+    "logic": "Thuộc Thủy"
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính tình đần độn, chậm tốt. Chủ sự nghiệp quả. Cung Mệnh có Mộ thì đần độn, nếu có Hao thì chết. Mộ cư Sửu, Mùi phùng Thái, Tọa: văn mộ, võ lược kiêm toàn. Mộ, Không giáp Mệnh (Mộ lạc hoang sơ): rất xấu. Mộ, Đào, Cái: hoang dâm, dâm dục."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Khắc con."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Mộ, Long, Phượng: dòng nhà giàu sang. Mộ, Hòa, Lộc: tiền của đến tận tay."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Thọ."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Mộ, Kình, Hình, Triệt: sét đánh. Mộ Cái hay Mộ Diêu: thủ dâm."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Hạn thấy Mộ, Hổ, Phục, Hình, Phù, Bệnh, Hao, Kiếp: chết. Mộ, Thái Dương: cha bệnh nguy chết. Mộ, Phùng, Tả, Hữu tại Mộ cung: thời vượng phát."
+    }
+  ],
+  "cach_cuc": [
+    {
+      "ten_cach": "Mộ cư Sửu Mùi phùng Thái",
+      "dieu_kien": "Mộ cư Sửu, Mùi gặp Thái, Tọa",
+      "y_nghia": "Văn mộ, võ lược kiêm toàn"
+    },
+    {
+      "ten_cach": "Mộ Không giáp Mệnh",
+      "dieu_kien": "Mộ, Không giáp Mệnh (Mộ lạc hoang sơ)",
+      "y_nghia": "Rất xấu"
+    }
+  ],
+  "ghi_chu_thieu_du_lieu": []
+}

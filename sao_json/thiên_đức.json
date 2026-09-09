@@ -1,0 +1,26 @@
+{
+  "sao": "THIÊN ĐỨC",
+  "loai": "Thuộc Hỏa, Phúc tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Độ lượng, khoan hòa. Chủ sự từ bi. Thiên Đức đóng cung nào gieo phúc cho cung đó. Không sợ vận hạn. Tốt nhất là đóng cung Phúc Đức và hội với Nguyệt Đức, Giải Thần hay Nguyệt Đức, Thiên Giải."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Thiên Đức, Nguyệt Đức, Đào Hoa: vợ chồng đều tốt đẹp, giàu sang. Đức, Âm, Đồng, Quang, Mã: vợ giàu."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Nhà có Thiên táng."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu dữ liệu các cung khác"
+  ]
+}

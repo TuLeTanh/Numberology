@@ -1,0 +1,66 @@
+{
+  "sao": "ĐỊA KIẾP",
+  "loai": "Sát tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Mặt dữ, da đen, táo bạo, ác, bất chính. Có Kiếp: gian phi, vô hạnh, mọi việc hoàn toàn thất bại. Mệnh Không Thân Kiếp tuổi Thìn, Tuất, Sửu, Mùi: giàu (Kim Thổ tốt hơn). Kiếp, Không ở Tị, Hợi đồng cung với Tử Vi: hoạch phát một thời, các cung khác thì bần cùng. Kiếp ở Tị, Hợi ngộ Quyền, Lộc: tài cán dũng lược mà hoạch phát lên voi xuống chó. Kiếp, Không miếu địa hợp Khôi, Việt: thành danh. Kiếp ngộ Sát, Phá, Liêm, Tham: chung thân đói rách. Kiếp giáp Mệnh: hậu vận bần. Kiếp, Không thủ Mệnh: lang thang vất vả, không ai ưa."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Gặp Thiên Không: không có anh em. Tam Không ngộ Dưỡng: có nghĩa bào. Có Kiếp: anh chị em có người gian xảo."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Gặp Kỵ: đàn bà hại chồng, đàn ông hại vợ. Gặp Không: hôn nhân trắc trở nhiều lần mới thành. Địa Kiếp: trai gái phải xa nhau rồi mới lấy nhau. Gặp Không, Tuế: cưới hỏi nhiều sự lôi thôi, vợ chồng bất hòa."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Gặp Không: 2, 3 con chết sớm, sau mới nuôi được. Gặp Không, Tử, Sát (Dương, Đà, Linh, Hỏa): hiếm con, ngẩn ngơ. Gặp Không, Thai: có con gần ngày đẻ mà sẩy."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Gặp Phủ, Vũ: hao tán. Gặp Thiên Không: bần cùng ăn mày, dù có tài tình cũng tiền phú hậu bần."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Gặp Không, Sát, Hình: hình tù, thêm có Thiên Việt: chết bởi đao thương. Gặp Không: bệnh huyết hư, hỏa hư. Gặp Liêm ở Hỏa cung: thắt cổ chết. Gặp Cơ: ung tật hay bệnh hôi thối."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Gặp Địa Không: chết đường. Ngộ Tham, Sát, Phá: ăn mày."
+    },
+    {
+      "cung": "Nô Bộc",
+      "dien_giai": "Gặp Không: tôi lừa chủ."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Gặp Tướng: đi làm bị triệt hồi. Gặp Không: công danh hèn kém. Gặp Quyền: người dưới khinh ghét."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Gặp Không: vô điền sản."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Gặp Không: tổn thọ, bần cùng ăn mày, trong họ có nhiều kẻ cường đạo. Gặp Không, Sát, Kỵ: đạo tặc. Về mồ mả: gặp Không thì dương phần lộ táng, mả táng lạc phân; gặp Long, Trì thì bên mả có giếng bị cạn lấp; gặp Kỵ, Bạch, Tang thì nhà suy."
+    },
+    {
+      "cung": "Phụ Mẫu",
+      "dien_giai": "Gặp Không ngộ Thiên Cơ ở Dần, Thân: cha mẹ mất sớm."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Gặp Địa Kiếp ngộ Tả, Hữu thì lừa người, ngộ Tử, Phủ, Khôi, Việt thì bị lừa. Gặp Không, Tham: đường cùng. Địa Kiếp chiếu vào Thái Tuế, Thiên Không, Phục Binh, Kình Dương, Tiểu Hao, Thất Sát: chết. Gặp Kỵ, Không, Tuế, Hao, Phục, Hỏa, Linh: chết. Kiếp tại Mệnh: lâm cảnh nghèo túng. Gặp Không, Hao, Quyền: bị kẻ dèm pha."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu công thức an sao"
+  ]
+}

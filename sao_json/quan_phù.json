@@ -1,0 +1,46 @@
+{
+  "sao": "Quan Phù",
+  "loai": "Gian tinh",
+  "cong_thuc_an_sao": {
+    "input": [
+      "Hành Hỏa"
+    ],
+    "logic": "Thuộc Hỏa. Hãm địa tại Tý, Hợi."
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính tình hèn hạ, gian nịnh, khoe khoang. Chủ sự hèn hạ. Mệnh có Quan Phù: gian hèn lắm bệnh tật. Phá, Tuế: đại sự đấu tranh kiện tụng ở cung vượng thì thắng. Quan Phù hội Kình, Đà hãm địa (Tý, Hợi): chết trôi. Phá, Tướng, Tấu: tăng ni. Phá, Hình, Không, Kiếp: bị nhiều người thù ghét, hãm hại. Quan Phù lâm Thân, Tử: thường bị người ta phản."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Quan Phù, Thái Tuế: có kiện tụng mới có của."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Phù, Hổ, Sát: hình tù. Phù, Kình (hãm địa): sét đánh. Phù, Hổ: bị đi đày."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Quan Phù, Phá, Tú (Quả): đi đường thường bị nguy hiểm. Phù phùng Liêm: chết đường. Sát, Phù, Kình: ký ngụ phong tư."
+    },
+    {
+      "cung": "Nô Bộc",
+      "dien_giai": "Quan Phù: tôi tớ trộm cắp."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Phù, Tướng, Tấu mà Mệnh có Tả, Hữu: tăng ni. Quan Phù, Tả, Hữu, Lộc Tồn hay tam Hóa hoặc Khoa, Quyền: được người giúp đỡ."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Tổn thọ."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Quan Phù, Thái Tuế: có đại sự đấu tranh nếu lâm Vượng cung thì thắng, Tuyệt cung thì nan luận. Nếu Tuế chiếu: phòng rắn rết cắn. Phá, Hình có quan tụng; ngộ Không, Kiếp: bị người thù ghét, hãm hại kiện thưa."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": []
+}

@@ -1,0 +1,50 @@
+{
+  "sao": "Hóa Quyền",
+  "loai": "Quý tinh",
+  "cong_thuc_an_sao": {
+    "input": ["Hành Thủy"],
+    "logic": "Vượng tại Thìn, Tuất, Sửu, Mùi. Hãm địa tại Tý, Ngọ, Thân, Dậu, Hợi."
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Hóa Quyền là gò má, ngộ Hình hay Kình, Không, Kiếp: gò má có sẹo; ngộ Kỵ: má đen có tàn nhang. Tính cách nghiêm trang, hách dịch, ưu phiền. Chủ sự có quyền. Hóa Quyền miếu địa: công danh quyền quý, đàn bà không tự làm nên quyền quý cũng nhờ chồng mà có danh quyền. Quyền, Sát cư Ngọ: uy quyền lớn. Tam Hóa củng Mệnh, Kình, Đà, Không, Kiếp: quyền lụy đến thân."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Tam Hóa ở Thìn, Tuất ngộ Cơ, Lương hay tam Hóa, Tả, Hữu: làm giàu dễ dàng."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Quyền, Khoa, Tả, Hữu, Xương, Khúc, Lương, Đồng: ốm gặp thuốc, nạn gặp người cứu."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Quyền, Khoa, Tả, Hữu, Tử, Phủ: đi ra gặp quý nhân giúp đỡ, trọng đãi, tín dụng."
+    },
+    {
+      "cung": "Nô Bộc",
+      "dien_giai": "Vợ bé lấn quyền vợ cả. Quyền, Lộc: nhờ bạn làm nên."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Quyền, Lộc, Phủ, Vũ: đại quý. Quyền, Sát: uy yểm vạn nhân. Quyền ngộ Hao, Sát, Khúc, Hư: người dưới khinh ghét."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Quyền, Tham: thọ. Quyền, Khoa, Xương, Khúc: phát văn, dòng dõi văn gia. Quyền, Quý, Ân Quang: công danh đại phát."
+    },
+    {
+      "cung": "Phụ Mẫu",
+      "dien_giai": "Quyền, Khôi: cha mẹ có quyền hành lớn."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Hóa Quyền ngộ Cự, Vũ: có lệnh bổ đi làm quan ở biên cương."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu ý nghĩa tại cung Huynh Đệ, Phu Thê, Tử Tức, Điền Trạch."
+  ]
+}

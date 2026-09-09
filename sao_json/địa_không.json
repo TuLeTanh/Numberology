@@ -1,0 +1,22 @@
+{
+  "sao": "Địa Không",
+  "loai": "Sát tinh",
+  "cong_thuc_an_sao": {
+    "input": ["Hành Hỏa"],
+    "logic": "Thuộc Hỏa. Vượng tại Tỵ, Hợi. Đắc địa tại Dần. Hãm địa tại Thìn, Tuất."
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính cách nghèo cùng, cô độc, hiểm ác, gian xảo. Địa Không độc thủ: bần cùng, gian quyệt, làm việc gì cũng hỏng, mưu cầu gì cũng hoàn toàn thất bại. Mệnh vô chính diệu đắc tam Không (Địa Không, Thiên Không, Tuần Không): phú quý khả kỳ (không bền). Mệnh, Không, Thân, Kiếp tuổi Thìn, Tuất, Sửu, Mùi: giàu có một thời (Kim, Thổ tốt hơn). Không, Kiếp ngộ Mã: có tài buôn tàu mà không nên công gì. Mệnh giáp Không, giáp Kiếp: lang thang. Không cư Tỵ, Hợi ngộ Lộc Quyền: tài đảm, dũng lược mà danh lợi chỉ phát một thời. Các cung khác xem mục Địa Kiếp."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Địa Không tại Mệnh: sự nghiệp tan tành cả."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu ý nghĩa tại các cung Huynh Đệ, Phu Thê, Tử Tức, Tài Bạch, Tật Ách, Thiên Di, Nô Bộc, Quan Lộc, Điền Trạch, Phúc Đức, Phụ Mẫu (Văn bản chỉ hướng dẫn xem về mục Địa Kiếp cho các cung khác)."
+  ]
+}

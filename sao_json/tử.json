@@ -1,0 +1,33 @@
+{
+  "sao": "Tử",
+  "loai": "Hung tinh",
+  "cong_thuc_an_sao": {
+    "input": ["Hành Hỏa"]
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính cách ai cũng ghét. Chủ sự chết. Mệnh có Tử: rất xấu."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Tài vững không hao. Tử, Vũ, Tham, Kỵ: có của chôn, của cất giữ. Tử, Tang: vô điền."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Tài vững không hao. Tử, Vũ, Tham, Kỵ: có của chôn, của cất giữ. Tử, Tang: vô tài."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Tử, Phục: có người chết trận hay bị ám sát."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Con xung khắc."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu ý nghĩa tại cung Huynh Đệ, Phu Thê, Tật Ách, Thiên Di, Nô Bộc, Quan Lộc, Phụ Mẫu, Hạn."
+  ]
+}

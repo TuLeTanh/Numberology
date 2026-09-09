@@ -1,0 +1,38 @@
+{
+  "sao": "CÔ THẦN",
+  "loai": "Hung tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "cô độc, lạnh lùng, khó tính, ít người ưa. Chủ sự cô đơn."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "hiếm con. Nếu gặp Kỵ thì khắc con. Nếu ngộ Quý tinh thì đông con."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "tiền của giữ vững."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "nhà độc đinh (một con). Nếu gặp Triệt, Dưỡng thì đời nào nhà cũng thất tự (không con trai) và có con nuôi. Nếu đắc địa có phúc tinh thì có linh thần phù hộ."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "gặp Kiếp thì là con một."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "không có bạn. Nếu ngộ quý tinh thì được nhiều người giúp đỡ."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu công thức an sao"
+  ]
+}

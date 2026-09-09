@@ -1,0 +1,52 @@
+{
+  "sao": "Thiên Riêu",
+  "loai": "Phóng đãng tinh",
+  "cong_thuc_an_sao": {
+    "input": [
+      "Hành Thủy"
+    ],
+    "logic": "Vượng tại Mão, Dậu, Tuất, Hợi."
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Thiên Diêu là lông. Tính cách chơi bời, tửu sắc, đa dục, đa nghi, chơi bời phóng đãng. Diêu, Hình nữ Mệnh: phi xung chồng cũng phản chồng. Ngộ Quyền, Lộc: tài đảm. Diêu, Sát Tỵ Ngọ: đàn bà tài hoa mà chìm nổi, nếu có Quyền Lộc: thư thái, tài không lụy tình. Diêu, Phá, Tuế: chơi bời lếu láo phá hại người ta. Diêu, Xương đắc địa: dâm dục chi nhân (hãm: ngồi tù bị gia án). Diêu ngộ Long, Phượng: rất quý. Diêu ngộ Hỏa, Sát: làm việc phi thường. Diêu, Hình: cuồng ngôn, loạn ngữ. Diêu, Hình, Xương, Khúc: mơ mộng viển vông. Diêu, Xương, Khúc, Khôi, Việt: thông minh, hiếu học, tài cao, nhiều vợ đẹp, đàn bà hay trang điểm. Diêu, Phủ nữ Mệnh hay Diêu, Đào, Hỷ có Phá, Tướng, Sứ chiếu / Diêu, Đào ngộ Mã: dâm phụ, vợ theo trai. Diêu, Hỷ, Đào, Hồng: dâm dục. Diêu, Đào, Phủ, Tướng nữ Mệnh: giang hồ mà phú quý."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Diêu, Đào, Hỷ bị Phá hoặc Tướng Quân, Thiên Sứ chiếu: có chị em theo trai chửa hoang."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Diêu, Đà, Sát ngộ Linh, Hỏa: trai giết hoặc bỏ vợ, gái giết chồng hoặc phản chồng. Diêu, Kỵ: số đàn ông thì vợ loạn dâm. Diêu, Đào: vợ có ngoại tình."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Con chơi bời."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Diêu, Tham, Kỵ: chết đuối. Diêu, Hổ: thú dữ cắn chết. Diêu, Vũ: bị bệnh tê thấp. Diêu, Vũ, Toái: câm. Diêu, Đà: mộng tinh. Diêu, Đà, Kỵ: nhiều tai nạn. Diêu, Thiên Hỷ: hay tự gây lấy tai họa. Diêu, Tang: ngã cây."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Diêu, Xương, Mã: ra đi lắm chuyện tư dâm bậy bạ. Diêu, Kỵ: bị người thù ghét. Diêu, Mã: bông lông nơi xa. Diêu, Hình, Không, Kiếp: bệnh phong tình nặng."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Diêu, Cơ, Tấu, Vũ, Đào: làm nghề ca xướng."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Diêu, Hình: có người ngu dốt, vô loại."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Người già không sống lâu, trẻ con thì hay quấy. Diêu, Tham hãm: nhà bị người nhà trộm cắp. Diêu, Hình, Bệnh: hay bệnh phù. Diêu, Hình, Không, Kiếp: bệnh phong tình. Diêu, Toái: ốm đau khẩu thiệt. Diêu, Thai, Tướng, Phá, Phục: cả nghe bị lừa, tình duyên rắc rối. Diêu, Hỷ, Hồng, Đào: có nhân tình."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": [
+    "Thiếu ý nghĩa tại cung Tài Bạch, Nô Bộc, Điền Trạch, Phụ Mẫu."
+  ]
+}

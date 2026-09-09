@@ -1,0 +1,36 @@
+{
+  "sao": "TAM THAI",
+  "loai": "Thuộc Hỏa, Đài Các tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Tính cách ung dung, dịu dàng, đàng hoàng, đứng đắn, thanh nhàn. Chủ sự vinh hiển lâu dài. Gặp Tuần thì kém tốt. Gặp Long Trì, Hóa Lộc thì có địa vị lớn. Thai Tọa trùng phùng chủ về tướng có tài ra trận ung dung. Giáp Thai, giáp Tọa thì tuổi trẻ đã có uy quyền thung dung ở chốn lâu đài."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Gặp Bát Tọa thì cuộc sống sung túc."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Gặp Bát Tọa, Long Trì, Phượng Các thì có nhà cửa lâu dài và được hưởng lợi."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Gặp Bát Tọa thì thọ và nhàn nhã."
+    }
+  ],
+  "cach_cuc": [
+    {
+      "ten_cach": "Giáp Thai giáp Tọa",
+      "dieu_kien": "Mệnh giáp Tam Thai, giáp Bát Tọa",
+      "y_nghia": "Tuổi trẻ đã có uy quyền thung dung ở chốn lâu đài"
+    }
+  ],
+  "ghi_chu_thieu_du_lieu": [
+    "Không có thông tin về công thức an sao"
+  ]
+}

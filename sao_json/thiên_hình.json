@@ -1,0 +1,64 @@
+{
+  "sao": "THIÊN HÌNH",
+  "loai": "Thuộc Hỏa, Hung tinh",
+  "cong_thuc_an_sao": {
+    "input": [],
+    "logic": ""
+  },
+  "y_nghia_theo_cung": [
+    {
+      "cung": "Mệnh",
+      "dien_giai": "Nghiêm ác. Chủ sự hình phạt. Đắc địa: thanh kiếm, khôn ngoan, tài năng, hãm (con dao) bị hình ngục từ tụng lắm chuyện thị phi. Hình, Sát vượng địa: khôn ngoan, anh hùng. Hình, Tham, Liêm: hình tù. Hình, Mã ngộ Khốc hay Hư: võ nghiệp công danh. Hình, Tướng, Ấn: có võ công lớn. Hình, Diêu, Đào, Hồng, Long, Phượng, Lộc, Phùng, Tả, Hữu, nữ Mệnh: lấy chồng quan sang. Hình, Diêu, Xương, Khúc: mơ mộng bóng bẩy. Hình, Sát, Vũ, Tam Thai Bát Toạ: võ nghiệp hiển đạt. Hình, Dương tại Ngọ cập Thiên, Sát hay Địa Kiếp: tù ngục. Hình, Cơ, Thái Tuế: thợ mộc giỏi. Thiên Hình, nữ Mệnh: hao tài. Hình, Diêu, nữ mệnh: không lộn chồng cũng phần phu, ngộ Lộc, Quyền: tài đảm."
+    },
+    {
+      "cung": "Huynh Đệ",
+      "dien_giai": "Hình, Kỵ, Phá hay Hình, Sát, Phá: anh chị em khiếm hòa."
+    },
+    {
+      "cung": "Tử Tức",
+      "dien_giai": "Già mới có con, nhưng con khá. Hình, Sát: hiếm, không con. Hình ngộ Quí tinh: đông con."
+    },
+    {
+      "cung": "Tài Bạch",
+      "dien_giai": "Hình, Lực Sĩ: trộm của đền đài. Hình, Kỵ: tán tài, nghèo. Hình, Cơ, Tuế: làm thợ giỏi."
+    },
+    {
+      "cung": "Tật Ách",
+      "dien_giai": "Hình, Tham, Liêm, Hình, Kiếp, Sát: hình tù. Hình, Sát, Nhẫn: mù và tật. Hình, Phục: nói ngọng. Hình, Kỵ, Liêm, Phá, Đà, Nhẫn: điên và đau mắt. Thiên Hình: bệnh phong sang. Hình, Hỏa ngộ Phi: sét đánh hay súng bắn chết. Hình ngộ Liêm, Đồng giáp Ấn: lo sự tàn tật. Hình, Diêu, Không, Kiếp: bị bệnh phong tình. Hình, Đà, Nhẫn: bị châm chích, mổ xẻ. Hình, Kỵ, Kiếp: bị nạn đao thương."
+    },
+    {
+      "cung": "Nô Bộc",
+      "dien_giai": "Hình, Khốc, Hư: tôi tớ, trộm cắp. Hình, Liêm, Tham, Kiếp: tôi tớ làm tù tội."
+    },
+    {
+      "cung": "Thiên Di",
+      "dien_giai": "Phục, Hình, Thiên Tuế: bị cạnh tranh nguy hiểm."
+    },
+    {
+      "cung": "Điền Trạch",
+      "dien_giai": "Của không hao tán."
+    },
+    {
+      "cung": "Quan Lộc",
+      "dien_giai": "Hình, Cự, Đồng: nhờ ơn trên giúp đỡ làm nên."
+    },
+    {
+      "cung": "Phúc Đức",
+      "dien_giai": "Hình: tổn thọ. Hình, Diêu: nhà có người ngu dốt vô loại."
+    },
+    {
+      "cung": "Phụ Mẫu",
+      "dien_giai": "Hình, Tuần, Triệt: cha mẹ mất sớm."
+    },
+    {
+      "cung": "Phu Thê",
+      "dien_giai": "Hình, Quí: lấy người ngay chính."
+    },
+    {
+      "cung": "Hạn",
+      "dien_giai": "Hình, Đà, Nhẫn: bị châm chích, cắt mổ xẻ. Hình, Kỵ, Kiếp: phòng nạn đao thương. Hình, Hao ngộ Kiếp, Sát: hao tán, ốm đau. Hình, Linh ngộ Việt: phòng sét, điện, súng đạn. Hình, Phù: phòng kiện tụng. Ngộ Không, Kiếp: bị người thù ghét, hãm hại, kiện thưa. Hình, Kỵ ngộ Phá: đánh nhau bị hại. Hình, Tuế: khẩu thiệt."
+    }
+  ],
+  "cach_cuc": [],
+  "ghi_chu_thieu_du_lieu": []
+}
