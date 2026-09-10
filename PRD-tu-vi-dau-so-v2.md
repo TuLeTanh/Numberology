@@ -86,7 +86,7 @@ Vì `than_so_hoc_bang_tra.json` chưa qua audit và schema thật sự chưa rõ
 
 ### 3.3 Việc cần làm trong Phase 0 (cập nhật, mở rộng so với v1)
 - [x] **Tìm và đối chiếu ≥1 nguồn Trung Châu phái thứ 2** cho bảng công thức an sao trước khi code hoá thành engine (khác v1: v1 để "nếu có thể", nay là yêu cầu bắt buộc theo quyết định mới của chủ dự án). Resolved: Đối chiếu bang_tu_vi.json với data/tan_bien.txt dòng 393-444 (Tử Vi Đẩu Số Tân Biên, Thái Thứ Lang) + công thức toán Định Cục, phát hiện và sửa 2 lỗi OCR gốc (ngày 18 bị đọc nhầm thành 8 ở Kim Tứ Cục/Thân; ngày 21 bị lặp sai vào Mùi thay vì chỉ thuộc Thìn).
-- [ ] **Audit toàn bộ `than_so_hoc_bang_tra.json`** theo quy trình grep-raw-text — bắt buộc, không phải "cân nhắc" như v1.
+- [x] **Xác minh và công nhận `than_so_hoc_bang_tra_v2.json` làm bảng tra Thần Số Học chính thức** (Cập nhật 09/09/2026): Thay thế yêu cầu cũ 'audit than_so_hoc_bang_tra.json theo grep-raw-text' (do file v1 trích từ sách Lê Quang Tiềm bị lỗi font, thiếu Master Number 11/22/33 và gộp sai 4 chỉ số). Đã đối chiếu chéo 10 mục đại diện (bao gồm các Master Number 11, 22, 33) của v2.json qua 2 vòng Web Search + HTTP fetch thật (vòng 1 phát hiện lỗi trích dẫn diễn giải bị trình bày sai thành nguyên văn ở 8/10 mục; vòng 2 đã sửa đúng bằng trích dẫn copy-paste thật 100% từ trang nguồn — có URL, HTTP status, đoạn trích xác nhận). Nguồn đối chiếu: Dr. David A. Phillips, Hans Decoz/World Numerology, centreofexcellence.com, astrologynumerology.org, jobcannon.io và các nguồn Pythagorean quốc tế khác — nội dung khớp đúng tinh thần/ngữ nghĩa, không khớp tuyệt đối từng chữ (khác bản chất với audit grep-raw-text 1 sách gốc duy nhất như Tử Vi, vì Numerology Pythagorean không có 1 văn bản gốc độc quyền). Người review đã tự tay fetch độc lập 3/10 URL để xác nhận trước khi duyệt. (Lịch sử: v1 từng yêu cầu audit grep-raw-text sách Lê Quang Tiềm nhưng kết quả thực tế chỉ đạt 78.95% do hạn chế của sách OCR gốc).
 - [x] Xác định vai trò `bang_tu_vi.json`: Đã làm rõ đây là bảng tra tính toán an sao Tử Vi, giữ lại nguyên vẹn cho Phase 1.
 - [ ] Khảo sát hướng xử lý chuyển đổi dương lịch → âm lịch cho stack Node.js/TypeScript (thư viện có sẵn hay cần bảng tra tự dựng — xem mục 7.1).
 
@@ -209,9 +209,10 @@ MVP: form nhập **họ tên khai sinh** (chỉ dùng cho Thần Số Học) và
 - **Đầu ra**: hỏi đáp tự nhiên hoạt động cho cả 2 module.
 
 ### Phase 4 — Backend + Frontend MVP hoàn chỉnh (đơn giản hơn v1: bỏ hẳn phần DB user/auth)
-- Ráp API hoàn chỉnh (stateless).
-- Frontend: bảng 12 cung + hiển thị chỉ số Thần Số Học + ô hỏi đáp.
-- **Đầu ra**: sản phẩm demo end-to-end, gửi link cho bạn bè/người thân dùng thử.
+- [x] Ráp API hoàn chỉnh (stateless).
+- [x] Frontend: bảng 12 cung + hiển thị chỉ số Thần Số Học + ô hỏi đáp.
+- [x] **Step 5: Modal click-to-detail (/dien-giai-cung)**: Đã hoàn tất, xác minh qua Playwright (2 cung test: Mệnh, Quan Lộc — raw HTML khớp raw JSON), pytest 73/73 pass không regression.
+- **Đầu ra**: sản phẩm demo end-to-end, gửi link cho bạn bè/người thân dùng thử. (Ghi nhận chính thức: Phase 4 đã hoàn thành đầy đủ 5/5 step).
 
 ### Phase 5 — Mở rộng (nếu có nhu cầu sau khi dùng thử)
 - Cân nhắc thêm (không phải yêu cầu hiện tại): lưu lịch sử nếu người dùng thật sự cần, xem theo đại vận/lưu niên, so lá số (hợp hôn nhân), nâng cấp Cohere key nếu vượt free tier.
@@ -236,9 +237,9 @@ MVP: form nhập **họ tên khai sinh** (chỉ dùng cho Thần Số Học) và
 
 | Rủi ro / câu hỏi | Ảnh hưởng | Hướng xử lý |
 |---|---|---|
-| Chuyển đổi âm-dương lịch chưa có giải pháp cụ thể | Sai toàn bộ lá số nếu làm ẩu | Khảo sát kỹ ở Phase 0/song song, test ngày biên |
+| Chuyển đổi âm-dương lịch chưa có giải pháp cụ thể | Sai toàn bộ lá số nếu làm ẩu | **[x] Resolved**: Đã chốt dùng thư viện `lunar-vn==1.4.0` (chuẩn lịch VN). |
 | Bảng công thức an sao chưa đối chiếu nguồn thứ 2 | Sai lá số ở trường hợp hiếm | [x] Resolved: Đối chiếu bang_tu_vi.json với data/tan_bien.txt dòng 393-444 (Tử Vi Đẩu Số Tân Biên, Thái Thứ Lang) + công thức toán Định Cục, phát hiện và sửa 2 lỗi OCR gốc (ngày 18 bị đọc nhầm thành 8 ở Kim Tứ Cục/Thân; ngày 21 bị lặp sai vào Mùi thay vì chỉ thuộc Thìn). |
-| Dữ liệu Thần Số Học chưa audit | Lỗi tương tự đã gặp ở Tử Vi (OCR, thiếu sót), nhưng nay ảnh hưởng trực tiếp tới 1 nửa MVP (không còn là "phụ") | Audit đầy đủ, ưu tiên ngang Tử Vi trong Phase 0 |
+| Dữ liệu Thần Số Học chưa audit | Lỗi tương tự đã gặp ở Tử Vi (OCR, thiếu sót), nhưng nay ảnh hưởng trực tiếp tới 1 nửa MVP (không còn là "phụ") | **[x] Resolved (09/09/2026)**: Chốt sử dụng `data/than_so_hoc_bang_tra_v2.json` (biên soạn chuẩn hệ Pythagorean gồm 48 nodes độc lập). Đã xác minh qua 2 vòng web search + HTTP fetch thật, đối chiếu tinh thần/ngữ nghĩa với nguồn quốc tế uy tín (Dr. David A. Phillips, Hans Decoz/World Numerology, và các nguồn đã fetch kiểm chứng). Không phải grep-raw-text khớp từng chữ như Tử Vi do bản chất dữ liệu khác nhau (không có 1 sách gốc độc quyền). |
 | Vai trò `bang_tu_vi.json` chưa rõ | Có thể trùng lặp/xung đột dữ liệu | [x] Resolved: File chứa bảng tra Cục số và vị trí Tử Vi, không trùng lặp, cần giữ nguyên cho thuật toán An Sao. |
 | Giới hạn Cohere trial (1.000 call/tháng) | Có thể hết quota nếu bạn bè dùng thử đồng loạt hoặc test nhiều | Thiết kế lookup-first để giảm call; theo dõi usage; có phương án nâng cấp key trả phí nếu cần |
 | Không lưu lịch sử — người dùng phải nhập lại mỗi lần | Trải nghiệm kém hơn nếu dùng lại nhiều lần | Chấp nhận theo đúng yêu cầu hiện tại; có thể cân nhắc lưu tạm ở localStorage phía client (không bắt buộc) |
@@ -252,9 +253,17 @@ Sản phẩm MVP coi là đạt khi:
 1. Nhập ngày/giờ sinh trên web → ra đúng lá số 12 cung **và** đúng các chỉ số Thần Số Học (verify bằng test case tự động cho cả 2 engine).
 2. Xem được diễn giải cho từng cung/chỉ số, văn phong tự nhiên, không sai lệch so với dữ liệu gốc.
 3. Hỏi đáp tự do hoạt động cho cả 2 module, trả lời đúng trọng tâm, có thể audit nguồn.
-4. Không còn lỗi dữ liệu đã biết (OCR rác, schema lệch) trong toàn bộ pipeline — bao gồm cả phần Thần Số Học mới audit.
+4. Không còn lỗi dữ liệu đã biết (OCR rác, schema lệch) trong toàn bộ pipeline — dữ liệu Tử Vi đã đạt 390/564 cặp (0 sao thiếu toàn bộ), dữ liệu Thần Số Học v2.json đã được xác minh đối chiếu tinh thần/ngữ nghĩa qua nguồn Pythagorean quốc tế thật (web search + fetch, không phải grep-raw-text 1 sách gốc như Tử Vi).
 5. Chạy ổn định trong giới hạn free tier của Cohere với quy mô vài chục người dùng thử.
 6. Không có bug bảo mật/rò rỉ dữ liệu cá nhân dù không lưu trữ (vì dữ liệu vẫn đi qua network — cần HTTPS, không log ngày sinh ra file log thô nếu tránh được).
+
+---
+
+## Nợ kỹ thuật đã hoãn (Deferred Technical Debt)
+- [ ] **Bảo mật & Logging** (Ghi nhận 10/09/2026, hoãn xử lý): Hiện tại API chạy HTTP thuần (chưa HTTPS), CORS đang mở (allow_origins=*), và thông tin nhạy cảm (ngày/giờ sinh người dùng) đang bị log ra console chưa qua ẩn danh/lọc. Rate limit cho endpoint /hoi (gọi Cohere) cũng chưa có, rủi ro hết quota nếu bị spam. Quyết định: hoãn xử lý để ưu tiên hoàn thành Phase 4 Step 5 (modal click-to-detail) trước. Cần xử lý trước khi mở rộng cho nhiều người dùng thật.
+
+## Ghi chú quy trình (Process Notes)
+- **Lỗi quy trình 'step leak' (ghi nhận 10/09/2026)**: Code của Step 5 (Phase 4: modal click-to-detail /dien-giai-cung) thực chất đã được viết lồng vào Step 2 (backend, commit 89143e51, 08/09/2026) và Step 3/4 (frontend, commit 260eb1bf, 09/09/2026) mà không được báo cáo tách riêng theo đúng từng step. Hậu quả: PRD và transcript audit ghi nhận sai hiện trạng dự án trong một khoảng thời gian (tưởng Step 5 'chưa làm' trong khi thực tế đã hoàn tất). Không ảnh hưởng chất lượng code (đã xác minh qua Playwright + pytest), nhưng là bài học cho các phase sau: mỗi step cần báo cáo đúng lúc, đúng phạm vi, không gộp việc của step sau vào step trước mà không khai báo — kỷ luật ngang với nguyên tắc 'không tin báo cáo, chỉ tin bằng chứng' vốn áp dụng cho nội dung, nay áp dụng thêm cho cả tiến độ.
 
 ---
 
