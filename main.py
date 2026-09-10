@@ -648,19 +648,23 @@ def hoi_dap(data: HoiInput):
     2. Retrieve diễn giải thô cho cung/chỉ số đó
     3. Gọi Cohere để trả lời tự nhiên dựa trên context
     """
-    cau_hoi_lower = data.cau_hoi.lower()
+    import unicodedata
+    cau_hoi_lower = unicodedata.normalize('NFC', data.cau_hoi).lower()
 
     # ── Detect từ khóa Thần Số Học trước ──
     chi_so_match = None
     for kw, chi_so in KEYWORD_TO_CHI_SO.items():
-        if kw in cau_hoi_lower:
+        # Đảm bảo từ khóa cũng được chuẩn hóa NFC
+        kw_nfc = unicodedata.normalize('NFC', kw)
+        if kw_nfc in cau_hoi_lower:
             chi_so_match = chi_so
             break
 
     # ── Detect từ khóa Tử Vi ──
     cung_match = None
     for kw, cung in KEYWORD_TO_CUNG.items():
-        if kw in cau_hoi_lower:
+        kw_nfc = unicodedata.normalize('NFC', kw)
+        if kw_nfc in cau_hoi_lower:
             cung_match = cung
             break
 
