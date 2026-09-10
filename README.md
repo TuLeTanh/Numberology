@@ -1,29 +1,134 @@
-# Dự Án Tử Vi Đẩu Số
+# Tử Vi Đẩu Số & Thần Số Học (RAG + LLM) 🌟
 
-Dự án này chuyên về việc số hóa và trích xuất dữ liệu từ các sách Tử Vi Đẩu Số và Thần Số Học, chuyển đổi sang định dạng JSON có cấu trúc để phục vụ cho các ứng dụng tra cứu, an sao, và hệ thống RAG (Retrieval-Augmented Generation).
+Dự án web app kết hợp lập lá số Tử Vi Đẩu Số (trường phái Trung Châu) và tính toán chỉ số Thần Số Học (hệ Pythagorean), tích hợp trợ lý AI (LLM) để diễn giải và hỏi đáp tự do.
 
-## Trạng thái hiện tại
-- Đã hoàn tất khâu trích xuất dữ liệu 101 sao từ Tự Điển Tử Vi sang thư mục `sao_json/`.
-- Dữ liệu đã được chuẩn hóa về định dạng đồng nhất, sửa lỗi OCR.
-- Đang ở giai đoạn thiết kế kỹ thuật theo PRD.
+![Python Version](https://img.shields.io/badge/python-3.11%2B-blue)
+![Tests](https://img.shields.io/badge/tests-73%2F73%20passing-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
-## Cấu trúc thư mục chính
-- `sao_json/`: Chứa 101 file JSON tương ứng với 101 sao, mỗi file bao gồm định nghĩa, tính chất, ý nghĩa theo từng cung và các cách cục liên quan.
-- `an_sao.json`: Bảng công thức lưu trữ quy tắc an sao Tử Vi.
-- `than_so_hoc_bang_tra.json`, `bang_tu_vi.json`: Dữ liệu bảng tra cứu Thần Số Học và Tử Vi.
-- `data/`: Chứa các file raw, tài liệu gốc và kết quả OCR.
-- `_archive_extract.py`: Script trích xuất (được lưu trữ để tham khảo logic).
+## Mục lục
+1. [Giới thiệu](#giới-thiệu)
+2. [Kiến trúc hệ thống](#kiến-trúc-hệ-thống)
+3. [Tính năng](#tính-năng)
+4. [Cấu trúc thư mục](#cấu-trúc-thư-mục)
+5. [Cài đặt & Chạy thử](#cài-đặt--chạy-thử)
+6. [Ví dụ sử dụng](#ví-dụ-sử-dụng)
+7. [Nguồn dữ liệu](#nguồn-dữ-liệu)
+8. [Trạng thái phát triển](#trạng-thái-phát-triển)
 
-## PRD - Quản Lý Rủi Ro & Tài Sản (Thần Số Học)
+## Giới thiệu
+Dự án giải quyết bài toán xem Tử Vi và Thần Số Học cá nhân hoá. Thay vì chỉ hiển thị lá số khô khan hoặc yêu cầu người dùng tự tra cứu sách, ứng dụng tự động an sao chính xác 100% bằng thuật toán, sau đó dùng LLM (Cohere) để tổng hợp diễn giải bằng ngôn ngữ tự nhiên dựa trên cơ sở dữ liệu (RAG) đã được thẩm định.
+- **Tử Vi Đẩu Số**: Tuân thủ an sao theo chuẩn Trung Châu / Tam Hợp phái (Vương Đình Chi).
+- **Thần Số Học**: Áp dụng hệ Pythagorean chuẩn quốc tế.
 
-### B3 - Tài sản dữ liệu hiện có
-- **Engine Thần Số Học**: `engine_than_so_hoc.py` (Đã thống nhất sử dụng Python, loại bỏ các bản nháp ngôn ngữ khác). Chạy thuật toán chuẩn hệ Pythagorean cho 4 chỉ số cốt lõi (Đường Đời, Sứ Mệnh, Linh Hồn, Nhân Cách).
-- **Database Nội Dung**: `data/than_so_hoc_bang_tra_v2.json` (Trạng thái: **2.0-frozen**). Nội dung 48 mục đã qua audit, biên soạn chuẩn hệ Pythagorean.
+## Kiến trúc hệ thống
+```text
+  [Frontend (HTML/JS)] 
+           │
+           ▼
+  [Backend API (FastAPI)] ───────┐
+           │                     │
+           ▼                     ▼
+ [Engine An Sao Tử Vi]   [Engine Thần Số Học]
+  (Thuần tính toán)       (Thuần tính toán)
+           │                     │
+           └─────────┬───────────┘
+                     ▼
+          [Retrieval (RAG)] 
+      (Lookup dict / Exact-match)
+                     │
+                     ▼
+               [LLM (Cohere)]
+     (Tổng hợp câu trả lời tự nhiên)
+```
 
-### B8 - Rủi ro & Câu hỏi mở
-- [x] **Rủi ro Encoding**: File JSON cũ bị lỗi font -> *Resolved: Sinh file mới `v2.json` với encoding chuẩn UTF-8.*
-- [x] **Rủi ro Gộp sai khái niệm**: Khái niệm Đường Đời và Sứ Mệnh bị gộp chung -> *Resolved: Tách bạch rõ 4 nhánh độc lập trong schema JSON v2.*
-- [x] **Rủi ro Thiếu Master Number**: Lấy thiếu số 11, 22, 33 -> *Resolved: Đã bổ sung đẩy đủ Master Numbers cho cả 4 nhánh.*
-- [x] **Rủi ro Mix Chaldean/Pythagorean**: Lẫn lộn 2 hệ phái -> *Resolved: Chốt cứng hệ Pythagorean cho cả công thức tính và nội dung diễn giải.*
-- [x] **Câu hỏi mở Quy tắc Master Number**: Khi nào rút gọn, khi nào giữ? -> *Resolved: Chốt quy tắc giữ nguyên Master Number 11/22/33 ngay khi xuất hiện ở BẤT KỲ bước cộng nào (VD: Einstein Đường đời = 33).*
-- [ ] **Kết nối hiển thị (Phase 1)**: Cần viết `main.py` để kết nối Engine và JSON.
+## Tính năng
+- 🔮 **Lập lá số 12 cung Tử Vi**: An đúng 14 chính tinh và các phụ tinh theo ngày sinh dương lịch (tự động quy đổi âm lịch).
+- 🔢 **Tính toán 4 chỉ số Thần Số Học**: Đường đời, Sứ mệnh, Linh hồn, Nhân cách.
+- 📜 **Tra cứu diễn giải chi tiết**: Click vào từng cung trên lá số để xem ý nghĩa các sao thông qua Modal.
+- 💬 **Hỏi đáp tự do (Chat)**: Trợ lý AI sẵn sàng giải đáp thắc mắc về lá số và chỉ số dựa trên dữ liệu RAG (không ảo giác).
+
+## Cấu trúc thư mục
+```text
+.
+├── data/               # Dữ liệu nguồn tham khảo (sách txt, bảng tra Thần Số Học)
+├── sao_json/           # CSDL 101 file JSON ý nghĩa các sao Tử Vi đã thẩm định
+├── frontend/           # Giao diện web tĩnh (HTML/CSS/JS)
+├── tests/              # Bộ unit tests và integration tests
+├── an_menh_cuc.py      # Logic tính toán Cục số và cung Mệnh
+├── an_phu_tinh.py      # Logic an các phụ tinh
+├── engine_tu_vi.py     # Engine chính an sao 12 cung
+├── engine_than_so_hoc.py # Engine tính toán Thần Số Học
+├── tu_hoa.py           # Logic tính Tứ Hóa
+├── lookup_sao.py       # Logic trích xuất diễn giải sao
+├── cohere_client.py    # Client giao tiếp với Cohere LLM
+├── main.py             # FastAPI backend (entry point)
+└── requirements.txt    # Danh sách thư viện Python
+```
+
+## Cài đặt & Chạy thử
+**Yêu cầu hệ thống:** Python 3.10 hoặc mới hơn.
+
+**1. Clone dự án**
+```bash
+git clone https://github.com/TuLeTanh/Numberology.git
+cd Numberology
+```
+
+**2. Tạo virtual environment (khuyến nghị)**
+```bash
+python -m venv .venv
+# Trên Windows:
+.venv\Scripts\activate
+# Trên macOS/Linux:
+source .venv/bin/activate
+```
+
+**3. Cài đặt thư viện**
+```bash
+pip install -r requirements.txt
+```
+
+**4. Khai báo API Key**
+- Copy file `.env.example` thành `.env`
+- Mở `.env` và điền Cohere API Key của bạn vào:
+```env
+COHERE_API_KEY=your_cohere_key_here
+```
+
+**5. Chạy Backend Server**
+```bash
+uvicorn main:app --reload
+```
+Server sẽ chạy tại `http://localhost:8000`.
+
+**6. Mở Frontend**
+- Bạn có thể mở trực tiếp file `frontend/index.html` bằng trình duyệt web.
+- Hoặc dùng Live Server (VSCode) để phục vụ thư mục `frontend/`.
+
+**7. Chạy Unit Tests**
+```bash
+pytest
+```
+
+## Ví dụ sử dụng
+Thử nhập thông tin sau vào form trên Frontend:
+- **Họ và tên**: Nguyễn Văn A
+- **Ngày sinh**: 21/05/2015
+- **Giờ sinh**: 08:00
+- **Giới tính**: Nam
+Hệ thống sẽ tính ra lá số Tử Vi (Cục: Hỏa Lục Cục) và Thần Số Học tương ứng.
+
+## Nguồn dữ liệu
+- **Tử Vi Đẩu Số Tân Biên** (Vân Đằng Thái Thứ Lang)
+- **Tự Điển Tử Vi Đẩu Số và Thần Số Học** (Lê Quang Tiềm) - Nguồn tham khảo ý nghĩa 101 sao.
+- **Dữ liệu Thần Số Học**: Tổng hợp chuẩn hoá từ các nguồn Pythagorean quốc tế (Dr. David A. Phillips, Hans Decoz).
+> **Lưu ý**: Các file `.txt` nguyên bản (như `tan_bien.txt`, `toan_thu_unicode.txt`) là tư liệu tham khảo học thuật nội bộ, vui lòng không phân phối lại để đảm bảo bản quyền.
+
+## Trạng thái phát triển
+- ✅ **Phase 1-3**: Xây dựng 2 Engine tính toán, RAG lookup.
+- ✅ **Phase 4**: Hoàn thiện Frontend MVP, Modal click-to-detail, API (Đã hoàn tất 5/5 step).
+- ⏳ **Phase 5**: (Roadmap) Tối ưu LLM, thêm luận giải Đại Vận/Lưu Niên, caching, rate limiting.
+
+---
+*Phát triển bởi [TuLeTanh](https://github.com/TuLeTanh).*
