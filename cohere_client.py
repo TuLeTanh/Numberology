@@ -59,17 +59,29 @@ def goi_cohere(
         return "[LỖI] COHERE_API_KEY chưa được cấu hình. Kiểm tra file .env."
 
     try:
-        client = cohere.ClientV2(api_key=key)
-        response = client.chat(
-            model=model,
-            messages=[
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_message},
-            ],
-            max_tokens=max_tokens,
-        )
+        if hasattr(cohere, "ClientV2"):
+            client = cohere.ClientV2(api_key=key)
+            response = client.chat(
+                model=model,
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_message},
+                ],
+                max_tokens=max_tokens,
+            )
+            text = response.message.content[0].text
+        else:
+            # Cohere SDK v5.x (chuẩn theo requirements.txt cohere==5.0.2 trong .venv)
+            client = cohere.Client(api_key=key)
+            response = client.chat(
+                message=user_message,
+                preamble=system_prompt,
+                model=model,
+                max_tokens=max_tokens,
+            )
+            text = response.text
+
         _call_count += 1
-        text = response.message.content[0].text
         msg = f"[Cohere] Lần gọi #{_call_count} trong phiên này | model={model} | tokens_out≈{len(text.split())}"
         try:
             print(msg)
@@ -77,12 +89,14 @@ def goi_cohere(
             print(f"[Cohere] Lan goi #{_call_count} trong phien nay | model={model} | tokens_out~{len(text.split())}")
         return text
 
-    except cohere.UnauthorizedError:
-        return "[LỖI 401] COHERE_API_KEY không hợp lệ hoặc đã hết hạn."
-    except cohere.TooManyRequestsError:
-        return "[LỖI 429] Đã vượt giới hạn rate limit. Thử lại sau ít phút."
     except Exception as e:
-        return f"[LỖI] Không thể kết nối Cohere: {type(e).__name__}: {e}"
+        status = getattr(e, "status_code", None)
+        err_type = type(e).__name__
+        if status == 401 or err_type == "UnauthorizedError":
+            return "[LỖI 401] COHERE_API_KEY không hợp lệ hoặc đã hết hạn."
+        if status == 429 or err_type == "TooManyRequestsError":
+            return "[LỖI 429] Đã vượt giới hạn rate limit. Thử lại sau ít phút."
+        return f"[LỖI] Không thể kết nối Cohere: {err_type}: {e}"
 
 
 def get_call_count() -> int:

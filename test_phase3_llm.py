@@ -66,12 +66,16 @@ def test_cohere_missing_key():
     assert "[LỖI] COHERE_API_KEY chưa được cấu hình" in res
 
 
-@patch("cohere.ClientV2")
+CLIENT_PATCH = "cohere.ClientV2" if hasattr(cohere_client.cohere, "ClientV2") else "cohere.Client"
+
+
+@patch(CLIENT_PATCH)
 def test_cohere_mock_success(mock_client_cls):
     """Giả lập gọi Cohere thành công và bộ đếm tăng lên."""
     initial_count = cohere_client.get_call_count()
     mock_instance = MagicMock()
     mock_response = MagicMock()
+    mock_response.text = "Diễn giải mẫu từ AI."
     mock_response.message.content = [MagicMock(text="Diễn giải mẫu từ AI.")]
     mock_instance.chat.return_value = mock_response
     mock_client_cls.return_value = mock_instance
@@ -81,7 +85,7 @@ def test_cohere_mock_success(mock_client_cls):
     assert cohere_client.get_call_count() == initial_count + 1
 
 
-@patch("cohere.ClientV2")
+@patch(CLIENT_PATCH)
 def test_cohere_error_handling(mock_client_cls):
     """Test xử lý ngoại lệ mạng / lỗi chung."""
     mock_instance = MagicMock()
@@ -93,24 +97,26 @@ def test_cohere_error_handling(mock_client_cls):
     assert "Connection timeout" in res
 
 
-@patch("cohere.ClientV2")
+@patch(CLIENT_PATCH)
 def test_cohere_unauthorized_error(mock_client_cls):
     """Test xử lý lỗi 401 Unauthorized từ Cohere không bị AttributeError."""
-    import cohere
     mock_instance = MagicMock()
-    mock_instance.chat.side_effect = cohere.UnauthorizedError(body="Invalid API key")
+    err = Exception("Invalid API key")
+    err.status_code = 401
+    mock_instance.chat.side_effect = err
     mock_client_cls.return_value = mock_instance
 
     res = cohere_client.goi_cohere("prompt", "hello", api_key="test-key")
     assert "[LỖI 401]" in res
 
 
-@patch("cohere.ClientV2")
+@patch(CLIENT_PATCH)
 def test_cohere_rate_limit_error(mock_client_cls):
     """Test xử lý lỗi 429 TooManyRequests từ Cohere không bị AttributeError."""
-    import cohere
     mock_instance = MagicMock()
-    mock_instance.chat.side_effect = cohere.TooManyRequestsError(body="Rate limit exceeded")
+    err = Exception("Rate limit exceeded")
+    err.status_code = 429
+    mock_instance.chat.side_effect = err
     mock_client_cls.return_value = mock_instance
 
     res = cohere_client.goi_cohere("prompt", "hello", api_key="test-key")
