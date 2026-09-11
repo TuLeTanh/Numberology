@@ -93,6 +93,30 @@ def test_cohere_error_handling(mock_client_cls):
     assert "Connection timeout" in res
 
 
+@patch("cohere.ClientV2")
+def test_cohere_unauthorized_error(mock_client_cls):
+    """Test xử lý lỗi 401 Unauthorized từ Cohere không bị AttributeError."""
+    import cohere
+    mock_instance = MagicMock()
+    mock_instance.chat.side_effect = cohere.UnauthorizedError(body="Invalid API key")
+    mock_client_cls.return_value = mock_instance
+
+    res = cohere_client.goi_cohere("prompt", "hello", api_key="test-key")
+    assert "[LỖI 401]" in res
+
+
+@patch("cohere.ClientV2")
+def test_cohere_rate_limit_error(mock_client_cls):
+    """Test xử lý lỗi 429 TooManyRequests từ Cohere không bị AttributeError."""
+    import cohere
+    mock_instance = MagicMock()
+    mock_instance.chat.side_effect = cohere.TooManyRequestsError(body="Rate limit exceeded")
+    mock_client_cls.return_value = mock_instance
+
+    res = cohere_client.goi_cohere("prompt", "hello", api_key="test-key")
+    assert "[LỖI 429]" in res
+
+
 # ── Test POST /dien-giai-cung-llm ─────────────────────────────────────────────
 
 @patch("main.COHERE_API_KEY", "")

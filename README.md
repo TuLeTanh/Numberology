@@ -98,8 +98,9 @@ COHERE_API_KEY=your_cohere_key_here
 
 **5. Chạy Backend Server**
 ```bash
-uvicorn main:app --reload
+uvicorn main:app --reload --reload-exclude "test_*.py" --reload-exclude "_*.py" --reload-exclude "check_*.py" --reload-exclude "get_*.py"
 ```
+*(Hoặc chạy nhanh bằng file script `start.bat` trên Windows).*
 Server sẽ chạy tại `http://localhost:8000`.
 
 **6. Mở Frontend**

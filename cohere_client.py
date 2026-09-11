@@ -10,6 +10,20 @@ Model: command-r-plus-08-2024 (alias command-r-plus)
     cohere.ClientV2.chat(model="command-r-plus", ...)
 """
 import os
+import sys
+
+# Đảm bảo stdout/stderr hỗ trợ UTF-8 an toàn trên mọi terminal (kể cả Windows cp1252)
+if hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
+if hasattr(sys.stderr, "reconfigure"):
+    try:
+        sys.stderr.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
+
 import cohere
 
 # Bộ đếm cuộc gọi trong phiên — in-memory, reset khi restart server
@@ -56,12 +70,16 @@ def goi_cohere(
         )
         _call_count += 1
         text = response.message.content[0].text
-        print(f"[Cohere] Lần gọi #{_call_count} trong phiên này | model={model} | tokens_out≈{len(text.split())}")
+        msg = f"[Cohere] Lần gọi #{_call_count} trong phiên này | model={model} | tokens_out≈{len(text.split())}"
+        try:
+            print(msg)
+        except UnicodeEncodeError:
+            print(f"[Cohere] Lan goi #{_call_count} trong phien nay | model={model} | tokens_out~{len(text.split())}")
         return text
 
-    except cohere.errors.UnauthorizedError:
+    except cohere.UnauthorizedError:
         return "[LỖI 401] COHERE_API_KEY không hợp lệ hoặc đã hết hạn."
-    except cohere.errors.TooManyRequestsError:
+    except cohere.TooManyRequestsError:
         return "[LỖI 429] Đã vượt giới hạn rate limit. Thử lại sau ít phút."
     except Exception as e:
         return f"[LỖI] Không thể kết nối Cohere: {type(e).__name__}: {e}"
