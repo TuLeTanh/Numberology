@@ -535,6 +535,309 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  // ── Tính năng Xuất PDF (html2pdf.js) ──
+  const btnExportPdfTuVi = document.getElementById("btn-export-pdf-tuvi");
+  const btnExportPdfNumerology = document.getElementById("btn-export-pdf-numerology");
+
+  function xuatPdfTuVi() {
+    if (!currentLassoData || !currentLassoData.tu_vi) {
+      alert("Vui lòng lập lá số trước khi xuất PDF.");
+      return;
+    }
+
+    if (typeof html2pdf === "undefined") {
+      alert("Thư viện xuất PDF chưa sẵn sàng. Vui lòng kiểm tra kết nối mạng.");
+      return;
+    }
+
+    const personal = currentLassoData.thong_tin_ca_nhan || {};
+    const tuVi = currentLassoData.tu_vi || {};
+    const amLich = tuVi.am_lich || {};
+    const bang12 = tuVi.bang_12_cung || {};
+
+    const safeHoTen = (personal.ho_ten || "Nguoi_Dung").trim().replace(/\s+/g, "_");
+    const fileName = `La_So_Tu_Vi_${safeHoTen}.pdf`;
+
+    const palaceOrder = [
+      "Mệnh", "Phụ Mẫu", "Phúc Đức", "Điền Trạch",
+      "Quan Lộc", "Nô Bộc", "Thiên Di", "Tật Ách",
+      "Tài Bạch", "Tử Tức", "Phu Thê", "Huynh Đệ"
+    ];
+
+    let rowsHtml = "";
+    palaceOrder.forEach((tenCung, idx) => {
+      const info = bang12[tenCung];
+      if (!info) return;
+
+      const isMenh = (tenCung === "Mệnh");
+      const isThan = (tuVi.cung_than === info.dia_chi);
+      let badges = "";
+      if (isMenh) badges += ` <span style="background: #b8860b; color: #fff; padding: 2px 5px; font-size: 10px; border-radius: 3px;">MỆNH</span>`;
+      if (isThan) badges += ` <span style="background: #4682b4; color: #fff; padding: 2px 5px; font-size: 10px; border-radius: 3px;">THÂN</span>`;
+
+      // Chính tinh & Tứ Hóa
+      let ctText = "(Vô chính diệu)";
+      if (info.chinh_tinh && info.chinh_tinh.length > 0) {
+        ctText = info.chinh_tinh.map(item => {
+          let thStr = item.tu_hoa ? ` <b>[${item.tu_hoa}]</b>` : "";
+          return `<span style="color: #8b0000; font-weight: bold;">${item.sao}</span>${thStr}`;
+        }).join(", ");
+      }
+
+      // Phụ tinh & Tuần Triệt
+      let ptText = "-";
+      if (info.phu_tinh && info.phu_tinh.length > 0) {
+        ptText = info.phu_tinh.map(sao => {
+          if (["Kình Dương", "Đà La", "Hỏa Tinh", "Linh Tinh", "Địa Không", "Địa Kiếp"].includes(sao)) {
+            return `<span style="color: #c0392b;">${sao}</span>`;
+          } else if (["Tuần Không", "Triệt Không"].includes(sao)) {
+            return `<span style="color: #2980b9; font-weight: bold;">[${sao}]</span>`;
+          }
+          return `<span>${sao}</span>`;
+        }).join(", ");
+      }
+
+      const bgColor = idx % 2 === 0 ? "#ffffff" : "#fbf9f4";
+      rowsHtml += `
+        <tr style="background: ${bgColor}; page-break-inside: avoid;">
+          <td style="border: 1px solid #dcd1be; padding: 6px 9px; font-weight: bold; color: #333;">
+            ${tenCung} (${info.can || ""} ${info.dia_chi})${badges}
+          </td>
+          <td style="border: 1px solid #dcd1be; padding: 6px 9px;">
+            ${ctText}
+          </td>
+          <td style="border: 1px solid #dcd1be; padding: 6px 9px; color: #444;">
+            ${ptText}
+          </td>
+        </tr>
+      `;
+    });
+
+    const printContainer = document.createElement("div");
+    printContainer.id = "pdf-temp-container-tuvi";
+    printContainer.style.cssText = "width: 780px; background: #ffffff; color: #222; padding: 18px 22px; font-family: 'Be Vietnam Pro', Arial, sans-serif; line-height: 1.35; box-sizing: border-box;";
+
+    printContainer.innerHTML = `
+      <div style="text-align: center; border-bottom: 2px solid #8b6508; padding-bottom: 10px; margin-bottom: 14px;">
+        <h1 style="margin: 0 0 4px 0; color: #8b6508; font-size: 22px; text-transform: uppercase; letter-spacing: 1px;">Lá Số Tử Vi Đẩu Số</h1>
+        <div style="font-size: 12px; color: #666;">Hồ Sơ Mệnh Bàn & Chi Tiết 12 Cung Số</div>
+      </div>
+
+      <div style="background: #fdfbf7; border: 1px solid #e5dbca; border-radius: 6px; padding: 10px 14px; margin-bottom: 14px; page-break-inside: avoid;">
+        <div style="font-weight: bold; color: #8b6508; margin-bottom: 6px; font-size: 13px; text-transform: uppercase;">Thông Tin Đương Số (Thiên Bàn)</div>
+        <table style="width: 100%; font-size: 12px; border-collapse: collapse;">
+          <tr>
+            <td style="padding: 2px 4px; width: 50%;"><strong>Họ và tên:</strong> ${personal.ho_ten || "-"}</td>
+            <td style="padding: 2px 4px; width: 50%;"><strong>Giới tính:</strong> ${personal.gioi_tinh === "nu" ? "Nữ" : "Nam"}</td>
+          </tr>
+          <tr>
+            <td style="padding: 2px 4px;"><strong>Dương lịch:</strong> ${personal.ngay_thang_nam_sinh || "-"}</td>
+            <td style="padding: 2px 4px;"><strong>Âm lịch:</strong> Ngày ${amLich.ngay || "-"} tháng ${amLich.thang || "-"}${amLich.nhuan ? " (Nhuận)" : ""} năm ${amLich.nam || "-"}</td>
+          </tr>
+          <tr>
+            <td style="padding: 2px 4px;"><strong>Giờ sinh:</strong> Giờ ${tuVi.gio_chi || "-"}</td>
+            <td style="padding: 2px 4px;"><strong>Cục:</strong> ${tuVi.cuc || "-"}</td>
+          </tr>
+          <tr>
+            <td style="padding: 2px 4px;"><strong>Cung Mệnh:</strong> ${tuVi.cung_menh || "-"}</td>
+            <td style="padding: 2px 4px;"><strong>Cung Thân:</strong> Thân cư ${tuVi.cung_than || "-"}</td>
+          </tr>
+        </table>
+      </div>
+
+      <div style="font-weight: bold; color: #8b6508; margin: 12px 0 6px 0; font-size: 13px; text-transform: uppercase;">Chi Tiết Toàn Bộ 12 Cung Số</div>
+      <table style="width: 100%; border-collapse: collapse; font-size: 11px; margin-bottom: 12px;">
+        <thead>
+          <tr style="background: #8b6508; color: #ffffff;">
+            <th style="border: 1px solid #8b6508; padding: 6px 8px; width: 22%; text-align: left;">Cung Số & Vị Trí</th>
+            <th style="border: 1px solid #8b6508; padding: 6px 8px; width: 38%; text-align: left;">Chính Tinh & Tứ Hóa</th>
+            <th style="border: 1px solid #8b6508; padding: 6px 8px; width: 40%; text-align: left;">Phụ Tinh / Tuần Triệt</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rowsHtml}
+        </tbody>
+      </table>
+
+      <div style="font-size: 10px; color: #888; text-align: right; margin-top: 10px; border-top: 1px solid #eee; padding-top: 4px;">
+        Tạo tự động từ Hệ thống Tử Vi Đẩu Số &amp; Thần Số Học
+      </div>
+    `;
+
+    const wrapper = document.createElement("div");
+    wrapper.id = "pdf-wrapper-temp-tuvi";
+    wrapper.style.cssText = "position: fixed; top: 0; left: 0; width: 780px; height: 0; overflow: hidden; z-index: -9999; pointer-events: none;";
+    wrapper.appendChild(printContainer);
+    document.body.appendChild(wrapper);
+
+    const opt = {
+      margin: 10,
+      filename: fileName,
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: {
+        scale: 2,
+        useCORS: true,
+        scrollX: 0,
+        scrollY: 0
+      },
+      jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+      pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+    };
+
+    btnExportPdfTuVi.disabled = true;
+    btnExportPdfTuVi.innerHTML = `<span class="btn-icon">⏳</span> Đang tạo PDF...`;
+
+    const cleanup = () => {
+      if (wrapper && wrapper.parentNode) {
+        wrapper.parentNode.removeChild(wrapper);
+      }
+      btnExportPdfTuVi.disabled = false;
+      btnExportPdfTuVi.innerHTML = `<span class="btn-icon">📄</span> Tải PDF Lá số Tử Vi`;
+    };
+
+    html2pdf().set(opt).from(printContainer).save()
+      .then(cleanup)
+      .catch(err => {
+        cleanup();
+        console.error("Lỗi xuất PDF Tử Vi:", err);
+        alert("Không thể tạo file PDF. Chi tiết: " + err.message);
+      });
+  }
+
+  function xuatPdfThanSoHoc() {
+    if (!currentLassoData || !currentLassoData.than_so_hoc) {
+      alert("Vui lòng lập lá số trước khi xuất PDF.");
+      return;
+    }
+
+    if (typeof html2pdf === "undefined") {
+      alert("Thư viện xuất PDF chưa sẵn sàng. Vui lòng kiểm tra kết nối mạng.");
+      return;
+    }
+
+    const personal = currentLassoData.thong_tin_ca_nhan || {};
+    const tsh = currentLassoData.than_so_hoc || {};
+
+    const safeHoTen = (personal.ho_ten || "Nguoi_Dung").trim().replace(/\s+/g, "_");
+    const fileName = `Ho_So_Than_So_Hoc_${safeHoTen}.pdf`;
+
+    const printContainer = document.createElement("div");
+    printContainer.id = "pdf-temp-container-tsh";
+    printContainer.style.cssText = "width: 780px; margin: 0; background: #ffffff; color: #222; padding: 24px 28px; font-family: 'Be Vietnam Pro', Arial, sans-serif; line-height: 1.6; box-sizing: border-box;";
+
+    const duongDoiVal = tsh.duong_doi && tsh.duong_doi.gia_tri !== undefined ? tsh.duong_doi.gia_tri : "-";
+    const suMenhVal = tsh.su_menh && tsh.su_menh.gia_tri !== undefined ? tsh.su_menh.gia_tri : "-";
+    const linhHonVal = tsh.linh_hon && tsh.linh_hon.gia_tri !== undefined ? tsh.linh_hon.gia_tri : "-";
+    const nhanCachVal = tsh.nhan_cach && tsh.nhan_cach.gia_tri !== undefined ? tsh.nhan_cach.gia_tri : "-";
+
+    printContainer.innerHTML = `
+      <div style="text-align: center; border-bottom: 2px solid #8b6508; padding-bottom: 12px; margin-bottom: 20px;">
+        <h1 style="margin: 0 0 6px 0; color: #8b6508; font-size: 24px; text-transform: uppercase; letter-spacing: 1px;">Hồ Sơ Thần Số Học</h1>
+        <div style="font-size: 13px; color: #666;">Bảng Tổng Hợp Các Chỉ Số Định Danh Cốt Lõi</div>
+      </div>
+
+      <div style="background: #fdfbf7; border: 1px solid #e5dbca; border-radius: 8px; padding: 14px 18px; margin-bottom: 22px; page-break-inside: avoid;">
+        <div style="font-weight: bold; color: #8b6508; margin-bottom: 8px; font-size: 14px; text-transform: uppercase;">Thông Tin Đương Số</div>
+        <div style="font-size: 13.5px; margin-bottom: 5px;"><strong>Họ và tên khai sinh:</strong> ${personal.ho_ten || "-"}</div>
+        <div style="font-size: 13.5px;"><strong>Ngày tháng năm sinh:</strong> ${personal.ngay_thang_nam_sinh || "-"}</div>
+      </div>
+
+      <div style="font-weight: bold; color: #8b6508; margin-bottom: 10px; font-size: 14px; text-transform: uppercase;">4 Chỉ Số Thần Số Học Cốt Lõi</div>
+      <table style="width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 22px; page-break-inside: avoid;">
+        <thead>
+          <tr style="background: #8b6508; color: #ffffff;">
+            <th style="border: 1px solid #8b6508; padding: 10px 14px; width: 70%; text-align: left;">Tên Chỉ Số (Core Number)</th>
+            <th style="border: 1px solid #8b6508; padding: 10px 14px; width: 30%; text-align: center;">Giá Trị Số</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background: #ffffff;">
+            <td style="border: 1px solid #e5dbca; padding: 12px 14px; font-weight: bold; color: #333;">
+              Số Đường Đời (Life Path)
+            </td>
+            <td style="border: 1px solid #e5dbca; padding: 12px 14px; text-align: center; font-size: 20px; font-weight: bold; color: #8b6508;">
+              ${duongDoiVal}
+            </td>
+          </tr>
+          <tr style="background: #fbf9f4;">
+            <td style="border: 1px solid #e5dbca; padding: 12px 14px; font-weight: bold; color: #333;">
+              Số Sứ Mệnh (Destiny)
+            </td>
+            <td style="border: 1px solid #e5dbca; padding: 12px 14px; text-align: center; font-size: 20px; font-weight: bold; color: #8b6508;">
+              ${suMenhVal}
+            </td>
+          </tr>
+          <tr style="background: #ffffff;">
+            <td style="border: 1px solid #e5dbca; padding: 12px 14px; font-weight: bold; color: #333;">
+              Số Linh Hồn (Soul Urge)
+            </td>
+            <td style="border: 1px solid #e5dbca; padding: 12px 14px; text-align: center; font-size: 20px; font-weight: bold; color: #8b6508;">
+              ${linhHonVal}
+            </td>
+          </tr>
+          <tr style="background: #fbf9f4;">
+            <td style="border: 1px solid #e5dbca; padding: 12px 14px; font-weight: bold; color: #333;">
+              Số Nhân Cách (Personality)
+            </td>
+            <td style="border: 1px solid #e5dbca; padding: 12px 14px; text-align: center; font-size: 20px; font-weight: bold; color: #8b6508;">
+              ${nhanCachVal}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="font-size: 11px; color: #888; text-align: right; margin-top: 16px; border-top: 1px solid #eee; padding-top: 6px;">
+        Tạo tự động từ Hệ thống Tử Vi Đẩu Số &amp; Thần Số Học
+      </div>
+    `;
+
+    const wrapper = document.createElement("div");
+    wrapper.id = "pdf-wrapper-temp-tsh";
+    wrapper.style.cssText = "position: fixed; top: 0; left: 0; width: 780px; height: 0; overflow: hidden; z-index: -9999; pointer-events: none;";
+    wrapper.appendChild(printContainer);
+    document.body.appendChild(wrapper);
+
+    const opt = {
+      margin: 10,
+      filename: fileName,
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: {
+        scale: 2,
+        useCORS: true,
+        scrollX: 0,
+        scrollY: 0
+      },
+      jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+      pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+    };
+
+    btnExportPdfNumerology.disabled = true;
+    btnExportPdfNumerology.innerHTML = `<span class="btn-icon">⏳</span> Đang tạo PDF...`;
+
+    const cleanup = () => {
+      if (wrapper && wrapper.parentNode) {
+        wrapper.parentNode.removeChild(wrapper);
+      }
+      btnExportPdfNumerology.disabled = false;
+      btnExportPdfNumerology.innerHTML = `<span class="btn-icon">📄</span> Tải PDF Hồ sơ Thần Số Học`;
+    };
+
+    html2pdf().set(opt).from(printContainer).save()
+      .then(cleanup)
+      .catch(err => {
+        cleanup();
+        console.error("Lỗi xuất PDF Thần Số Học:", err);
+        alert("Không thể tạo file PDF. Chi tiết: " + err.message);
+      });
+  }
+
+  if (btnExportPdfTuVi) {
+    btnExportPdfTuVi.addEventListener("click", xuatPdfTuVi);
+  }
+  if (btnExportPdfNumerology) {
+    btnExportPdfNumerology.addEventListener("click", xuatPdfThanSoHoc);
+  }
+
   function closePalaceModal() {
     palaceModal.style.display = "none";
   }

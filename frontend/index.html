@@ -83,7 +83,12 @@
     <main id="result-container" class="result-container" style="display: none;">
       <!-- Bảng 12 Cung Tử Vi -->
       <section class="tuvi-section">
-        <h2 class="section-title">Lá Số Tử Vi Đẩu Số</h2>
+        <div class="section-header-bar">
+          <h2 class="section-title">Lá Số Tử Vi Đẩu Số</h2>
+          <button type="button" id="btn-export-pdf-tuvi" class="btn-pdf">
+            <span class="btn-icon">📄</span> Tải PDF Lá số Tử Vi
+          </button>
+        </div>
         <div class="tuvi-board-wrapper">
           <div id="tuvi-board" class="tuvi-board">
             <!-- 12 Cung và Trung Cung (Thiên Bàn) sẽ được JS chèn vào đây -->
@@ -93,7 +98,12 @@
 
       <!-- 4 Chỉ số Thần Số Học -->
       <section class="numerology-section">
-        <h2 class="section-title">Hồ Sơ Thần Số Học</h2>
+        <div class="section-header-bar">
+          <h2 class="section-title">Hồ Sơ Thần Số Học</h2>
+          <button type="button" id="btn-export-pdf-numerology" class="btn-pdf">
+            <span class="btn-icon">📄</span> Tải PDF Hồ sơ Thần Số Học
+          </button>
+        </div>
         <div id="numerology-grid" class="numerology-grid">
           <!-- 4 Card Thần số học sẽ được JS chèn vào đây -->
         </div>
@@ -140,6 +150,8 @@
     </div>
   </div>
 
+  <!-- Thư viện html2pdf.js tạo PDF từ DOM hỗ trợ tiếng Việt Unicode hoàn hảo -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

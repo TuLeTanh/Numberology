@@ -503,6 +503,12 @@ Bạn là trợ lý tư vấn Tử Vi Đẩu Số chuyên nghiệp. Hãy tuân t
    cổ văn khó đọc từ tài liệu gốc (viết tắt, chữ hán nôm). Giải thích thuật ngữ nếu cần.
 
 4. Giữ độ dài phù hợp: đủ để người đọc hiểu rõ, không dài dòng.
+
+5. TUYỆT ĐỐI KHÔNG liệt kê lại các trường hợp giả định dạng 'nếu gặp sao X thì...', 
+   'nếu ở cung Y thì...' như văn bản gốc. Thay vào đó, hãy trình bày đầy đủ các điểm quan trọng 
+   dựa trên ý nghĩa cốt lõi của các sao tại cung này, diễn đạt thành một nhận định dứt khoát, 
+   tự nhiên, giống lời một người luận giải thật sự nói chuyện trực tiếp — không dùng cấu trúc 
+   điều kiện lặp lại nhiều lần.
 """
 
 # ── Bảng từ khóa → cung (dùng cho route /hoi) ──
@@ -514,6 +520,8 @@ KEYWORD_TO_CUNG = {
     "thăng tiến": "Quan Lộc",
     "sự thành đạt": "Quan Lộc",
     "chức vụ": "Quan Lộc",
+    "học vấn": "Quan Lộc",
+    "thi cử": "Quan Lộc",
     # Tài chính
     "tiền bạc": "Tài Bạch",
     "tài chính": "Tài Bạch",
@@ -527,6 +535,7 @@ KEYWORD_TO_CUNG = {
     "tình yêu": "Phu Thê",
     "người yêu": "Phu Thê",
     "bạn đời": "Phu Thê",
+    "kết hôn": "Phu Thê",
     # Sức khỏe
     "sức khỏe": "Tật Ách",
     "bệnh tật": "Tật Ách",
@@ -538,6 +547,8 @@ KEYWORD_TO_CUNG = {
     # Cha mẹ
     "cha mẹ": "Phụ Mẫu",
     "bố mẹ": "Phụ Mẫu",
+    "gia đình": "Phụ Mẫu",
+    "gia đạo": "Phụ Mẫu",
     # Bạn bè / người hầu
     "bạn bè": "Nô Bộc",
     "đồng nghiệp": "Nô Bộc",
@@ -563,6 +574,8 @@ KEYWORD_TO_CUNG = {
     "vận mệnh": "Mệnh",
     "bản mệnh": "Mệnh",
     "cuộc đời": "Mệnh",
+    "cung mệnh": "Mệnh",
+    "tính cách": "Mệnh",
 }
 
 # Từ khóa cho Thần Số Học
@@ -704,17 +717,20 @@ def hoi_dap(data: HoiInput):
             for loai_hoa, ten_sao_hoa in (data.tu_hoa or {}).items():
                 hoa_map.setdefault(ten_sao_hoa, []).append(loai_hoa)
 
-            context_parts.append(f"\nCung {cung_match} (Địa Chi: {dia_chi_cung}):")
-            for ts in sao_tai_cung:
-                dg = lookup_sao.get_dien_giai_sao(sao_data, ts, ten_cung_de_tra)
-                line = f"  - {ts}"
-                if hoa_map.get(ts):
-                    line += f" [{', '.join(hoa_map[ts])}]"
-                if isinstance(dg, str):
-                    line += f": {dg[:400]}"
-                else:
-                    line += ": [Thiếu dữ liệu diễn giải]"
-                context_parts.append(line)
+            if not sao_tai_cung:
+                context_parts.append(f"\nCung {cung_match} (Địa Chi: {dia_chi_cung}): Không có chính tinh (Vô Chính Diệu).")
+            else:
+                context_parts.append(f"\nCung {cung_match} (Địa Chi: {dia_chi_cung}):")
+                for ts in sao_tai_cung:
+                    dg = lookup_sao.get_dien_giai_sao(sao_data, ts, ten_cung_de_tra)
+                    line = f"  - {ts}"
+                    if hoa_map.get(ts):
+                        line += f" [{', '.join(hoa_map[ts])}]"
+                    if isinstance(dg, str):
+                        line += f": {dg[:400]}"
+                    else:
+                        line += ": [Thiếu dữ liệu diễn giải]"
+                    context_parts.append(line)
 
     # Không match được gì
     if not context_parts:
