@@ -372,6 +372,13 @@ document.addEventListener("DOMContentLoaded", () => {
         muoi_hai_cung: tuVi.muoi_hai_cung || null,
         chinh_tinh: tuVi["14_chinh_tinh"] || tuVi.chinh_tinh || null,
         tu_hoa: tuVi.tu_hoa || null,
+        phu_tinh: tuVi.phu_tinh || null,
+        vong_thai_tue: tuVi.vong_thai_tue || null,
+        tuan_triet: tuVi.tuan_triet || null,
+        dao_hong_hi: tuVi.dao_hong_hi || null,
+        quang_quy: tuVi.quang_quy || null,
+        khoc_hu_co_qua: tuVi.khoc_hu_co_qua || null,
+        hinh_rieu_y: tuVi.hinh_rieu_y || null,
         than_so_hoc: currentLassoData.than_so_hoc || null
       };
 

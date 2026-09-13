@@ -406,61 +406,81 @@ class DienGiaiCungInput(BaseModel):
     hinh_rieu_y: Optional[Dict[str, str]] = {}
 
 
-@app.post("/dien-giai-cung")
-def dien_giai_cung(data: DienGiaiCungInput):
+def lay_context_day_du_cho_cung(
+    ten_cung: str,
+    muoi_hai_cung: Dict[str, str],
+    chinh_tinh: Dict[str, str],
+    tu_hoa: Optional[Dict[str, str]] = None,
+    phu_tinh: Optional[Dict[str, str]] = None,
+    vong_thai_tue: Optional[Dict[str, str]] = None,
+    tuan_triet: Optional[Dict[str, List[str]]] = None,
+    dao_hong_hi: Optional[Dict[str, str]] = None,
+    quang_quy: Optional[Dict[str, str]] = None,
+    khoc_hu_co_qua: Optional[Dict[str, str]] = None,
+    hinh_rieu_y: Optional[Dict[str, str]] = None,
+) -> Dict:
     """
-    Từ ten_cung, tìm Địa Chi của cung đó trong muoi_hai_cung,
-    sau đó tìm các sao đang đóng tại Địa Chi đó trong chinh_tinh và các nhóm phụ tinh,
-    cuối cùng tra dien_giai thô cho từng sao.
+    Hàm dùng chung thu thập đầy đủ 7 nhóm sao + chính tinh + tuần triệt cho một cung,
+    xử lý trường hợp Vô Chính Diệu (mượn chính tinh từ cung xung chiếu),
+    và tra cứu diễn giải thô từ lookup_sao.
     """
     global sao_data
-    # Lazy fallback: nếu lifespan chưa chạy (e.g. TestClient không dùng context manager)
     if not sao_data:
         sao_data = lookup_sao.load_sao_data()
 
-    ten_cung = data.ten_cung
+    if ten_cung not in muoi_hai_cung:
+        return {
+            "cung": ten_cung,
+            "dia_chi": None,
+            "chinh_tinh_tai_cung": [],
+            "phu_tinh_tai_cung": [],
+            "so_sao": 0,
+            "sao_va_dien_giai": [],
+            "vo_chinh_dieu": False,
+            "cung_xung_chieu": None,
+            "sao_muon": [],
+        }
 
-    # Bước 1: Tìm địa chi của cung được hỏi
-    if ten_cung not in data.muoi_hai_cung:
-        raise HTTPException(
-            status_code=400,
-            detail=f"Cung '{ten_cung}' không có trong muoi_hai_cung được gửi lên."
-        )
-    dia_chi_cung = data.muoi_hai_cung[ten_cung]  # e.g. "Sửu"
+    dia_chi_cung = muoi_hai_cung[ten_cung]
 
-    # Bước 2: Tìm các sao đang ở địa chi đó (gồm chính tinh và phụ tinh)
-    sao_tai_cung = [
+    # Bước 1: Tìm chính tinh tại cung
+    chinh_tinh_tai_cung = [
         ten_sao
-        for ten_sao, dia_chi_sao in data.chinh_tinh.items()
+        for ten_sao, dia_chi_sao in (chinh_tinh or {}).items()
         if dia_chi_sao == dia_chi_cung
     ]
+
+    # Bước 2: Tìm phụ tinh tại cung (từ 6 dict phụ tinh + tuan_triet)
+    phu_tinh_tai_cung = []
     for pt_dict in [
-        data.phu_tinh or {},
-        data.vong_thai_tue or {},
-        data.dao_hong_hi or {},
-        data.quang_quy or {},
-        data.khoc_hu_co_qua or {},
-        data.hinh_rieu_y or {},
+        phu_tinh or {},
+        vong_thai_tue or {},
+        dao_hong_hi or {},
+        quang_quy or {},
+        khoc_hu_co_qua or {},
+        hinh_rieu_y or {},
     ]:
         for ten_sao, dia_chi_sao in pt_dict.items():
-            if dia_chi_sao == dia_chi_cung and ten_sao not in sao_tai_cung:
-                sao_tai_cung.append(ten_sao)
-    for ten_sao, list_dc in (data.tuan_triet or {}).items():
-        if dia_chi_cung in list_dc and ten_sao not in sao_tai_cung:
-            sao_tai_cung.append(ten_sao)
+            if dia_chi_sao == dia_chi_cung and ten_sao not in chinh_tinh_tai_cung and ten_sao not in phu_tinh_tai_cung:
+                phu_tinh_tai_cung.append(ten_sao)
 
-    # Bước 3: Với mỗi sao, xác định sao đang ở cung nào trong 12 cung
-    # (vì sao tra cứu theo tên cung, không theo địa chi)
-    # Đảo ngược muoi_hai_cung: {dia_chi -> ten_cung}
-    dia_chi_to_cung = {v: k for k, v in data.muoi_hai_cung.items()}
+    for ten_sao, list_dc in (tuan_triet or {}).items():
+        if dia_chi_cung in list_dc and ten_sao not in chinh_tinh_tai_cung and ten_sao not in phu_tinh_tai_cung:
+            phu_tinh_tai_cung.append(ten_sao)
+
+    # Danh sách tất cả sao tại cung
+    sao_tai_cung = list(chinh_tinh_tai_cung) + [s for s in phu_tinh_tai_cung if s not in chinh_tinh_tai_cung]
+
+    # Bước 3: Xác định tên cung tra cứu
+    dia_chi_to_cung = {v: k for k, v in muoi_hai_cung.items()}
     ten_cung_de_tra = dia_chi_to_cung.get(dia_chi_cung, ten_cung)
 
-    # Kiểm tra Tứ Hóa xem sao nào đang được hóa
-    hoa_map = {}  # ten_sao -> [loai_hoa]
-    for loai_hoa, ten_sao_hoa in (data.tu_hoa or {}).items():
+    # Map Tứ Hóa
+    hoa_map = {}
+    for loai_hoa, ten_sao_hoa in (tu_hoa or {}).items():
         hoa_map.setdefault(ten_sao_hoa, []).append(loai_hoa)
 
-    # Bước 4: Tra diễn giải
+    # Bước 4: Tra diễn giải cho từng sao tại cung
     ket_qua = []
     for ten_sao in sao_tai_cung:
         dg = lookup_sao.get_dien_giai_sao(sao_data, ten_sao, ten_cung_de_tra)
@@ -480,11 +500,87 @@ def dien_giai_cung(data: DienGiaiCungInput):
             entry["dien_giai"] = dg
         ket_qua.append(entry)
 
+    # Bước 5: Xử lý Vô Chính Diệu (mượn sao từ cung xung chiếu)
+    vo_chinh_dieu = (len(chinh_tinh_tai_cung) == 0)
+    cung_xung_chieu_ten = None
+    sao_muon_list = []
+
+    if vo_chinh_dieu:
+        from an_menh_cuc import TEN_12_CUNG
+        if ten_cung in TEN_12_CUNG:
+            idx_cung = TEN_12_CUNG.index(ten_cung)
+            cung_xung_chieu_ten = TEN_12_CUNG[(idx_cung + 6) % 12]
+            dia_chi_xung = muoi_hai_cung.get(cung_xung_chieu_ten)
+            if dia_chi_xung:
+                chinh_tinh_xung = [
+                    ts for ts, dc in (chinh_tinh or {}).items() if dc == dia_chi_xung
+                ]
+                for ts in chinh_tinh_xung:
+                    dg = lookup_sao.get_dien_giai_sao(sao_data, ts, cung_xung_chieu_ten)
+                    entry_muon = {
+                        "sao": ts,
+                        "tai_cung": cung_xung_chieu_ten,
+                        "tai_dia_chi": dia_chi_xung,
+                        "tu_hoa": hoa_map.get(ts, []),
+                        "la_sao_muon": True,
+                    }
+                    if isinstance(dg, dict) and "error" in dg:
+                        entry_muon["dien_giai"] = None
+                        entry_muon["warning"] = dg["error"]
+                    elif dg is None:
+                        entry_muon["dien_giai"] = None
+                        entry_muon["warning"] = f"Chưa có dữ liệu diễn giải cho {ts} tại cung {cung_xung_chieu_ten}"
+                    else:
+                        entry_muon["dien_giai"] = dg
+                    sao_muon_list.append(entry_muon)
+
     return {
         "cung": ten_cung,
         "dia_chi": dia_chi_cung,
+        "chinh_tinh_tai_cung": chinh_tinh_tai_cung,
+        "phu_tinh_tai_cung": phu_tinh_tai_cung,
         "so_sao": len(ket_qua),
-        "sao_va_dien_giai": ket_qua
+        "sao_va_dien_giai": ket_qua,
+        "vo_chinh_dieu": vo_chinh_dieu,
+        "cung_xung_chieu": cung_xung_chieu_ten,
+        "sao_muon": sao_muon_list,
+    }
+
+
+@app.post("/dien-giai-cung")
+def dien_giai_cung(data: DienGiaiCungInput):
+    """
+    Từ ten_cung, tìm Địa Chi của cung đó trong muoi_hai_cung,
+    sau đó tìm các sao đang đóng tại Địa Chi đó trong chinh_tinh và các nhóm phụ tinh,
+    cuối cùng tra dien_giai thô cho từng sao.
+    """
+    ten_cung = data.ten_cung
+
+    if ten_cung not in data.muoi_hai_cung:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Cung '{ten_cung}' không có trong muoi_hai_cung được gửi lên."
+        )
+
+    info = lay_context_day_du_cho_cung(
+        ten_cung=ten_cung,
+        muoi_hai_cung=data.muoi_hai_cung,
+        chinh_tinh=data.chinh_tinh,
+        tu_hoa=data.tu_hoa,
+        phu_tinh=data.phu_tinh,
+        vong_thai_tue=data.vong_thai_tue,
+        tuan_triet=data.tuan_triet,
+        dao_hong_hi=data.dao_hong_hi,
+        quang_quy=data.quang_quy,
+        khoc_hu_co_qua=data.khoc_hu_co_qua,
+        hinh_rieu_y=data.hinh_rieu_y,
+    )
+
+    return {
+        "cung": info["cung"],
+        "dia_chi": info["dia_chi"],
+        "so_sao": info["so_sao"],
+        "sao_va_dien_giai": info["sao_va_dien_giai"]
     }
 
 
@@ -650,6 +746,13 @@ class HoiInput(BaseModel):
     muoi_hai_cung: Optional[Dict[str, str]] = None
     chinh_tinh: Optional[Dict[str, str]] = None
     tu_hoa: Optional[Dict[str, str]] = None
+    phu_tinh: Optional[Dict[str, str]] = None
+    vong_thai_tue: Optional[Dict[str, str]] = None
+    tuan_triet: Optional[Dict[str, List[str]]] = None
+    dao_hong_hi: Optional[Dict[str, str]] = None
+    quang_quy: Optional[Dict[str, str]] = None
+    khoc_hu_co_qua: Optional[Dict[str, str]] = None
+    hinh_rieu_y: Optional[Dict[str, str]] = None
     than_so_hoc: Optional[Dict] = None  # 4 chỉ số: duong_doi, su_menh, linh_hon, nhan_cach
 
 
@@ -710,27 +813,46 @@ def hoi_dap(data: HoiInput):
     if cung_match and data.muoi_hai_cung and data.chinh_tinh:
         dia_chi_cung = data.muoi_hai_cung.get(cung_match)
         if dia_chi_cung:
-            sao_tai_cung = [ts for ts, dc in data.chinh_tinh.items() if dc == dia_chi_cung]
-            dia_chi_to_cung = {v: k for k, v in data.muoi_hai_cung.items()}
-            ten_cung_de_tra = dia_chi_to_cung.get(dia_chi_cung, cung_match)
-            hoa_map = {}
-            for loai_hoa, ten_sao_hoa in (data.tu_hoa or {}).items():
-                hoa_map.setdefault(ten_sao_hoa, []).append(loai_hoa)
+            cung_info = lay_context_day_du_cho_cung(
+                ten_cung=cung_match,
+                muoi_hai_cung=data.muoi_hai_cung,
+                chinh_tinh=data.chinh_tinh,
+                tu_hoa=data.tu_hoa,
+                phu_tinh=data.phu_tinh,
+                vong_thai_tue=data.vong_thai_tue,
+                tuan_triet=data.tuan_triet,
+                dao_hong_hi=data.dao_hong_hi,
+                quang_quy=data.quang_quy,
+                khoc_hu_co_qua=data.khoc_hu_co_qua,
+                hinh_rieu_y=data.hinh_rieu_y,
+            )
 
-            if not sao_tai_cung:
-                context_parts.append(f"\nCung {cung_match} (Địa Chi: {dia_chi_cung}): Không có chính tinh (Vô Chính Diệu).")
-            else:
-                context_parts.append(f"\nCung {cung_match} (Địa Chi: {dia_chi_cung}):")
-                for ts in sao_tai_cung:
-                    dg = lookup_sao.get_dien_giai_sao(sao_data, ts, ten_cung_de_tra)
-                    line = f"  - {ts}"
-                    if hoa_map.get(ts):
-                        line += f" [{', '.join(hoa_map[ts])}]"
-                    if isinstance(dg, str):
-                        line += f": {dg[:400]}"
-                    else:
-                        line += ": [Thiếu dữ liệu diễn giải]"
-                    context_parts.append(line)
+            lines = [f"\nCung {cung_match} (Địa Chi: {dia_chi_cung}):"]
+            if cung_info["vo_chinh_dieu"]:
+                lines.append("  - Không có chính tinh (Vô Chính Diệu).")
+                if cung_info["sao_muon"]:
+                    lines.append(f"  - Mượn chính tinh từ cung xung chiếu ({cung_info['cung_xung_chieu']}):")
+                    for sm in cung_info["sao_muon"]:
+                        line = f"    * {sm['sao']}"
+                        if sm.get("tu_hoa"):
+                            line += f" [{', '.join(sm['tu_hoa'])}]"
+                        if sm.get("dien_giai"):
+                            line += f": {sm['dien_giai'][:400]}"
+                        else:
+                            line += ": [Thiếu dữ liệu diễn giải]"
+                        lines.append(line)
+
+            for s in cung_info["sao_va_dien_giai"]:
+                line = f"  - {s['sao']}"
+                if s.get("tu_hoa"):
+                    line += f" [{', '.join(s['tu_hoa'])}]"
+                if s.get("dien_giai"):
+                    line += f": {s['dien_giai'][:400]}"
+                else:
+                    line += ": [Thiếu dữ liệu diễn giải]"
+                lines.append(line)
+
+            context_parts.extend(lines)
 
     # Không match được gì
     if not context_parts:
