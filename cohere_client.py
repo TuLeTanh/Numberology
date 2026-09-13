@@ -24,7 +24,10 @@ if hasattr(sys.stderr, "reconfigure"):
     except Exception:
         pass
 
+import time
+
 import cohere
+import httpx
 
 # Bộ đếm cuộc gọi trong phiên — in-memory, reset khi restart server
 _call_count = 0
@@ -60,15 +63,26 @@ def goi_cohere(
 
     try:
         if hasattr(cohere, "ClientV2"):
-            client = cohere.ClientV2(api_key=key)
-            response = client.chat(
-                model=model,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_message},
-                ],
-                max_tokens=max_tokens,
-            )
+            # timeout=90s: thực tế đo được variance 23-46s (Cohere free tier), 90s cho margin an toàn
+            client = cohere.ClientV2(api_key=key, timeout=90)
+
+            def _do_chat():
+                return client.chat(
+                    model=model,
+                    messages=[
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": user_message},
+                    ],
+                    max_tokens=max_tokens,
+                )
+
+            # Retry tối đa 1 lần khi gặp timeout — không retry lỗi khác (401, 400...)
+            try:
+                response = _do_chat()
+            except httpx.TimeoutException:
+                time.sleep(2)
+                response = _do_chat()  # lần 2 fail → exception thoát ra except bên ngoài
+
             text = response.message.content[0].text
         else:
             # Cohere SDK v5.x (chuẩn theo requirements.txt cohere==5.0.2 trong .venv)
